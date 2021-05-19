@@ -1,0 +1,12 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/xxxx/my_subsystem_2/New_NIC1_use_3_ports/xxv_ethernet_0_ex.gen/sources_1/ip/fifo_generator_0/sim/fifo_generator_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_generator_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/xxxx/my_subsystem_2/New_NIC1_use_3_ports/xxv_ethernet_0_ex.srcs/sources_1/new/CWnd_Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CWnd_Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/xxxx/my_subsystem_2/New_NIC1_use_3_ports/xxv_ethernet_0_ex.srcs/sources_1/new/CWnd_Rate_Computation_verilog.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CWnd_Rate_Computation_verilog
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/xxxx/my_subsystem_2/New_NIC1_use_3_ports/xxv_ethernet_0_ex.srcs/sources_1/new/Ports_for_CC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Ports_for_CC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/xxxx/my_subsystem_2/New_NIC1_use_3_ports/xxv_ethernet_0_ex.srcs/sources_1/new/Rate_Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Rate_Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/xxxx/my_subsystem_2/New_NIC1_use_3_ports/xxv_ethernet_0_ex.srcs/sim_1/new/sim_first.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim_first

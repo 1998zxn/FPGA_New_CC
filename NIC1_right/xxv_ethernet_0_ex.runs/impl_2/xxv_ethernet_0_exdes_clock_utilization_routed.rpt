@@ -1,0 +1,935 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------
+| Tool Version      : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date              : Wed Apr 14 14:52:00 2021
+| Host              : zxn running 64-bit major release  (build 9200)
+| Command           : report_clock_utilization -file xxv_ethernet_0_exdes_clock_utilization_routed.rpt
+| Design            : xxv_ethernet_0_exdes
+| Device            : xcku040-ffva1156
+| Speed File        : -2  PRODUCTION 1.25 12-04-2018
+| Temperature Grade : E
+| Design State      : Routed
+-------------------------------------------------------------------------------------------------------
+
+Clock Utilization Report
+
+Table of Contents
+-----------------
+1. Clock Primitive Utilization
+2. Global Clock Resources
+3. Global Clock Source Details
+4. Local Clock Details
+5. Clock Regions : Clock Primitives
+6. Clock Regions : Load Primitives
+7. Clock Regions : Global Clock Summary
+8. Clock Regions : Routing Resource Utilization
+9. Device Cell Placement Summary for Global Clock g0
+10. Device Cell Placement Summary for Global Clock g1
+11. Device Cell Placement Summary for Global Clock g2
+12. Device Cell Placement Summary for Global Clock g3
+13. Device Cell Placement Summary for Global Clock g4
+14. Device Cell Placement Summary for Global Clock g5
+15. Device Cell Placement Summary for Global Clock g6
+16. Device Cell Placement Summary for Global Clock g7
+17. Device Cell Placement Summary for Global Clock g8
+18. Device Cell Placement Summary for Global Clock g9
+19. Device Cell Placement Summary for Global Clock g10
+20. Device Cell Placement Summary for Global Clock g11
+21. Device Cell Placement Summary for Global Clock g12
+22. Device Cell Placement Summary for Global Clock g13
+23. Device Cell Placement Summary for Global Clock g14
+24. Device Cell Placement Summary for Global Clock g15
+25. Device Cell Placement Summary for Global Clock g16
+26. Device Cell Placement Summary for Global Clock g17
+27. Device Cell Placement Summary for Global Clock g18
+28. Device Cell Placement Summary for Global Clock g19
+29. Device Cell Placement Summary for Global Clock g20
+30. Clock Region Cell Placement per Global Clock: Region X2Y1
+31. Clock Region Cell Placement per Global Clock: Region X3Y1
+32. Clock Region Cell Placement per Global Clock: Region X2Y2
+33. Clock Region Cell Placement per Global Clock: Region X3Y2
+34. Clock Region Cell Placement per Global Clock: Region X2Y3
+35. Clock Region Cell Placement per Global Clock: Region X3Y3
+36. Clock Region Cell Placement per Global Clock: Region X2Y4
+37. Clock Region Cell Placement per Global Clock: Region X3Y4
+
+1. Clock Primitive Utilization
+------------------------------
+
++------------+------+-----------+-----+--------------+--------+
+| Type       | Used | Available | LOC | Clock Region | Pblock |
++------------+------+-----------+-----+--------------+--------+
+| BUFGCE     |    5 |       240 |   0 |            0 |      0 |
+| BUFGCE_DIV |    0 |        40 |   0 |            0 |      0 |
+| BUFGCTRL   |    0 |        80 |   0 |            0 |      0 |
+| BUFG_GT    |   16 |       120 |   0 |            0 |      0 |
+| MMCM       |    1 |        10 |   0 |            0 |      0 |
+| PLL        |    0 |        20 |   0 |            0 |      0 |
++------------+------+-----------+-----+--------------+--------+
+
+
+2. Global Clock Resources
+-------------------------
+
++-----------+-----------+-----------------+------------+---------------+--------------+------+-------------------+-------------------+-------------+-----------------+--------------+-------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Global Id | Source Id | Driver Type/Pin | Constraint | Site          | Clock Region | Root | Clock Delay Group | Load Clock Region | Clock Loads | Non-Clock Loads | Clock Period | Clock             | Driver Pin                                                                                                                                                                   | Net                                                                                                                                                         |
++-----------+-----------+-----------------+------------+---------------+--------------+------+-------------------+-------------------+-------------+-----------------+--------------+-------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| g0        | src0      | BUFG_GT/O       | None       | BUFG_GT_X0Y85 | X3Y3         | X3Y3 |                   |                 3 |        2403 |               0 |        6.400 | tx_clk_out_0      | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_0/i_xxv_ethernet_0_core_gtwiz_userclk_tx_inst/gen_gtwiz_userclk_tx_main.bufg_gt_usrclk2_inst/O                     | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_0/i_xxv_ethernet_0_core_gtwiz_userclk_tx_inst/gt_rxn_in_0                                         |
+| g1        | src0      | BUFG_GT/O       | None       | BUFG_GT_X0Y84 | X3Y3         | X3Y3 |                   |                 1 |           1 |               0 |        3.200 | txoutclk_out[0]   | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_0/i_xxv_ethernet_0_core_gtwiz_userclk_tx_inst/gen_gtwiz_userclk_tx_main.bufg_gt_usrclk_inst/O                      | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_0/i_xxv_ethernet_0_core_gtwiz_userclk_tx_inst/txusrclk_in[0]                                      |
+| g2        | src1      | BUFG_GT/O       | None       | BUFG_GT_X0Y81 | X3Y3         | X3Y3 |                   |                 4 |        2403 |               0 |        6.400 | tx_clk_out_1      | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_1/i_xxv_ethernet_0_core_gtwiz_userclk_tx_inst/gen_gtwiz_userclk_tx_main.bufg_gt_usrclk2_inst/O                     | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_1/i_xxv_ethernet_0_core_gtwiz_userclk_tx_inst/gt_rxn_in_1                                         |
+| g3        | src1      | BUFG_GT/O       | None       | BUFG_GT_X0Y80 | X3Y3         | X3Y3 |                   |                 1 |           1 |               0 |        3.200 | txoutclk_out[0]_1 | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_1/i_xxv_ethernet_0_core_gtwiz_userclk_tx_inst/gen_gtwiz_userclk_tx_main.bufg_gt_usrclk_inst/O                      | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_1/i_xxv_ethernet_0_core_gtwiz_userclk_tx_inst/txusrclk_in[0]                                      |
+| g4        | src2      | BUFG_GT/O       | None       | BUFG_GT_X0Y77 | X3Y3         | X3Y3 |                   |                 3 |        2403 |               0 |        6.400 | tx_clk_out_2      | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_2/i_xxv_ethernet_0_core_gtwiz_userclk_tx_inst/gen_gtwiz_userclk_tx_main.bufg_gt_usrclk2_inst/O                     | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_2/i_xxv_ethernet_0_core_gtwiz_userclk_tx_inst/gt_rxn_in_2                                         |
+| g5        | src2      | BUFG_GT/O       | None       | BUFG_GT_X0Y76 | X3Y3         | X3Y3 |                   |                 1 |           1 |               0 |        3.200 | txoutclk_out[0]_2 | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_2/i_xxv_ethernet_0_core_gtwiz_userclk_tx_inst/gen_gtwiz_userclk_tx_main.bufg_gt_usrclk_inst/O                      | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_2/i_xxv_ethernet_0_core_gtwiz_userclk_tx_inst/txusrclk_in[0]                                      |
+| g6        | src3      | BUFG_GT/O       | None       | BUFG_GT_X0Y73 | X3Y3         | X3Y3 |                   |                 2 |        2403 |               0 |        6.400 | tx_clk_out_3      | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_3/i_xxv_ethernet_0_core_gtwiz_userclk_tx_inst/gen_gtwiz_userclk_tx_main.bufg_gt_usrclk2_inst/O                     | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_3/i_xxv_ethernet_0_core_gtwiz_userclk_tx_inst/gt_rxn_in_3                                         |
+| g7        | src3      | BUFG_GT/O       | None       | BUFG_GT_X0Y72 | X3Y3         | X3Y3 |                   |                 1 |           1 |               0 |        3.200 | txoutclk_out[0]_3 | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_3/i_xxv_ethernet_0_core_gtwiz_userclk_tx_inst/gen_gtwiz_userclk_tx_main.bufg_gt_usrclk_inst/O                      | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_3/i_xxv_ethernet_0_core_gtwiz_userclk_tx_inst/txusrclk_in[0]                                      |
+| g8        | src4      | BUFG_GT/O       | None       | BUFG_GT_X0Y87 | X3Y3         | X3Y3 |                   |                 2 |        1633 |               0 |        6.400 | rx_core_clk_0     | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_0/i_xxv_ethernet_0_core_gtwiz_userclk_rx_inst/gen_gtwiz_userclk_rx_main.bufg_gt_usrclk2_inst/O                     | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_0/i_xxv_ethernet_0_core_gtwiz_userclk_rx_inst/gt_rxn_in_0                                         |
+| g9        | src4      | BUFG_GT/O       | None       | BUFG_GT_X0Y86 | X3Y3         | X3Y3 |                   |                 1 |           1 |               0 |        3.200 | rxoutclk_out[0]   | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_0/i_xxv_ethernet_0_core_gtwiz_userclk_rx_inst/gen_gtwiz_userclk_rx_main.bufg_gt_usrclk_inst/O                      | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_0/i_xxv_ethernet_0_core_gtwiz_userclk_rx_inst/rxusrclk_in[0]                                      |
+| g10       | src5      | BUFG_GT/O       | None       | BUFG_GT_X0Y83 | X3Y3         | X3Y3 |                   |                 2 |        1633 |               0 |        6.400 | rx_core_clk_1     | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_1/i_xxv_ethernet_0_core_gtwiz_userclk_rx_inst/gen_gtwiz_userclk_rx_main.bufg_gt_usrclk2_inst/O                     | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_1/i_xxv_ethernet_0_core_gtwiz_userclk_rx_inst/gt_rxn_in_1                                         |
+| g11       | src5      | BUFG_GT/O       | None       | BUFG_GT_X0Y82 | X3Y3         | X3Y3 |                   |                 1 |           1 |               0 |        3.200 | rxoutclk_out[0]_1 | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_1/i_xxv_ethernet_0_core_gtwiz_userclk_rx_inst/gen_gtwiz_userclk_rx_main.bufg_gt_usrclk_inst/O                      | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_1/i_xxv_ethernet_0_core_gtwiz_userclk_rx_inst/rxusrclk_in[0]                                      |
+| g12       | src6      | BUFG_GT/O       | None       | BUFG_GT_X0Y79 | X3Y3         | X3Y3 |                   |                 2 |        1633 |               0 |        6.400 | rx_core_clk_2     | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_2/i_xxv_ethernet_0_core_gtwiz_userclk_rx_inst/gen_gtwiz_userclk_rx_main.bufg_gt_usrclk2_inst/O                     | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_2/i_xxv_ethernet_0_core_gtwiz_userclk_rx_inst/gt_rxn_in_2                                         |
+| g13       | src6      | BUFG_GT/O       | None       | BUFG_GT_X0Y78 | X3Y3         | X3Y3 |                   |                 1 |           1 |               0 |        3.200 | rxoutclk_out[0]_2 | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_2/i_xxv_ethernet_0_core_gtwiz_userclk_rx_inst/gen_gtwiz_userclk_rx_main.bufg_gt_usrclk_inst/O                      | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_2/i_xxv_ethernet_0_core_gtwiz_userclk_rx_inst/rxusrclk_in[0]                                      |
+| g14       | src7      | BUFG_GT/O       | None       | BUFG_GT_X0Y75 | X3Y3         | X3Y3 |                   |                 2 |        1633 |               0 |        6.400 | rx_core_clk_3     | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_3/i_xxv_ethernet_0_core_gtwiz_userclk_rx_inst/gen_gtwiz_userclk_rx_main.bufg_gt_usrclk2_inst/O                     | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_3/i_xxv_ethernet_0_core_gtwiz_userclk_rx_inst/gt_rxn_in_3                                         |
+| g15       | src7      | BUFG_GT/O       | None       | BUFG_GT_X0Y74 | X3Y3         | X3Y3 |                   |                 1 |           1 |               0 |        3.200 | rxoutclk_out[0]_3 | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_3/i_xxv_ethernet_0_core_gtwiz_userclk_rx_inst/gen_gtwiz_userclk_rx_main.bufg_gt_usrclk_inst/O                      | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_3/i_xxv_ethernet_0_core_gtwiz_userclk_rx_inst/rxusrclk_in[0]                                      |
+| g16       | src8      | BUFGCE/O        | None       | BUFGCE_X0Y47  | X0Y1         | X2Y3 |                   |                 6 |         748 |               0 |              |                   | axi_lite_clocking_i/s_axi_aclk_bufg0/O                                                                                                                                       | axi_lite_clocking_i/s_axi_aclk                                                                                                                              |
+| g17       | src9      | BUFGCE/O        | None       | BUFGCE_X1Y68  | X2Y2         | X2Y2 | n/a               |                 2 |           0 |            1134 |          n/a | n/a               | i_xxv_ethernet_0_core_support/DUT/inst/i_xxv_ethernet_0_top_0/i_xxv_ethernet_0_CORE/i_TX_TOP/i_TX_CORE/i_TX_CORE_STRIPER/i_RESET_FLOP_TX_LBA/reset_flop_out_reg_bufg_place/O | i_xxv_ethernet_0_core_support/DUT/inst/i_xxv_ethernet_0_top_0/i_xxv_ethernet_0_CORE/i_TX_TOP/i_TX_CORE/i_TX_CORE_STRIPER/i_RESET_FLOP_TX_LBA/reset_flop_out |
+| g18       | src10     | BUFGCE/O        | None       | BUFGCE_X1Y88  | X2Y3         | X2Y3 | n/a               |                 3 |           0 |            1134 |          n/a | n/a               | i_xxv_ethernet_0_core_support/DUT/inst/i_xxv_ethernet_0_top_1/i_xxv_ethernet_0_CORE/i_TX_TOP/i_TX_CORE/i_TX_CORE_STRIPER/i_RESET_FLOP_TX_LBA/reset_flop_out_reg_bufg_place/O | i_xxv_ethernet_0_core_support/DUT/inst/i_xxv_ethernet_0_top_1/i_xxv_ethernet_0_CORE/i_TX_TOP/i_TX_CORE/i_TX_CORE_STRIPER/i_RESET_FLOP_TX_LBA/reset_flop_out |
+| g19       | src11     | BUFGCE/O        | None       | BUFGCE_X1Y114 | X2Y4         | X2Y4 | n/a               |                 2 |           0 |            1134 |          n/a | n/a               | i_xxv_ethernet_0_core_support/DUT/inst/i_xxv_ethernet_0_top_2/i_xxv_ethernet_0_CORE/i_TX_TOP/i_TX_CORE/i_TX_CORE_STRIPER/i_RESET_FLOP_TX_LBA/reset_flop_out_reg_bufg_place/O | i_xxv_ethernet_0_core_support/DUT/inst/i_xxv_ethernet_0_top_2/i_xxv_ethernet_0_CORE/i_TX_TOP/i_TX_CORE/i_TX_CORE_STRIPER/i_RESET_FLOP_TX_LBA/reset_flop_out |
+| g20       | src12     | BUFGCE/O        | None       | BUFGCE_X1Y116 | X2Y4         | X2Y4 | n/a               |                 2 |           0 |            1134 |          n/a | n/a               | i_xxv_ethernet_0_core_support/DUT/inst/i_xxv_ethernet_0_top_3/i_xxv_ethernet_0_CORE/i_TX_TOP/i_TX_CORE/i_TX_CORE_STRIPER/i_RESET_FLOP_TX_LBA/reset_flop_out_reg_bufg_place/O | i_xxv_ethernet_0_core_support/DUT/inst/i_xxv_ethernet_0_top_3/i_xxv_ethernet_0_CORE/i_TX_TOP/i_TX_CORE/i_TX_CORE_STRIPER/i_RESET_FLOP_TX_LBA/reset_flop_out |
++-----------+-----------+-----------------+------------+---------------+--------------+------+-------------------+-------------------+-------------+-----------------+--------------+-------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+* Clock Loads column represents the clock pin loads (pin count)
+** Non-Clock Loads column represents the non-clock pin loads (pin count)
+
+
+3. Global Clock Source Details
+------------------------------
+
++-----------+-----------+------------------------+---------------------+---------------------+--------------+-------------+-----------------+---------------------+-------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Source Id | Global Id | Driver Type/Pin        | Constraint          | Site                | Clock Region | Clock Loads | Non-Clock Loads | Source Clock Period | Source Clock      | Driver Pin                                                                                                                                                                                                                                                                                                                                 | Net                                                                                                                                                                                                                                                                           |
++-----------+-----------+------------------------+---------------------+---------------------+--------------+-------------+-----------------+---------------------+-------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| src0      | g0        | GTHE3_CHANNEL/TXOUTCLK | GTHE3_CHANNEL_X0Y12 | GTHE3_CHANNEL_X0Y12 | X3Y3         |           3 |               0 |               3.200 | txoutclk_out[0]   | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_0/i_xxv_ethernet_0_gt_0/inst/gen_gtwizard_gthe3_top.xxv_ethernet_0_gt_0_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_channel_container[0].gen_enabled_channel.gthe3_channel_wrapper_inst/channel_inst/gthe3_channel_gen.gen_gthe3_channel_inst[0].GTHE3_CHANNEL_PRIM_INST/TXOUTCLK | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_0/i_xxv_ethernet_0_gt_0/inst/gen_gtwizard_gthe3_top.xxv_ethernet_0_gt_0_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_channel_container[0].gen_enabled_channel.gthe3_channel_wrapper_inst/channel_inst/txoutclk_out[0] |
+| src0      | g1        | GTHE3_CHANNEL/TXOUTCLK | GTHE3_CHANNEL_X0Y12 | GTHE3_CHANNEL_X0Y12 | X3Y3         |           3 |               0 |               3.200 | txoutclk_out[0]   | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_0/i_xxv_ethernet_0_gt_0/inst/gen_gtwizard_gthe3_top.xxv_ethernet_0_gt_0_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_channel_container[0].gen_enabled_channel.gthe3_channel_wrapper_inst/channel_inst/gthe3_channel_gen.gen_gthe3_channel_inst[0].GTHE3_CHANNEL_PRIM_INST/TXOUTCLK | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_0/i_xxv_ethernet_0_gt_0/inst/gen_gtwizard_gthe3_top.xxv_ethernet_0_gt_0_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_channel_container[0].gen_enabled_channel.gthe3_channel_wrapper_inst/channel_inst/txoutclk_out[0] |
+| src1      | g2        | GTHE3_CHANNEL/TXOUTCLK | GTHE3_CHANNEL_X0Y13 | GTHE3_CHANNEL_X0Y13 | X3Y3         |           3 |               0 |               3.200 | txoutclk_out[0]_1 | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_1/i_xxv_ethernet_0_gt_1/inst/gen_gtwizard_gthe3_top.xxv_ethernet_0_gt_1_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_channel_container[0].gen_enabled_channel.gthe3_channel_wrapper_inst/channel_inst/gthe3_channel_gen.gen_gthe3_channel_inst[0].GTHE3_CHANNEL_PRIM_INST/TXOUTCLK | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_1/i_xxv_ethernet_0_gt_1/inst/gen_gtwizard_gthe3_top.xxv_ethernet_0_gt_1_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_channel_container[0].gen_enabled_channel.gthe3_channel_wrapper_inst/channel_inst/txoutclk_out[0] |
+| src1      | g3        | GTHE3_CHANNEL/TXOUTCLK | GTHE3_CHANNEL_X0Y13 | GTHE3_CHANNEL_X0Y13 | X3Y3         |           3 |               0 |               3.200 | txoutclk_out[0]_1 | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_1/i_xxv_ethernet_0_gt_1/inst/gen_gtwizard_gthe3_top.xxv_ethernet_0_gt_1_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_channel_container[0].gen_enabled_channel.gthe3_channel_wrapper_inst/channel_inst/gthe3_channel_gen.gen_gthe3_channel_inst[0].GTHE3_CHANNEL_PRIM_INST/TXOUTCLK | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_1/i_xxv_ethernet_0_gt_1/inst/gen_gtwizard_gthe3_top.xxv_ethernet_0_gt_1_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_channel_container[0].gen_enabled_channel.gthe3_channel_wrapper_inst/channel_inst/txoutclk_out[0] |
+| src2      | g4        | GTHE3_CHANNEL/TXOUTCLK | GTHE3_CHANNEL_X0Y14 | GTHE3_CHANNEL_X0Y14 | X3Y3         |           3 |               0 |               3.200 | txoutclk_out[0]_2 | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_2/i_xxv_ethernet_0_gt_2/inst/gen_gtwizard_gthe3_top.xxv_ethernet_0_gt_2_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_channel_container[0].gen_enabled_channel.gthe3_channel_wrapper_inst/channel_inst/gthe3_channel_gen.gen_gthe3_channel_inst[0].GTHE3_CHANNEL_PRIM_INST/TXOUTCLK | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_2/i_xxv_ethernet_0_gt_2/inst/gen_gtwizard_gthe3_top.xxv_ethernet_0_gt_2_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_channel_container[0].gen_enabled_channel.gthe3_channel_wrapper_inst/channel_inst/txoutclk_out[0] |
+| src2      | g5        | GTHE3_CHANNEL/TXOUTCLK | GTHE3_CHANNEL_X0Y14 | GTHE3_CHANNEL_X0Y14 | X3Y3         |           3 |               0 |               3.200 | txoutclk_out[0]_2 | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_2/i_xxv_ethernet_0_gt_2/inst/gen_gtwizard_gthe3_top.xxv_ethernet_0_gt_2_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_channel_container[0].gen_enabled_channel.gthe3_channel_wrapper_inst/channel_inst/gthe3_channel_gen.gen_gthe3_channel_inst[0].GTHE3_CHANNEL_PRIM_INST/TXOUTCLK | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_2/i_xxv_ethernet_0_gt_2/inst/gen_gtwizard_gthe3_top.xxv_ethernet_0_gt_2_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_channel_container[0].gen_enabled_channel.gthe3_channel_wrapper_inst/channel_inst/txoutclk_out[0] |
+| src3      | g6        | GTHE3_CHANNEL/TXOUTCLK | GTHE3_CHANNEL_X0Y15 | GTHE3_CHANNEL_X0Y15 | X3Y3         |           3 |               0 |               3.200 | txoutclk_out[0]_3 | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_3/i_xxv_ethernet_0_gt_3/inst/gen_gtwizard_gthe3_top.xxv_ethernet_0_gt_3_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_channel_container[0].gen_enabled_channel.gthe3_channel_wrapper_inst/channel_inst/gthe3_channel_gen.gen_gthe3_channel_inst[0].GTHE3_CHANNEL_PRIM_INST/TXOUTCLK | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_3/i_xxv_ethernet_0_gt_3/inst/gen_gtwizard_gthe3_top.xxv_ethernet_0_gt_3_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_channel_container[0].gen_enabled_channel.gthe3_channel_wrapper_inst/channel_inst/txoutclk_out[0] |
+| src3      | g7        | GTHE3_CHANNEL/TXOUTCLK | GTHE3_CHANNEL_X0Y15 | GTHE3_CHANNEL_X0Y15 | X3Y3         |           3 |               0 |               3.200 | txoutclk_out[0]_3 | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_3/i_xxv_ethernet_0_gt_3/inst/gen_gtwizard_gthe3_top.xxv_ethernet_0_gt_3_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_channel_container[0].gen_enabled_channel.gthe3_channel_wrapper_inst/channel_inst/gthe3_channel_gen.gen_gthe3_channel_inst[0].GTHE3_CHANNEL_PRIM_INST/TXOUTCLK | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_3/i_xxv_ethernet_0_gt_3/inst/gen_gtwizard_gthe3_top.xxv_ethernet_0_gt_3_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_channel_container[0].gen_enabled_channel.gthe3_channel_wrapper_inst/channel_inst/txoutclk_out[0] |
+| src4      | g8        | GTHE3_CHANNEL/RXOUTCLK | GTHE3_CHANNEL_X0Y12 | GTHE3_CHANNEL_X0Y12 | X3Y3         |           3 |               0 |               3.200 | rxoutclk_out[0]   | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_0/i_xxv_ethernet_0_gt_0/inst/gen_gtwizard_gthe3_top.xxv_ethernet_0_gt_0_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_channel_container[0].gen_enabled_channel.gthe3_channel_wrapper_inst/channel_inst/gthe3_channel_gen.gen_gthe3_channel_inst[0].GTHE3_CHANNEL_PRIM_INST/RXOUTCLK | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_0/i_xxv_ethernet_0_gt_0/inst/gen_gtwizard_gthe3_top.xxv_ethernet_0_gt_0_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_channel_container[0].gen_enabled_channel.gthe3_channel_wrapper_inst/channel_inst/rxoutclk_out[0] |
+| src4      | g9        | GTHE3_CHANNEL/RXOUTCLK | GTHE3_CHANNEL_X0Y12 | GTHE3_CHANNEL_X0Y12 | X3Y3         |           3 |               0 |               3.200 | rxoutclk_out[0]   | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_0/i_xxv_ethernet_0_gt_0/inst/gen_gtwizard_gthe3_top.xxv_ethernet_0_gt_0_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_channel_container[0].gen_enabled_channel.gthe3_channel_wrapper_inst/channel_inst/gthe3_channel_gen.gen_gthe3_channel_inst[0].GTHE3_CHANNEL_PRIM_INST/RXOUTCLK | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_0/i_xxv_ethernet_0_gt_0/inst/gen_gtwizard_gthe3_top.xxv_ethernet_0_gt_0_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_channel_container[0].gen_enabled_channel.gthe3_channel_wrapper_inst/channel_inst/rxoutclk_out[0] |
+| src5      | g10       | GTHE3_CHANNEL/RXOUTCLK | GTHE3_CHANNEL_X0Y13 | GTHE3_CHANNEL_X0Y13 | X3Y3         |           3 |               0 |               3.200 | rxoutclk_out[0]_1 | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_1/i_xxv_ethernet_0_gt_1/inst/gen_gtwizard_gthe3_top.xxv_ethernet_0_gt_1_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_channel_container[0].gen_enabled_channel.gthe3_channel_wrapper_inst/channel_inst/gthe3_channel_gen.gen_gthe3_channel_inst[0].GTHE3_CHANNEL_PRIM_INST/RXOUTCLK | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_1/i_xxv_ethernet_0_gt_1/inst/gen_gtwizard_gthe3_top.xxv_ethernet_0_gt_1_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_channel_container[0].gen_enabled_channel.gthe3_channel_wrapper_inst/channel_inst/rxoutclk_out[0] |
+| src5      | g11       | GTHE3_CHANNEL/RXOUTCLK | GTHE3_CHANNEL_X0Y13 | GTHE3_CHANNEL_X0Y13 | X3Y3         |           3 |               0 |               3.200 | rxoutclk_out[0]_1 | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_1/i_xxv_ethernet_0_gt_1/inst/gen_gtwizard_gthe3_top.xxv_ethernet_0_gt_1_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_channel_container[0].gen_enabled_channel.gthe3_channel_wrapper_inst/channel_inst/gthe3_channel_gen.gen_gthe3_channel_inst[0].GTHE3_CHANNEL_PRIM_INST/RXOUTCLK | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_1/i_xxv_ethernet_0_gt_1/inst/gen_gtwizard_gthe3_top.xxv_ethernet_0_gt_1_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_channel_container[0].gen_enabled_channel.gthe3_channel_wrapper_inst/channel_inst/rxoutclk_out[0] |
+| src6      | g12       | GTHE3_CHANNEL/RXOUTCLK | GTHE3_CHANNEL_X0Y14 | GTHE3_CHANNEL_X0Y14 | X3Y3         |           3 |               0 |               3.200 | rxoutclk_out[0]_2 | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_2/i_xxv_ethernet_0_gt_2/inst/gen_gtwizard_gthe3_top.xxv_ethernet_0_gt_2_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_channel_container[0].gen_enabled_channel.gthe3_channel_wrapper_inst/channel_inst/gthe3_channel_gen.gen_gthe3_channel_inst[0].GTHE3_CHANNEL_PRIM_INST/RXOUTCLK | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_2/i_xxv_ethernet_0_gt_2/inst/gen_gtwizard_gthe3_top.xxv_ethernet_0_gt_2_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_channel_container[0].gen_enabled_channel.gthe3_channel_wrapper_inst/channel_inst/rxoutclk_out[0] |
+| src6      | g13       | GTHE3_CHANNEL/RXOUTCLK | GTHE3_CHANNEL_X0Y14 | GTHE3_CHANNEL_X0Y14 | X3Y3         |           3 |               0 |               3.200 | rxoutclk_out[0]_2 | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_2/i_xxv_ethernet_0_gt_2/inst/gen_gtwizard_gthe3_top.xxv_ethernet_0_gt_2_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_channel_container[0].gen_enabled_channel.gthe3_channel_wrapper_inst/channel_inst/gthe3_channel_gen.gen_gthe3_channel_inst[0].GTHE3_CHANNEL_PRIM_INST/RXOUTCLK | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_2/i_xxv_ethernet_0_gt_2/inst/gen_gtwizard_gthe3_top.xxv_ethernet_0_gt_2_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_channel_container[0].gen_enabled_channel.gthe3_channel_wrapper_inst/channel_inst/rxoutclk_out[0] |
+| src7      | g14       | GTHE3_CHANNEL/RXOUTCLK | GTHE3_CHANNEL_X0Y15 | GTHE3_CHANNEL_X0Y15 | X3Y3         |           3 |               0 |               3.200 | rxoutclk_out[0]_3 | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_3/i_xxv_ethernet_0_gt_3/inst/gen_gtwizard_gthe3_top.xxv_ethernet_0_gt_3_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_channel_container[0].gen_enabled_channel.gthe3_channel_wrapper_inst/channel_inst/gthe3_channel_gen.gen_gthe3_channel_inst[0].GTHE3_CHANNEL_PRIM_INST/RXOUTCLK | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_3/i_xxv_ethernet_0_gt_3/inst/gen_gtwizard_gthe3_top.xxv_ethernet_0_gt_3_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_channel_container[0].gen_enabled_channel.gthe3_channel_wrapper_inst/channel_inst/rxoutclk_out[0] |
+| src7      | g15       | GTHE3_CHANNEL/RXOUTCLK | GTHE3_CHANNEL_X0Y15 | GTHE3_CHANNEL_X0Y15 | X3Y3         |           3 |               0 |               3.200 | rxoutclk_out[0]_3 | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_3/i_xxv_ethernet_0_gt_3/inst/gen_gtwizard_gthe3_top.xxv_ethernet_0_gt_3_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_channel_container[0].gen_enabled_channel.gthe3_channel_wrapper_inst/channel_inst/gthe3_channel_gen.gen_gthe3_channel_inst[0].GTHE3_CHANNEL_PRIM_INST/RXOUTCLK | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_3/i_xxv_ethernet_0_gt_3/inst/gen_gtwizard_gthe3_top.xxv_ethernet_0_gt_3_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_channel_container[0].gen_enabled_channel.gthe3_channel_wrapper_inst/channel_inst/rxoutclk_out[0] |
+| src8      | g16       | MMCME3_ADV/CLKOUT0     | None                | MMCME3_ADV_X0Y1     | X0Y1         |           1 |               0 |                     |                   | axi_lite_clocking_i/tx_mmcm/CLKOUT0                                                                                                                                                                                                                                                                                                        | axi_lite_clocking_i/s_axi_dcm_aclk0                                                                                                                                                                                                                                           |
+| src9      | g17       | FDRE/Q                 | None                | SLICE_X88Y136       | X3Y2         |           1 |               0 |                     |                   | i_xxv_ethernet_0_core_support/DUT/inst/i_xxv_ethernet_0_top_0/i_xxv_ethernet_0_CORE/i_TX_TOP/i_TX_CORE/i_TX_CORE_STRIPER/i_RESET_FLOP_TX_LBA/reset_flop_out_reg/Q                                                                                                                                                                          | i_xxv_ethernet_0_core_support/DUT/inst/i_xxv_ethernet_0_top_0/i_xxv_ethernet_0_CORE/i_TX_TOP/i_TX_CORE/i_TX_CORE_STRIPER/i_RESET_FLOP_TX_LBA/reset_flop_out_bufg_place                                                                                                        |
+| src10     | g18       | FDRE/Q                 | None                | SLICE_X79Y183       | X3Y3         |           1 |               0 |                     |                   | i_xxv_ethernet_0_core_support/DUT/inst/i_xxv_ethernet_0_top_1/i_xxv_ethernet_0_CORE/i_TX_TOP/i_TX_CORE/i_TX_CORE_STRIPER/i_RESET_FLOP_TX_LBA/reset_flop_out_reg/Q                                                                                                                                                                          | i_xxv_ethernet_0_core_support/DUT/inst/i_xxv_ethernet_0_top_1/i_xxv_ethernet_0_CORE/i_TX_TOP/i_TX_CORE/i_TX_CORE_STRIPER/i_RESET_FLOP_TX_LBA/reset_flop_out_bufg_place                                                                                                        |
+| src11     | g19       | FDRE/Q                 | None                | SLICE_X68Y224       | X2Y3         |           1 |               0 |                     |                   | i_xxv_ethernet_0_core_support/DUT/inst/i_xxv_ethernet_0_top_2/i_xxv_ethernet_0_CORE/i_TX_TOP/i_TX_CORE/i_TX_CORE_STRIPER/i_RESET_FLOP_TX_LBA/reset_flop_out_reg/Q                                                                                                                                                                          | i_xxv_ethernet_0_core_support/DUT/inst/i_xxv_ethernet_0_top_2/i_xxv_ethernet_0_CORE/i_TX_TOP/i_TX_CORE/i_TX_CORE_STRIPER/i_RESET_FLOP_TX_LBA/reset_flop_out_bufg_place                                                                                                        |
+| src12     | g20       | FDRE/Q                 | None                | SLICE_X83Y269       | X3Y4         |           1 |               0 |                     |                   | i_xxv_ethernet_0_core_support/DUT/inst/i_xxv_ethernet_0_top_3/i_xxv_ethernet_0_CORE/i_TX_TOP/i_TX_CORE/i_TX_CORE_STRIPER/i_RESET_FLOP_TX_LBA/reset_flop_out_reg/Q                                                                                                                                                                          | i_xxv_ethernet_0_core_support/DUT/inst/i_xxv_ethernet_0_top_3/i_xxv_ethernet_0_CORE/i_TX_TOP/i_TX_CORE/i_TX_CORE_STRIPER/i_RESET_FLOP_TX_LBA/reset_flop_out_bufg_place                                                                                                        |
++-----------+-----------+------------------------+---------------------+---------------------+--------------+-------------+-----------------+---------------------+-------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+* Clock Loads column represents the clock pin loads (pin count)
+** Non-Clock Loads column represents the non-clock pin loads (pin count)
+
+
+4. Local Clock Details
+----------------------
+
++----------+-----------------+-------------------+--------------------------------+--------------+-------------+-----------------+--------------+-------------+-----------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------+
+| Local Id | Driver Type/Pin | Constraint        | Site/BEL                       | Clock Region | Clock Loads | Non-Clock Loads | Clock Period | Clock       | Driver Pin                                                                                                                        | Net                                                                                                             |
++----------+-----------------+-------------------+--------------------------------+--------------+-------------+-----------------+--------------+-------------+-----------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------||
+| 0        | IBUFDS_GTE3/O   | GTHE3_COMMON_X0Y3 | GTHE3_COMMON_X0Y3/IBUFDS0_GTE3 | X3Y3         |           1 |               0 |        6.400 | gt_refclk_p | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_sharedlogic_wrapper/i_xxv_ethernet_0_clocking_wrapper/IBUFDS_GTE3_GTREFCLK0_INST/O | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_sharedlogic_wrapper/i_xxv_ethernet_0_clocking_wrapper/gt_ref_clk - Static -
++----------+-----------------+-------------------+--------------------------------+--------------+-------------+-----------------+--------------+-------------+-----------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------||
+* Local Clocks in this context represents only clocks driven by non-global buffers
+** Clock Loads column represents the clock pin loads (pin count)
+*** Non-Clock Loads column represents the non-clock pin loads (pin count)
+
+
+5. Clock Regions : Clock Primitives
+-----------------------------------
+
++-------------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+
+|                   |  Global Clock |     BUFGCE    |   BUFGCE_DIV  |    BUFGCTRL   |    BUFG_GT    |      MMCM     |      PLL      |
++-------------------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
+| Clock Region Name | Used  | Avail | Used  | Avail | Used  | Avail | Used  | Avail | Used  | Avail | Used  | Avail | Used  | Avail |
++-------------------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
+| X0Y0              |     0 |    24 |     0 |    24 |     0 |     4 |     0 |     8 |     0 |     0 |     0 |     1 |     0 |     2 |
+| X1Y0              |     0 |    24 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |
+| X2Y0              |     0 |    24 |     0 |    24 |     0 |     4 |     0 |     8 |     0 |     0 |     0 |     1 |     0 |     2 |
+| X3Y0              |     0 |    24 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |    24 |     0 |     0 |     0 |     0 |
+| X0Y1              |     0 |    24 |     1 |    24 |     0 |     4 |     0 |     8 |     0 |     0 |     1 |     1 |     0 |     2 |
+| X1Y1              |     0 |    24 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |
+| X2Y1              |     1 |    24 |     0 |    24 |     0 |     4 |     0 |     8 |     0 |     0 |     0 |     1 |     0 |     2 |
+| X3Y1              |     2 |    24 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |    24 |     0 |     0 |     0 |     0 |
+| X0Y2              |     0 |    24 |     0 |    24 |     0 |     4 |     0 |     8 |     0 |     0 |     0 |     1 |     0 |     2 |
+| X1Y2              |     0 |    24 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |
+| X2Y2              |     6 |    24 |     1 |    24 |     0 |     4 |     0 |     8 |     0 |     0 |     0 |     1 |     0 |     2 |
+| X3Y2              |     8 |    24 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |    24 |     0 |     0 |     0 |     0 |
+| X0Y3              |     0 |    24 |     0 |    24 |     0 |     4 |     0 |     8 |     0 |     0 |     0 |     1 |     0 |     2 |
+| X1Y3              |     0 |    24 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |
+| X2Y3              |     7 |    24 |     1 |    24 |     0 |     4 |     0 |     8 |     0 |     0 |     0 |     1 |     0 |     2 |
+| X3Y3              |    19 |    24 |     0 |     0 |     0 |     0 |     0 |     0 |    16 |    24 |     0 |     0 |     0 |     0 |
+| X0Y4              |     0 |    24 |     0 |    24 |     0 |     4 |     0 |     8 |     0 |     0 |     0 |     1 |     0 |     2 |
+| X1Y4              |     0 |    24 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |
+| X2Y4              |     2 |    24 |     2 |    24 |     0 |     4 |     0 |     8 |     0 |     0 |     0 |     1 |     0 |     2 |
+| X3Y4              |     4 |    24 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |    24 |     0 |     0 |     0 |     0 |
++-------------------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
+* Global Clock column represents track count; while other columns represents cell counts
+
+
+6. Clock Regions : Load Primitives
+----------------------------------
+
++-------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+
+|                   |   Global Clock   |        FF        |      LUTRAM      |  Block RAM (18K) |        DSP       |        GT        |      HARD IP     |
++-------------------+--------+---------+--------+---------+--------+---------+--------+---------+--------+---------+--------+---------+--------+---------+
+| Clock Region Name | Used   | Avail   | Used   | Avail   | Used   | Avail   | Used   | Avail   | Used   | Avail   | Used   | Avail   | Used   | Avail   |
++-------------------+--------+---------+--------+---------+--------+---------+--------+---------+--------+---------+--------+---------+--------+---------+
+| X0Y0              |      0 |      24 |      0 |   23040 |      0 |    5760 |      0 |      72 |      0 |      96 |      0 |       0 |      0 |       0 |
+| X1Y0              |      0 |      24 |      0 |   24000 |      0 |    6240 |      0 |      72 |      0 |      96 |      0 |       0 |      0 |       0 |
+| X2Y0              |      0 |      24 |      0 |   25920 |      0 |    7200 |      0 |      48 |      0 |     144 |      0 |       0 |      0 |       0 |
+| X3Y0              |      0 |      24 |      0 |   24000 |      0 |    3360 |      0 |      48 |      0 |      48 |      0 |       4 |      0 |       1 |
+| X0Y1              |      0 |      24 |      0 |   23040 |      0 |    5760 |      0 |      72 |      0 |      96 |      0 |       0 |      0 |       0 |
+| X1Y1              |      0 |      24 |      0 |   24000 |      0 |    6240 |      0 |      72 |      0 |      96 |      0 |       0 |      0 |       0 |
+| X2Y1              |      1 |      24 |      0 |   25920 |      0 |    7200 |      0 |      48 |      0 |     144 |      0 |       0 |      0 |       0 |
+| X3Y1              |      2 |      24 |    673 |   24000 |      0 |    3360 |      4 |      48 |      0 |      48 |      0 |       4 |      0 |       0 |
+| X0Y2              |      0 |      24 |      0 |   23040 |      0 |    5760 |      0 |      72 |      0 |      96 |      0 |       0 |      0 |       0 |
+| X1Y2              |      0 |      24 |      0 |   24000 |      0 |    6240 |      0 |      72 |      0 |      96 |      0 |       0 |      0 |       0 |
+| X2Y2              |      6 |      24 |    350 |   25920 |      0 |    7200 |      0 |      48 |      0 |     144 |      0 |       0 |      0 |       0 |
+| X3Y2              |      8 |      24 |   3911 |   24000 |     91 |    3360 |      8 |      48 |      0 |      48 |      0 |       4 |      0 |       0 |
+| X0Y3              |      0 |      24 |      0 |   23040 |      0 |    5760 |      0 |      72 |      0 |      96 |      0 |       0 |      0 |       0 |
+| X1Y3              |      0 |      24 |      0 |   24000 |      0 |    6240 |      0 |      72 |      0 |      96 |      0 |       0 |      0 |       0 |
+| X2Y3              |      7 |      24 |   2335 |   25920 |     21 |    7200 |      8 |      48 |      0 |     144 |      0 |       0 |      0 |       0 |
+| X3Y3              |     19 |      24 |   6147 |   24000 |    168 |    3360 |      4 |      48 |      0 |      48 |      4 |       4 |      0 |       1 |
+| X0Y4              |      0 |      24 |      0 |   23040 |      0 |    5760 |      0 |      72 |      0 |      96 |      0 |       0 |      0 |       0 |
+| X1Y4              |      0 |      24 |      0 |   24000 |      0 |    6240 |      0 |      72 |      0 |      96 |      0 |       0 |      0 |       0 |
+| X2Y4              |      2 |      24 |     13 |   25920 |      0 |    7200 |      0 |      48 |      0 |     144 |      0 |       0 |      0 |       0 |
+| X3Y4              |      4 |      24 |   2995 |   24000 |     84 |    3360 |      8 |      48 |      0 |      48 |      0 |       4 |      0 |       1 |
++-------------------+--------+---------+--------+---------+--------+---------+--------+---------+--------+---------+--------+---------+--------+---------+
+* Global Clock column represents track count; while other columns represents cell counts
+
+
+7. Clock Regions : Global Clock Summary
+---------------------------------------
+
+All Modules
++----+----+----+----+----+
+|    | X0 | X1 | X2 | X3 |
++----+----+----+----+----+
+| Y4 |  0 |  0 |  3 |  4 |
+| Y3 |  0 |  0 |  7 | 19 |
+| Y2 |  0 |  0 |  6 |  8 |
+| Y1 |  0 |  0 |  2 |  2 |
+| Y0 |  0 |  0 |  0 |  0 |
++----+----+----+----+----+
+
+
+8. Clock Regions : Routing Resource Utilization
+-----------------------------------------------
+
+All Modules
++-------------------+-----------------------+----------------------+----------------------+----------------------+
+|                   |        HROUTES        |        HDISTRS       |        VROUTES       |        VDISTRS       |
++-------------------+------+-------+--------+------+-------+-------+------+-------+-------+------+-------+-------+
+| Clock Region Name | Used | Avail | Util%  | Used | Avail | Util% | Used | Avail | Util% | Used | Avail | Util% |
++-------------------+------+-------+--------+------+-------+-------+------+-------+-------+------+-------+-------+
+| X0Y0              |    0 |    24 |   0.00 |    0 |    24 |  0.00 |    0 |    24 |  0.00 |    0 |    24 |  0.00 |
+| X1Y0              |    0 |    24 |   0.00 |    0 |    24 |  0.00 |    0 |    24 |  0.00 |    0 |    24 |  0.00 |
+| X2Y0              |    0 |    24 |   0.00 |    0 |    24 |  0.00 |    0 |    24 |  0.00 |    0 |    24 |  0.00 |
+| X3Y0              |    0 |    24 |   0.00 |    0 |    24 |  0.00 |    0 |    24 |  0.00 |    0 |    24 |  0.00 |
+| X0Y1              |    2 |    24 |   8.33 |    0 |    24 |  0.00 |    0 |    24 |  0.00 |    0 |    24 |  0.00 |
+| X1Y1              |    2 |    24 |   8.33 |    0 |    24 |  0.00 |    0 |    24 |  0.00 |    0 |    24 |  0.00 |
+| X2Y1              |    3 |    24 |  12.50 |    1 |    24 |  4.17 |    0 |    24 |  0.00 |    1 |    24 |  4.17 |
+| X3Y1              |    0 |    24 |   0.00 |    2 |    24 |  8.33 |    0 |    24 |  0.00 |    1 |    24 |  4.17 |
+| X0Y2              |    0 |    24 |   0.00 |    0 |    24 |  0.00 |    0 |    24 |  0.00 |    0 |    24 |  0.00 |
+| X1Y2              |    0 |    24 |   0.00 |    0 |    24 |  0.00 |    0 |    24 |  0.00 |    0 |    24 |  0.00 |
+| X2Y2              |    0 |    24 |   0.00 |    6 |    24 | 25.00 |    1 |    24 |  4.17 |    4 |    24 | 16.67 |
+| X3Y2              |    0 |    24 |   0.00 |    8 |    24 | 33.33 |    0 |    24 |  0.00 |    5 |    24 | 20.83 |
+| X0Y3              |    0 |    24 |   0.00 |    0 |    24 |  0.00 |    0 |    24 |  0.00 |    0 |    24 |  0.00 |
+| X1Y3              |    0 |    24 |   0.00 |    0 |    24 |  0.00 |    0 |    24 |  0.00 |    0 |    24 |  0.00 |
+| X2Y3              |    0 |    24 |   0.00 |    7 |    24 | 29.17 |    1 |    24 |  4.17 |    4 |    24 | 16.67 |
+| X3Y3              |   24 |    24 | 100.00 |   19 |    24 | 79.17 |    0 |    24 |  0.00 |   14 |    24 | 58.33 |
+| X0Y4              |    0 |    24 |   0.00 |    0 |    24 |  0.00 |    0 |    24 |  0.00 |    0 |    24 |  0.00 |
+| X1Y4              |    0 |    24 |   0.00 |    0 |    24 |  0.00 |    0 |    24 |  0.00 |    0 |    24 |  0.00 |
+| X2Y4              |    0 |    24 |   0.00 |    2 |    24 |  8.33 |    0 |    24 |  0.00 |    2 |    24 |  8.33 |
+| X3Y4              |    0 |    24 |   0.00 |    4 |    24 | 16.67 |    0 |    24 |  0.00 |    0 |    24 |  0.00 |
++-------------------+------+-------+--------+------+-------+-------+------+-------+-------+------+-------+-------+
+
+
+9. Device Cell Placement Summary for Global Clock g0
+----------------------------------------------------
+
++-----------+-----------------+-------------------+--------------+-------------+---------------+----------+-------------+----------+----------------+----------+---------------------------------------------------------------------------------------------------------------------+
+| Global Id | Driver Type/Pin | Driver Region (D) | Clock        | Period (ns) | Waveform (ns) | Root (R) | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net                                                                                                                 |
++-----------+-----------------+-------------------+--------------+-------------+---------------+----------+-------------+----------+----------------+----------+---------------------------------------------------------------------------------------------------------------------+
+| g0        | BUFG_GT/O       | X3Y3              | tx_clk_out_0 |       6.400 | {0.000 3.200} | X3Y3     |        2399 |        0 |              0 |        1 | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_0/i_xxv_ethernet_0_core_gtwiz_userclk_tx_inst/gt_rxn_in_0 |
++-----------+-----------------+-------------------+--------------+-------------+---------------+----------+-------------+----------+----------------+----------+---------------------------------------------------------------------------------------------------------------------+
+* Slice Loads column represents load cell count of all cell types other than IO, GT and clock resources
+** IO Loads column represents load cell count of IO types
+*** Clocking Loads column represents load cell count that are clock resources (global clock buffer, MMCM, PLL, etc)
+**** GT Loads column represents load cell count of GT types
+
+
++----+----+----+----+-----------+-----------------------+
+|    | X0 | X1 | X2 | X3        | HORIZONTAL PROG DELAY |
++----+----+----+----+-----------+-----------------------+
+| Y4 |  0 |  0 |  0 |         0 |                     0 |
+| Y3 |  0 |  0 |  0 | (R) (D) 1 |                     2 |
+| Y2 |  0 |  0 |  0 |      1724 |                     1 |
+| Y1 |  0 |  0 |  0 |       675 |                     0 |
+| Y0 |  0 |  0 |  0 |         0 |                     0 |
++----+----+----+----+-----------+-----------------------+
+
+
+10. Device Cell Placement Summary for Global Clock g1
+-----------------------------------------------------
+
++-----------+-----------------+-------------------+-----------------+-------------+---------------+----------+-------------+----------+----------------+----------+------------------------------------------------------------------------------------------------------------------------+
+| Global Id | Driver Type/Pin | Driver Region (D) | Clock           | Period (ns) | Waveform (ns) | Root (R) | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net                                                                                                                    |
++-----------+-----------------+-------------------+-----------------+-------------+---------------+----------+-------------+----------+----------------+----------+------------------------------------------------------------------------------------------------------------------------+
+| g1        | BUFG_GT/O       | X3Y3              | txoutclk_out[0] |       3.200 | {0.000 1.600} | X3Y3     |           0 |        0 |              0 |        1 | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_0/i_xxv_ethernet_0_core_gtwiz_userclk_tx_inst/txusrclk_in[0] |
++-----------+-----------------+-------------------+-----------------+-------------+---------------+----------+-------------+----------+----------------+----------+------------------------------------------------------------------------------------------------------------------------+
+* Slice Loads column represents load cell count of all cell types other than IO, GT and clock resources
+** IO Loads column represents load cell count of IO types
+*** Clocking Loads column represents load cell count that are clock resources (global clock buffer, MMCM, PLL, etc)
+**** GT Loads column represents load cell count of GT types
+
+
++----+----+----+----+-----------+-----------------------+
+|    | X0 | X1 | X2 | X3        | HORIZONTAL PROG DELAY |
++----+----+----+----+-----------+-----------------------+
+| Y4 |  0 |  0 |  0 |         0 |                     0 |
+| Y3 |  0 |  0 |  0 | (R) (D) 1 |                     2 |
+| Y2 |  0 |  0 |  0 |         0 |                     0 |
+| Y1 |  0 |  0 |  0 |         0 |                     0 |
+| Y0 |  0 |  0 |  0 |         0 |                     0 |
++----+----+----+----+-----------+-----------------------+
+
+
+11. Device Cell Placement Summary for Global Clock g2
+-----------------------------------------------------
+
++-----------+-----------------+-------------------+--------------+-------------+---------------+----------+-------------+----------+----------------+----------+---------------------------------------------------------------------------------------------------------------------+
+| Global Id | Driver Type/Pin | Driver Region (D) | Clock        | Period (ns) | Waveform (ns) | Root (R) | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net                                                                                                                 |
++-----------+-----------------+-------------------+--------------+-------------+---------------+----------+-------------+----------+----------------+----------+---------------------------------------------------------------------------------------------------------------------+
+| g2        | BUFG_GT/O       | X3Y3              | tx_clk_out_1 |       6.400 | {0.000 3.200} | X3Y3     |        2399 |        0 |              0 |        1 | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_1/i_xxv_ethernet_0_core_gtwiz_userclk_tx_inst/gt_rxn_in_1 |
++-----------+-----------------+-------------------+--------------+-------------+---------------+----------+-------------+----------+----------------+----------+---------------------------------------------------------------------------------------------------------------------+
+* Slice Loads column represents load cell count of all cell types other than IO, GT and clock resources
+** IO Loads column represents load cell count of IO types
+*** Clocking Loads column represents load cell count that are clock resources (global clock buffer, MMCM, PLL, etc)
+**** GT Loads column represents load cell count of GT types
+
+
++----+----+----+-----+--------------+-----------------------+
+|    | X0 | X1 | X2  | X3           | HORIZONTAL PROG DELAY |
++----+----+----+-----+--------------+-----------------------+
+| Y4 |  0 |  0 |   0 |            0 |                     0 |
+| Y3 |  0 |  0 |  49 | (R) (D) 1659 |                     1 |
+| Y2 |  0 |  0 |  19 |          673 |                     0 |
+| Y1 |  0 |  0 |   0 |            0 |                     0 |
+| Y0 |  0 |  0 |   0 |            0 |                     0 |
++----+----+----+-----+--------------+-----------------------+
+
+
+12. Device Cell Placement Summary for Global Clock g3
+-----------------------------------------------------
+
++-----------+-----------------+-------------------+-------------------+-------------+---------------+----------+-------------+----------+----------------+----------+------------------------------------------------------------------------------------------------------------------------+
+| Global Id | Driver Type/Pin | Driver Region (D) | Clock             | Period (ns) | Waveform (ns) | Root (R) | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net                                                                                                                    |
++-----------+-----------------+-------------------+-------------------+-------------+---------------+----------+-------------+----------+----------------+----------+------------------------------------------------------------------------------------------------------------------------+
+| g3        | BUFG_GT/O       | X3Y3              | txoutclk_out[0]_1 |       3.200 | {0.000 1.600} | X3Y3     |           0 |        0 |              0 |        1 | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_1/i_xxv_ethernet_0_core_gtwiz_userclk_tx_inst/txusrclk_in[0] |
++-----------+-----------------+-------------------+-------------------+-------------+---------------+----------+-------------+----------+----------------+----------+------------------------------------------------------------------------------------------------------------------------+
+* Slice Loads column represents load cell count of all cell types other than IO, GT and clock resources
+** IO Loads column represents load cell count of IO types
+*** Clocking Loads column represents load cell count that are clock resources (global clock buffer, MMCM, PLL, etc)
+**** GT Loads column represents load cell count of GT types
+
+
++----+----+----+----+-----------+-----------------------+
+|    | X0 | X1 | X2 | X3        | HORIZONTAL PROG DELAY |
++----+----+----+----+-----------+-----------------------+
+| Y4 |  0 |  0 |  0 |         0 |                     0 |
+| Y3 |  0 |  0 |  0 | (R) (D) 1 |                     1 |
+| Y2 |  0 |  0 |  0 |         0 |                     0 |
+| Y1 |  0 |  0 |  0 |         0 |                     0 |
+| Y0 |  0 |  0 |  0 |         0 |                     0 |
++----+----+----+----+-----------+-----------------------+
+
+
+13. Device Cell Placement Summary for Global Clock g4
+-----------------------------------------------------
+
++-----------+-----------------+-------------------+--------------+-------------+---------------+----------+-------------+----------+----------------+----------+---------------------------------------------------------------------------------------------------------------------+
+| Global Id | Driver Type/Pin | Driver Region (D) | Clock        | Period (ns) | Waveform (ns) | Root (R) | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net                                                                                                                 |
++-----------+-----------------+-------------------+--------------+-------------+---------------+----------+-------------+----------+----------------+----------+---------------------------------------------------------------------------------------------------------------------+
+| g4        | BUFG_GT/O       | X3Y3              | tx_clk_out_2 |       6.400 | {0.000 3.200} | X3Y3     |        2399 |        0 |              0 |        1 | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_2/i_xxv_ethernet_0_core_gtwiz_userclk_tx_inst/gt_rxn_in_2 |
++-----------+-----------------+-------------------+--------------+-------------+---------------+----------+-------------+----------+----------------+----------+---------------------------------------------------------------------------------------------------------------------+
+* Slice Loads column represents load cell count of all cell types other than IO, GT and clock resources
+** IO Loads column represents load cell count of IO types
+*** Clocking Loads column represents load cell count that are clock resources (global clock buffer, MMCM, PLL, etc)
+**** GT Loads column represents load cell count of GT types
+
+
++----+----+----+-------+-------------+-----------------------+
+|    | X0 | X1 | X2    | X3          | HORIZONTAL PROG DELAY |
++----+----+----+-------+-------------+-----------------------+
+| Y4 |  0 |  0 |     0 |           0 |                     0 |
+| Y3 |  0 |  0 |  1916 | (R) (D) 163 |                     1 |
+| Y2 |  0 |  0 |   321 |           0 |                     0 |
+| Y1 |  0 |  0 |     0 |           0 |                     0 |
+| Y0 |  0 |  0 |     0 |           0 |                     0 |
++----+----+----+-------+-------------+-----------------------+
+
+
+14. Device Cell Placement Summary for Global Clock g5
+-----------------------------------------------------
+
++-----------+-----------------+-------------------+-------------------+-------------+---------------+----------+-------------+----------+----------------+----------+------------------------------------------------------------------------------------------------------------------------+
+| Global Id | Driver Type/Pin | Driver Region (D) | Clock             | Period (ns) | Waveform (ns) | Root (R) | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net                                                                                                                    |
++-----------+-----------------+-------------------+-------------------+-------------+---------------+----------+-------------+----------+----------------+----------+------------------------------------------------------------------------------------------------------------------------+
+| g5        | BUFG_GT/O       | X3Y3              | txoutclk_out[0]_2 |       3.200 | {0.000 1.600} | X3Y3     |           0 |        0 |              0 |        1 | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_2/i_xxv_ethernet_0_core_gtwiz_userclk_tx_inst/txusrclk_in[0] |
++-----------+-----------------+-------------------+-------------------+-------------+---------------+----------+-------------+----------+----------------+----------+------------------------------------------------------------------------------------------------------------------------+
+* Slice Loads column represents load cell count of all cell types other than IO, GT and clock resources
+** IO Loads column represents load cell count of IO types
+*** Clocking Loads column represents load cell count that are clock resources (global clock buffer, MMCM, PLL, etc)
+**** GT Loads column represents load cell count of GT types
+
+
++----+----+----+----+-----------+-----------------------+
+|    | X0 | X1 | X2 | X3        | HORIZONTAL PROG DELAY |
++----+----+----+----+-----------+-----------------------+
+| Y4 |  0 |  0 |  0 |         0 |                     0 |
+| Y3 |  0 |  0 |  0 | (R) (D) 1 |                     1 |
+| Y2 |  0 |  0 |  0 |         0 |                     0 |
+| Y1 |  0 |  0 |  0 |         0 |                     0 |
+| Y0 |  0 |  0 |  0 |         0 |                     0 |
++----+----+----+----+-----------+-----------------------+
+
+
+15. Device Cell Placement Summary for Global Clock g6
+-----------------------------------------------------
+
++-----------+-----------------+-------------------+--------------+-------------+---------------+----------+-------------+----------+----------------+----------+---------------------------------------------------------------------------------------------------------------------+
+| Global Id | Driver Type/Pin | Driver Region (D) | Clock        | Period (ns) | Waveform (ns) | Root (R) | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net                                                                                                                 |
++-----------+-----------------+-------------------+--------------+-------------+---------------+----------+-------------+----------+----------------+----------+---------------------------------------------------------------------------------------------------------------------+
+| g6        | BUFG_GT/O       | X3Y3              | tx_clk_out_3 |       6.400 | {0.000 3.200} | X3Y3     |        2399 |        0 |              0 |        1 | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_3/i_xxv_ethernet_0_core_gtwiz_userclk_tx_inst/gt_rxn_in_3 |
++-----------+-----------------+-------------------+--------------+-------------+---------------+----------+-------------+----------+----------------+----------+---------------------------------------------------------------------------------------------------------------------+
+* Slice Loads column represents load cell count of all cell types other than IO, GT and clock resources
+** IO Loads column represents load cell count of IO types
+*** Clocking Loads column represents load cell count that are clock resources (global clock buffer, MMCM, PLL, etc)
+**** GT Loads column represents load cell count of GT types
+
+
++----+----+----+----+-------------+-----------------------+
+|    | X0 | X1 | X2 | X3          | HORIZONTAL PROG DELAY |
++----+----+----+----+-------------+-----------------------+
+| Y4 |  0 |  0 |  0 |        1810 |                     0 |
+| Y3 |  0 |  0 |  0 | (R) (D) 590 |                     0 |
+| Y2 |  0 |  0 |  0 |           0 |                     0 |
+| Y1 |  0 |  0 |  0 |           0 |                     0 |
+| Y0 |  0 |  0 |  0 |           0 |                     0 |
++----+----+----+----+-------------+-----------------------+
+
+
+16. Device Cell Placement Summary for Global Clock g7
+-----------------------------------------------------
+
++-----------+-----------------+-------------------+-------------------+-------------+---------------+----------+-------------+----------+----------------+----------+------------------------------------------------------------------------------------------------------------------------+
+| Global Id | Driver Type/Pin | Driver Region (D) | Clock             | Period (ns) | Waveform (ns) | Root (R) | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net                                                                                                                    |
++-----------+-----------------+-------------------+-------------------+-------------+---------------+----------+-------------+----------+----------------+----------+------------------------------------------------------------------------------------------------------------------------+
+| g7        | BUFG_GT/O       | X3Y3              | txoutclk_out[0]_3 |       3.200 | {0.000 1.600} | X3Y3     |           0 |        0 |              0 |        1 | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_3/i_xxv_ethernet_0_core_gtwiz_userclk_tx_inst/txusrclk_in[0] |
++-----------+-----------------+-------------------+-------------------+-------------+---------------+----------+-------------+----------+----------------+----------+------------------------------------------------------------------------------------------------------------------------+
+* Slice Loads column represents load cell count of all cell types other than IO, GT and clock resources
+** IO Loads column represents load cell count of IO types
+*** Clocking Loads column represents load cell count that are clock resources (global clock buffer, MMCM, PLL, etc)
+**** GT Loads column represents load cell count of GT types
+
+
++----+----+----+----+-----------+-----------------------+
+|    | X0 | X1 | X2 | X3        | HORIZONTAL PROG DELAY |
++----+----+----+----+-----------+-----------------------+
+| Y4 |  0 |  0 |  0 |         0 |                     0 |
+| Y3 |  0 |  0 |  0 | (R) (D) 1 |                     0 |
+| Y2 |  0 |  0 |  0 |         0 |                     0 |
+| Y1 |  0 |  0 |  0 |         0 |                     0 |
+| Y0 |  0 |  0 |  0 |         0 |                     0 |
++----+----+----+----+-----------+-----------------------+
+
+
+17. Device Cell Placement Summary for Global Clock g8
+-----------------------------------------------------
+
++-----------+-----------------+-------------------+---------------+-------------+---------------+----------+-------------+----------+----------------+----------+---------------------------------------------------------------------------------------------------------------------+
+| Global Id | Driver Type/Pin | Driver Region (D) | Clock         | Period (ns) | Waveform (ns) | Root (R) | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net                                                                                                                 |
++-----------+-----------------+-------------------+---------------+-------------+---------------+----------+-------------+----------+----------------+----------+---------------------------------------------------------------------------------------------------------------------+
+| g8        | BUFG_GT/O       | X3Y3              | rx_core_clk_0 |       6.400 | {0.000 3.200} | X3Y3     |        1616 |        0 |              0 |        1 | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_0/i_xxv_ethernet_0_core_gtwiz_userclk_rx_inst/gt_rxn_in_0 |
++-----------+-----------------+-------------------+---------------+-------------+---------------+----------+-------------+----------+----------------+----------+---------------------------------------------------------------------------------------------------------------------+
+* Slice Loads column represents load cell count of all cell types other than IO, GT and clock resources
+** IO Loads column represents load cell count of IO types
+*** Clocking Loads column represents load cell count that are clock resources (global clock buffer, MMCM, PLL, etc)
+**** GT Loads column represents load cell count of GT types
+
+
++----+----+----+----+-------------+-----------------------+
+|    | X0 | X1 | X2 | X3          | HORIZONTAL PROG DELAY |
++----+----+----+----+-------------+-----------------------+
+| Y4 |  0 |  0 |  0 |           0 |                     0 |
+| Y3 |  0 |  0 |  0 | (R) (D) 366 |                     1 |
+| Y2 |  0 |  0 |  0 |        1251 |                     0 |
+| Y1 |  0 |  0 |  0 |           0 |                     0 |
+| Y0 |  0 |  0 |  0 |           0 |                     0 |
++----+----+----+----+-------------+-----------------------+
+
+
+18. Device Cell Placement Summary for Global Clock g9
+-----------------------------------------------------
+
++-----------+-----------------+-------------------+-----------------+-------------+---------------+----------+-------------+----------+----------------+----------+------------------------------------------------------------------------------------------------------------------------+
+| Global Id | Driver Type/Pin | Driver Region (D) | Clock           | Period (ns) | Waveform (ns) | Root (R) | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net                                                                                                                    |
++-----------+-----------------+-------------------+-----------------+-------------+---------------+----------+-------------+----------+----------------+----------+------------------------------------------------------------------------------------------------------------------------+
+| g9        | BUFG_GT/O       | X3Y3              | rxoutclk_out[0] |       3.200 | {0.000 1.600} | X3Y3     |           0 |        0 |              0 |        1 | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_0/i_xxv_ethernet_0_core_gtwiz_userclk_rx_inst/rxusrclk_in[0] |
++-----------+-----------------+-------------------+-----------------+-------------+---------------+----------+-------------+----------+----------------+----------+------------------------------------------------------------------------------------------------------------------------+
+* Slice Loads column represents load cell count of all cell types other than IO, GT and clock resources
+** IO Loads column represents load cell count of IO types
+*** Clocking Loads column represents load cell count that are clock resources (global clock buffer, MMCM, PLL, etc)
+**** GT Loads column represents load cell count of GT types
+
+
++----+----+----+----+-----------+-----------------------+
+|    | X0 | X1 | X2 | X3        | HORIZONTAL PROG DELAY |
++----+----+----+----+-----------+-----------------------+
+| Y4 |  0 |  0 |  0 |         0 |                     0 |
+| Y3 |  0 |  0 |  0 | (R) (D) 1 |                     0 |
+| Y2 |  0 |  0 |  0 |         0 |                     0 |
+| Y1 |  0 |  0 |  0 |         0 |                     0 |
+| Y0 |  0 |  0 |  0 |         0 |                     0 |
++----+----+----+----+-----------+-----------------------+
+
+
+19. Device Cell Placement Summary for Global Clock g10
+------------------------------------------------------
+
++-----------+-----------------+-------------------+---------------+-------------+---------------+----------+-------------+----------+----------------+----------+---------------------------------------------------------------------------------------------------------------------+
+| Global Id | Driver Type/Pin | Driver Region (D) | Clock         | Period (ns) | Waveform (ns) | Root (R) | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net                                                                                                                 |
++-----------+-----------------+-------------------+---------------+-------------+---------------+----------+-------------+----------+----------------+----------+---------------------------------------------------------------------------------------------------------------------+
+| g10       | BUFG_GT/O       | X3Y3              | rx_core_clk_1 |       6.400 | {0.000 3.200} | X3Y3     |        1616 |        0 |              0 |        1 | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_1/i_xxv_ethernet_0_core_gtwiz_userclk_rx_inst/gt_rxn_in_1 |
++-----------+-----------------+-------------------+---------------+-------------+---------------+----------+-------------+----------+----------------+----------+---------------------------------------------------------------------------------------------------------------------+
+* Slice Loads column represents load cell count of all cell types other than IO, GT and clock resources
+** IO Loads column represents load cell count of IO types
+*** Clocking Loads column represents load cell count that are clock resources (global clock buffer, MMCM, PLL, etc)
+**** GT Loads column represents load cell count of GT types
+
+
++----+----+----+----+--------------+-----------------------+
+|    | X0 | X1 | X2 | X3           | HORIZONTAL PROG DELAY |
++----+----+----+----+--------------+-----------------------+
+| Y4 |  0 |  0 |  0 |            0 |                     0 |
+| Y3 |  0 |  0 |  0 | (R) (D) 1611 |                     1 |
+| Y2 |  0 |  0 |  0 |            6 |                     0 |
+| Y1 |  0 |  0 |  0 |            0 |                     0 |
+| Y0 |  0 |  0 |  0 |            0 |                     0 |
++----+----+----+----+--------------+-----------------------+
+
+
+20. Device Cell Placement Summary for Global Clock g11
+------------------------------------------------------
+
++-----------+-----------------+-------------------+-------------------+-------------+---------------+----------+-------------+----------+----------------+----------+------------------------------------------------------------------------------------------------------------------------+
+| Global Id | Driver Type/Pin | Driver Region (D) | Clock             | Period (ns) | Waveform (ns) | Root (R) | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net                                                                                                                    |
++-----------+-----------------+-------------------+-------------------+-------------+---------------+----------+-------------+----------+----------------+----------+------------------------------------------------------------------------------------------------------------------------+
+| g11       | BUFG_GT/O       | X3Y3              | rxoutclk_out[0]_1 |       3.200 | {0.000 1.600} | X3Y3     |           0 |        0 |              0 |        1 | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_1/i_xxv_ethernet_0_core_gtwiz_userclk_rx_inst/rxusrclk_in[0] |
++-----------+-----------------+-------------------+-------------------+-------------+---------------+----------+-------------+----------+----------------+----------+------------------------------------------------------------------------------------------------------------------------+
+* Slice Loads column represents load cell count of all cell types other than IO, GT and clock resources
+** IO Loads column represents load cell count of IO types
+*** Clocking Loads column represents load cell count that are clock resources (global clock buffer, MMCM, PLL, etc)
+**** GT Loads column represents load cell count of GT types
+
+
++----+----+----+----+-----------+-----------------------+
+|    | X0 | X1 | X2 | X3        | HORIZONTAL PROG DELAY |
++----+----+----+----+-----------+-----------------------+
+| Y4 |  0 |  0 |  0 |         0 |                     0 |
+| Y3 |  0 |  0 |  0 | (R) (D) 1 |                     0 |
+| Y2 |  0 |  0 |  0 |         0 |                     0 |
+| Y1 |  0 |  0 |  0 |         0 |                     0 |
+| Y0 |  0 |  0 |  0 |         0 |                     0 |
++----+----+----+----+-----------+-----------------------+
+
+
+21. Device Cell Placement Summary for Global Clock g12
+------------------------------------------------------
+
++-----------+-----------------+-------------------+---------------+-------------+---------------+----------+-------------+----------+----------------+----------+---------------------------------------------------------------------------------------------------------------------+
+| Global Id | Driver Type/Pin | Driver Region (D) | Clock         | Period (ns) | Waveform (ns) | Root (R) | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net                                                                                                                 |
++-----------+-----------------+-------------------+---------------+-------------+---------------+----------+-------------+----------+----------------+----------+---------------------------------------------------------------------------------------------------------------------+
+| g12       | BUFG_GT/O       | X3Y3              | rx_core_clk_2 |       6.400 | {0.000 3.200} | X3Y3     |        1616 |        0 |              0 |        1 | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_2/i_xxv_ethernet_0_core_gtwiz_userclk_rx_inst/gt_rxn_in_2 |
++-----------+-----------------+-------------------+---------------+-------------+---------------+----------+-------------+----------+----------------+----------+---------------------------------------------------------------------------------------------------------------------+
+* Slice Loads column represents load cell count of all cell types other than IO, GT and clock resources
+** IO Loads column represents load cell count of IO types
+*** Clocking Loads column represents load cell count that are clock resources (global clock buffer, MMCM, PLL, etc)
+**** GT Loads column represents load cell count of GT types
+
+
++----+----+----+------+--------------+-----------------------+
+|    | X0 | X1 | X2   | X3           | HORIZONTAL PROG DELAY |
++----+----+----+------+--------------+-----------------------+
+| Y4 |  0 |  0 |    0 |            0 |                     0 |
+| Y3 |  0 |  0 |  207 | (R) (D) 1410 |                     0 |
+| Y2 |  0 |  0 |    0 |            0 |                     0 |
+| Y1 |  0 |  0 |    0 |            0 |                     0 |
+| Y0 |  0 |  0 |    0 |            0 |                     0 |
++----+----+----+------+--------------+-----------------------+
+
+
+22. Device Cell Placement Summary for Global Clock g13
+------------------------------------------------------
+
++-----------+-----------------+-------------------+-------------------+-------------+---------------+----------+-------------+----------+----------------+----------+------------------------------------------------------------------------------------------------------------------------+
+| Global Id | Driver Type/Pin | Driver Region (D) | Clock             | Period (ns) | Waveform (ns) | Root (R) | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net                                                                                                                    |
++-----------+-----------------+-------------------+-------------------+-------------+---------------+----------+-------------+----------+----------------+----------+------------------------------------------------------------------------------------------------------------------------+
+| g13       | BUFG_GT/O       | X3Y3              | rxoutclk_out[0]_2 |       3.200 | {0.000 1.600} | X3Y3     |           0 |        0 |              0 |        1 | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_2/i_xxv_ethernet_0_core_gtwiz_userclk_rx_inst/rxusrclk_in[0] |
++-----------+-----------------+-------------------+-------------------+-------------+---------------+----------+-------------+----------+----------------+----------+------------------------------------------------------------------------------------------------------------------------+
+* Slice Loads column represents load cell count of all cell types other than IO, GT and clock resources
+** IO Loads column represents load cell count of IO types
+*** Clocking Loads column represents load cell count that are clock resources (global clock buffer, MMCM, PLL, etc)
+**** GT Loads column represents load cell count of GT types
+
+
++----+----+----+----+-----------+-----------------------+
+|    | X0 | X1 | X2 | X3        | HORIZONTAL PROG DELAY |
++----+----+----+----+-----------+-----------------------+
+| Y4 |  0 |  0 |  0 |         0 |                     0 |
+| Y3 |  0 |  0 |  0 | (R) (D) 1 |                     0 |
+| Y2 |  0 |  0 |  0 |         0 |                     0 |
+| Y1 |  0 |  0 |  0 |         0 |                     0 |
+| Y0 |  0 |  0 |  0 |         0 |                     0 |
++----+----+----+----+-----------+-----------------------+
+
+
+23. Device Cell Placement Summary for Global Clock g14
+------------------------------------------------------
+
++-----------+-----------------+-------------------+---------------+-------------+---------------+----------+-------------+----------+----------------+----------+---------------------------------------------------------------------------------------------------------------------+
+| Global Id | Driver Type/Pin | Driver Region (D) | Clock         | Period (ns) | Waveform (ns) | Root (R) | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net                                                                                                                 |
++-----------+-----------------+-------------------+---------------+-------------+---------------+----------+-------------+----------+----------------+----------+---------------------------------------------------------------------------------------------------------------------+
+| g14       | BUFG_GT/O       | X3Y3              | rx_core_clk_3 |       6.400 | {0.000 3.200} | X3Y3     |        1616 |        0 |              0 |        1 | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_3/i_xxv_ethernet_0_core_gtwiz_userclk_rx_inst/gt_rxn_in_3 |
++-----------+-----------------+-------------------+---------------+-------------+---------------+----------+-------------+----------+----------------+----------+---------------------------------------------------------------------------------------------------------------------+
+* Slice Loads column represents load cell count of all cell types other than IO, GT and clock resources
+** IO Loads column represents load cell count of IO types
+*** Clocking Loads column represents load cell count that are clock resources (global clock buffer, MMCM, PLL, etc)
+**** GT Loads column represents load cell count of GT types
+
+
++----+----+----+----+-------------+-----------------------+
+|    | X0 | X1 | X2 | X3          | HORIZONTAL PROG DELAY |
++----+----+----+----+-------------+-----------------------+
+| Y4 |  0 |  0 |  0 |        1092 |                     0 |
+| Y3 |  0 |  0 |  0 | (R) (D) 525 |                     0 |
+| Y2 |  0 |  0 |  0 |           0 |                     0 |
+| Y1 |  0 |  0 |  0 |           0 |                     0 |
+| Y0 |  0 |  0 |  0 |           0 |                     0 |
++----+----+----+----+-------------+-----------------------+
+
+
+24. Device Cell Placement Summary for Global Clock g15
+------------------------------------------------------
+
++-----------+-----------------+-------------------+-------------------+-------------+---------------+----------+-------------+----------+----------------+----------+------------------------------------------------------------------------------------------------------------------------+
+| Global Id | Driver Type/Pin | Driver Region (D) | Clock             | Period (ns) | Waveform (ns) | Root (R) | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net                                                                                                                    |
++-----------+-----------------+-------------------+-------------------+-------------+---------------+----------+-------------+----------+----------------+----------+------------------------------------------------------------------------------------------------------------------------+
+| g15       | BUFG_GT/O       | X3Y3              | rxoutclk_out[0]_3 |       3.200 | {0.000 1.600} | X3Y3     |           0 |        0 |              0 |        1 | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_3/i_xxv_ethernet_0_core_gtwiz_userclk_rx_inst/rxusrclk_in[0] |
++-----------+-----------------+-------------------+-------------------+-------------+---------------+----------+-------------+----------+----------------+----------+------------------------------------------------------------------------------------------------------------------------+
+* Slice Loads column represents load cell count of all cell types other than IO, GT and clock resources
+** IO Loads column represents load cell count of IO types
+*** Clocking Loads column represents load cell count that are clock resources (global clock buffer, MMCM, PLL, etc)
+**** GT Loads column represents load cell count of GT types
+
+
++----+----+----+----+-----------+-----------------------+
+|    | X0 | X1 | X2 | X3        | HORIZONTAL PROG DELAY |
++----+----+----+----+-----------+-----------------------+
+| Y4 |  0 |  0 |  0 |         0 |                     0 |
+| Y3 |  0 |  0 |  0 | (R) (D) 1 |                     0 |
+| Y2 |  0 |  0 |  0 |         0 |                     0 |
+| Y1 |  0 |  0 |  0 |         0 |                     0 |
+| Y0 |  0 |  0 |  0 |         0 |                     0 |
++----+----+----+----+-----------+-----------------------+
+
+
+25. Device Cell Placement Summary for Global Clock g16
+------------------------------------------------------
+
++-----------+-----------------+-------------------+-------+-------------+---------------+----------+-------------+----------+----------------+----------+--------------------------------+
+| Global Id | Driver Type/Pin | Driver Region (D) | Clock | Period (ns) | Waveform (ns) | Root (R) | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net                            |
++-----------+-----------------+-------------------+-------+-------------+---------------+----------+-------------+----------+----------------+----------+--------------------------------+
+| g16       | BUFGCE/O        | X0Y1              |       |             |               | X2Y3     |         744 |        0 |              0 |        4 | axi_lite_clocking_i/s_axi_aclk |
++-----------+-----------------+-------------------+-------+-------------+---------------+----------+-------------+----------+----------------+----------+--------------------------------+
+* Slice Loads column represents load cell count of all cell types other than IO, GT and clock resources
+** IO Loads column represents load cell count of IO types
+*** Clocking Loads column represents load cell count that are clock resources (global clock buffer, MMCM, PLL, etc)
+**** GT Loads column represents load cell count of GT types
+
+
++----+--------+----+---------+------+-----------------------+
+|    | X0     | X1 | X2      | X3   | HORIZONTAL PROG DELAY |
++----+--------+----+---------+------+-----------------------+
+| Y4 |      0 |  0 |      13 |  181 |                     1 |
+| Y3 |      0 |  0 | (R) 188 |    4 |                     1 |
+| Y2 |      0 |  0 |      10 |  352 |                     0 |
+| Y1 |  (D) 0 |  0 |       0 |    0 |                     0 |
+| Y0 |      0 |  0 |       0 |    0 |                     0 |
++----+--------+----+---------+------+-----------------------+
+
+
+26. Device Cell Placement Summary for Global Clock g17
+------------------------------------------------------
+
++-----------+-----------------+-------------------+-------+-------------+---------------+----------+-------------+----------+----------------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Global Id | Driver Type/Pin | Driver Region (D) | Clock | Period (ns) | Waveform (ns) | Root (R) | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net                                                                                                                                                         |
++-----------+-----------------+-------------------+-------+-------------+---------------+----------+-------------+----------+----------------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| g17       | BUFGCE/O        | X2Y2              |       |             |               | X2Y2     |        1134 |        0 |              0 |        0 | i_xxv_ethernet_0_core_support/DUT/inst/i_xxv_ethernet_0_top_0/i_xxv_ethernet_0_CORE/i_TX_TOP/i_TX_CORE/i_TX_CORE_STRIPER/i_RESET_FLOP_TX_LBA/reset_flop_out |
++-----------+-----------------+-------------------+-------+-------------+---------------+----------+-------------+----------+----------------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+* Slice Loads column represents load cell count of all cell types other than IO, GT and clock resources
+** IO Loads column represents load cell count of IO types
+*** Clocking Loads column represents load cell count that are clock resources (global clock buffer, MMCM, PLL, etc)
+**** GT Loads column represents load cell count of GT types
+
+
++----+----+----+-----------+------+-----------------------+
+|    | X0 | X1 | X2        | X3   | HORIZONTAL PROG DELAY |
++----+----+----+-----------+------+-----------------------+
+| Y4 |  0 |  0 |         0 |    0 |                     0 |
+| Y3 |  0 |  0 |         0 |    0 |                     0 |
+| Y2 |  0 |  0 | (R) (D) 0 |  982 |                     0 |
+| Y1 |  0 |  0 |         0 |  152 |                     0 |
+| Y0 |  0 |  0 |         0 |    0 |                     0 |
++----+----+----+-----------+------+-----------------------+
+
+
+27. Device Cell Placement Summary for Global Clock g18
+------------------------------------------------------
+
++-----------+-----------------+-------------------+-------+-------------+---------------+----------+-------------+----------+----------------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Global Id | Driver Type/Pin | Driver Region (D) | Clock | Period (ns) | Waveform (ns) | Root (R) | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net                                                                                                                                                         |
++-----------+-----------------+-------------------+-------+-------------+---------------+----------+-------------+----------+----------------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| g18       | BUFGCE/O        | X2Y3              |       |             |               | X2Y3     |        1134 |        0 |              0 |        0 | i_xxv_ethernet_0_core_support/DUT/inst/i_xxv_ethernet_0_top_1/i_xxv_ethernet_0_CORE/i_TX_TOP/i_TX_CORE/i_TX_CORE_STRIPER/i_RESET_FLOP_TX_LBA/reset_flop_out |
++-----------+-----------------+-------------------+-------+-------------+---------------+----------+-------------+----------+----------------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+* Slice Loads column represents load cell count of all cell types other than IO, GT and clock resources
+** IO Loads column represents load cell count of IO types
+*** Clocking Loads column represents load cell count that are clock resources (global clock buffer, MMCM, PLL, etc)
+**** GT Loads column represents load cell count of GT types
+
+
++----+----+----+------------+------+-----------------------+
+|    | X0 | X1 | X2         | X3   | HORIZONTAL PROG DELAY |
++----+----+----+------------+------+-----------------------+
+| Y4 |  0 |  0 |          0 |    0 |                     0 |
+| Y3 |  0 |  0 | (R) (D) 19 |  994 |                     0 |
+| Y2 |  0 |  0 |          0 |  121 |                     0 |
+| Y1 |  0 |  0 |          0 |    0 |                     0 |
+| Y0 |  0 |  0 |          0 |    0 |                     0 |
++----+----+----+------------+------+-----------------------+
+
+
+28. Device Cell Placement Summary for Global Clock g19
+------------------------------------------------------
+
++-----------+-----------------+-------------------+-------+-------------+---------------+----------+-------------+----------+----------------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Global Id | Driver Type/Pin | Driver Region (D) | Clock | Period (ns) | Waveform (ns) | Root (R) | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net                                                                                                                                                         |
++-----------+-----------------+-------------------+-------+-------------+---------------+----------+-------------+----------+----------------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| g19       | BUFGCE/O        | X2Y4              |       |             |               | X2Y4     |        1134 |        0 |              0 |        0 | i_xxv_ethernet_0_core_support/DUT/inst/i_xxv_ethernet_0_top_2/i_xxv_ethernet_0_CORE/i_TX_TOP/i_TX_CORE/i_TX_CORE_STRIPER/i_RESET_FLOP_TX_LBA/reset_flop_out |
++-----------+-----------------+-------------------+-------+-------------+---------------+----------+-------------+----------+----------------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+* Slice Loads column represents load cell count of all cell types other than IO, GT and clock resources
+** IO Loads column represents load cell count of IO types
+*** Clocking Loads column represents load cell count that are clock resources (global clock buffer, MMCM, PLL, etc)
+**** GT Loads column represents load cell count of GT types
+
+
++----+----+----+-----------+----+-----------------------+
+|    | X0 | X1 | X2        | X3 | HORIZONTAL PROG DELAY |
++----+----+----+-----------+----+-----------------------+
+| Y4 |  0 |  0 | (R) (D) 0 |  0 |                     0 |
+| Y3 |  0 |  0 |       813 |  0 |                     0 |
+| Y2 |  0 |  0 |       321 |  0 |                     0 |
+| Y1 |  0 |  0 |         0 |  0 |                     0 |
+| Y0 |  0 |  0 |         0 |  0 |                     0 |
++----+----+----+-----------+----+-----------------------+
+
+
+29. Device Cell Placement Summary for Global Clock g20
+------------------------------------------------------
+
++-----------+-----------------+-------------------+-------+-------------+---------------+----------+-------------+----------+----------------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Global Id | Driver Type/Pin | Driver Region (D) | Clock | Period (ns) | Waveform (ns) | Root (R) | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net                                                                                                                                                         |
++-----------+-----------------+-------------------+-------+-------------+---------------+----------+-------------+----------+----------------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| g20       | BUFGCE/O        | X2Y4              |       |             |               | X2Y4     |        1134 |        0 |              0 |        0 | i_xxv_ethernet_0_core_support/DUT/inst/i_xxv_ethernet_0_top_3/i_xxv_ethernet_0_CORE/i_TX_TOP/i_TX_CORE/i_TX_CORE_STRIPER/i_RESET_FLOP_TX_LBA/reset_flop_out |
++-----------+-----------------+-------------------+-------+-------------+---------------+----------+-------------+----------+----------------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+* Slice Loads column represents load cell count of all cell types other than IO, GT and clock resources
+** IO Loads column represents load cell count of IO types
+*** Clocking Loads column represents load cell count that are clock resources (global clock buffer, MMCM, PLL, etc)
+**** GT Loads column represents load cell count of GT types
+
+
++----+----+----+-----------+-------+-----------------------+
+|    | X0 | X1 | X2        | X3    | HORIZONTAL PROG DELAY |
++----+----+----+-----------+-------+-----------------------+
+| Y4 |  0 |  0 | (R) (D) 0 |  1019 |                     0 |
+| Y3 |  0 |  0 |         0 |   115 |                     0 |
+| Y2 |  0 |  0 |         0 |     0 |                     0 |
+| Y1 |  0 |  0 |         0 |     0 |                     0 |
+| Y0 |  0 |  0 |         0 |     0 |                     0 |
++----+----+----+-----------+-------+-----------------------+
+
+
+30. Clock Region Cell Placement per Global Clock: Region X2Y1
+-------------------------------------------------------------
+
++-----------+-------+-----------------+------------+-------------+-----------------+----+--------+------+-----+----+------+-----+---------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                                                                                                                         |
++-----------+-------+-----------------+------------+-------------+-----------------+----+--------+------+-----+----+------+-----+---------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| g16+      | 23    | BUFGCE/O        | None       |           0 |               0 |  0 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | axi_lite_clocking_i/s_axi_aclk                                                                                                                              |
+| g17+      | 20    | BUFGCE/O        | None       |           0 |               0 |  0 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | i_xxv_ethernet_0_core_support/DUT/inst/i_xxv_ethernet_0_top_0/i_xxv_ethernet_0_CORE/i_TX_TOP/i_TX_CORE/i_TX_CORE_STRIPER/i_RESET_FLOP_TX_LBA/reset_flop_out |
++-----------+-------+-----------------+------------+-------------+-----------------+----+--------+------+-----+----+------+-----+---------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+* Clock Loads column represents the clock pin loads (pin count)
+** Non-Clock Loads column represents the non-clock pin loads (pin count)
+*** Columns FF, LUTRAM, RAMB through 'Hard IP' represents load cell counts
+**** In Global Id column, sympbol '+' indicates that global clock was used only to route through the clock region.
+
+
+31. Clock Region Cell Placement per Global Clock: Region X3Y1
+-------------------------------------------------------------
+
++-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF  | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                                                                                                                         |
++-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| g0        | 13    | BUFG_GT/O       | None       |         675 |               0 | 673 |      0 |    2 |   0 |  0 |    0 |   0 |       0 | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_0/i_xxv_ethernet_0_core_gtwiz_userclk_tx_inst/gt_rxn_in_0                                         |
+| g17       | 20    | BUFGCE/O        | None       |           0 |             152 | 152 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | i_xxv_ethernet_0_core_support/DUT/inst/i_xxv_ethernet_0_top_0/i_xxv_ethernet_0_CORE/i_TX_TOP/i_TX_CORE/i_TX_CORE_STRIPER/i_RESET_FLOP_TX_LBA/reset_flop_out |
++-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+* Clock Loads column represents the clock pin loads (pin count)
+** Non-Clock Loads column represents the non-clock pin loads (pin count)
+*** Columns FF, LUTRAM, RAMB through 'Hard IP' represents load cell counts
+
+
+32. Clock Region Cell Placement per Global Clock: Region X2Y2
+-------------------------------------------------------------
+
++-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF  | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                                                                                                                         |
++-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| g2        | 9     | BUFG_GT/O       | None       |          19 |               0 |  19 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_1/i_xxv_ethernet_0_core_gtwiz_userclk_tx_inst/gt_rxn_in_1                                         |
+| g4        | 5     | BUFG_GT/O       | None       |         321 |               0 | 321 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_2/i_xxv_ethernet_0_core_gtwiz_userclk_tx_inst/gt_rxn_in_2                                         |
+| g16       | 23    | BUFGCE/O        | None       |          10 |               0 |  10 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | axi_lite_clocking_i/s_axi_aclk                                                                                                                              |
+| g17+      | 20    | BUFGCE/O        | None       |           0 |               0 |   0 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | i_xxv_ethernet_0_core_support/DUT/inst/i_xxv_ethernet_0_top_0/i_xxv_ethernet_0_CORE/i_TX_TOP/i_TX_CORE/i_TX_CORE_STRIPER/i_RESET_FLOP_TX_LBA/reset_flop_out |
+| g18+      | 16    | BUFGCE/O        | None       |           0 |               0 |   0 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | i_xxv_ethernet_0_core_support/DUT/inst/i_xxv_ethernet_0_top_1/i_xxv_ethernet_0_CORE/i_TX_TOP/i_TX_CORE/i_TX_CORE_STRIPER/i_RESET_FLOP_TX_LBA/reset_flop_out |
+| g19       | 18    | BUFGCE/O        | None       |           0 |             321 | 321 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | i_xxv_ethernet_0_core_support/DUT/inst/i_xxv_ethernet_0_top_2/i_xxv_ethernet_0_CORE/i_TX_TOP/i_TX_CORE/i_TX_CORE_STRIPER/i_RESET_FLOP_TX_LBA/reset_flop_out |
++-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+* Clock Loads column represents the clock pin loads (pin count)
+** Non-Clock Loads column represents the non-clock pin loads (pin count)
+*** Columns FF, LUTRAM, RAMB through 'Hard IP' represents load cell counts
+**** In Global Id column, sympbol '+' indicates that global clock was used only to route through the clock region.
+
+
+33. Clock Region Cell Placement per Global Clock: Region X3Y2
+-------------------------------------------------------------
+
++-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                                                                                                                         |
++-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| g0        | 13    | BUFG_GT/O       | None       |        1724 |               0 | 1709 |     15 |    0 |   0 |  0 |    0 |   0 |       0 | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_0/i_xxv_ethernet_0_core_gtwiz_userclk_tx_inst/gt_rxn_in_0                                         |
+| g2        | 9     | BUFG_GT/O       | None       |         673 |               0 |  671 |      0 |    2 |   0 |  0 |    0 |   0 |       0 | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_1/i_xxv_ethernet_0_core_gtwiz_userclk_tx_inst/gt_rxn_in_1                                         |
+| g4+       | 5     | BUFG_GT/O       | None       |           0 |               0 |    0 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_2/i_xxv_ethernet_0_core_gtwiz_userclk_tx_inst/gt_rxn_in_2                                         |
+| g8        | 15    | BUFG_GT/O       | None       |        1251 |               0 | 1173 |     76 |    2 |   0 |  0 |    0 |   0 |       0 | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_0/i_xxv_ethernet_0_core_gtwiz_userclk_rx_inst/gt_rxn_in_0                                         |
+| g10       | 11    | BUFG_GT/O       | None       |           6 |               0 |    6 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_1/i_xxv_ethernet_0_core_gtwiz_userclk_rx_inst/gt_rxn_in_1                                         |
+| g16       | 23    | BUFGCE/O        | None       |         352 |               0 |  352 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | axi_lite_clocking_i/s_axi_aclk                                                                                                                              |
+| g17       | 20    | BUFGCE/O        | None       |           0 |             982 |  982 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | i_xxv_ethernet_0_core_support/DUT/inst/i_xxv_ethernet_0_top_0/i_xxv_ethernet_0_CORE/i_TX_TOP/i_TX_CORE/i_TX_CORE_STRIPER/i_RESET_FLOP_TX_LBA/reset_flop_out |
+| g18       | 16    | BUFGCE/O        | None       |           0 |             121 |  121 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | i_xxv_ethernet_0_core_support/DUT/inst/i_xxv_ethernet_0_top_1/i_xxv_ethernet_0_CORE/i_TX_TOP/i_TX_CORE/i_TX_CORE_STRIPER/i_RESET_FLOP_TX_LBA/reset_flop_out |
++-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+* Clock Loads column represents the clock pin loads (pin count)
+** Non-Clock Loads column represents the non-clock pin loads (pin count)
+*** Columns FF, LUTRAM, RAMB through 'Hard IP' represents load cell counts
+**** In Global Id column, sympbol '+' indicates that global clock was used only to route through the clock region.
+
+
+34. Clock Region Cell Placement per Global Clock: Region X2Y3
+-------------------------------------------------------------
+
++-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                                                                                                                         |
++-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| g2        | 9     | BUFG_GT/O       | None       |          49 |               0 |   43 |      6 |    0 |   0 |  0 |    0 |   0 |       0 | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_1/i_xxv_ethernet_0_core_gtwiz_userclk_tx_inst/gt_rxn_in_1                                         |
+| g4        | 5     | BUFG_GT/O       | None       |        1916 |               0 | 1899 |     15 |    2 |   0 |  0 |    0 |   0 |       0 | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_2/i_xxv_ethernet_0_core_gtwiz_userclk_tx_inst/gt_rxn_in_2                                         |
+| g12       | 7     | BUFG_GT/O       | None       |         207 |               0 |  205 |      0 |    2 |   0 |  0 |    0 |   0 |       0 | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_2/i_xxv_ethernet_0_core_gtwiz_userclk_rx_inst/gt_rxn_in_2                                         |
+| g16       | 23    | BUFGCE/O        | None       |         188 |               0 |  188 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | axi_lite_clocking_i/s_axi_aclk                                                                                                                              |
+| g18       | 16    | BUFGCE/O        | None       |           0 |              19 |   19 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | i_xxv_ethernet_0_core_support/DUT/inst/i_xxv_ethernet_0_top_1/i_xxv_ethernet_0_CORE/i_TX_TOP/i_TX_CORE/i_TX_CORE_STRIPER/i_RESET_FLOP_TX_LBA/reset_flop_out |
+| g19       | 18    | BUFGCE/O        | None       |           0 |             813 |  813 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | i_xxv_ethernet_0_core_support/DUT/inst/i_xxv_ethernet_0_top_2/i_xxv_ethernet_0_CORE/i_TX_TOP/i_TX_CORE/i_TX_CORE_STRIPER/i_RESET_FLOP_TX_LBA/reset_flop_out |
+| g20+      | 20    | BUFGCE/O        | None       |           0 |               0 |    0 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | i_xxv_ethernet_0_core_support/DUT/inst/i_xxv_ethernet_0_top_3/i_xxv_ethernet_0_CORE/i_TX_TOP/i_TX_CORE/i_TX_CORE_STRIPER/i_RESET_FLOP_TX_LBA/reset_flop_out |
++-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+* Clock Loads column represents the clock pin loads (pin count)
+** Non-Clock Loads column represents the non-clock pin loads (pin count)
+*** Columns FF, LUTRAM, RAMB through 'Hard IP' represents load cell counts
+**** In Global Id column, sympbol '+' indicates that global clock was used only to route through the clock region.
+
+
+35. Clock Region Cell Placement per Global Clock: Region X3Y3
+-------------------------------------------------------------
+
++-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                                                                                                                         |
++-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| g0        | 13    | BUFG_GT/O       | None       |           1 |               0 |    0 |      0 |    0 |   0 |  1 |    0 |   0 |       0 | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_0/i_xxv_ethernet_0_core_gtwiz_userclk_tx_inst/gt_rxn_in_0                                         |
+| g2        | 9     | BUFG_GT/O       | None       |        1659 |               0 | 1649 |      9 |    0 |   0 |  1 |    0 |   0 |       0 | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_1/i_xxv_ethernet_0_core_gtwiz_userclk_tx_inst/gt_rxn_in_1                                         |
+| g4        | 5     | BUFG_GT/O       | None       |         163 |               0 |  162 |      0 |    0 |   0 |  1 |    0 |   0 |       0 | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_2/i_xxv_ethernet_0_core_gtwiz_userclk_tx_inst/gt_rxn_in_2                                         |
+| g6        | 1     | BUFG_GT/O       | None       |         590 |               0 |  582 |      7 |    0 |   0 |  1 |    0 |   0 |       0 | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_3/i_xxv_ethernet_0_core_gtwiz_userclk_tx_inst/gt_rxn_in_3                                         |
+| g8        | 15    | BUFG_GT/O       | None       |         366 |               0 |  365 |      0 |    0 |   0 |  1 |    0 |   0 |       0 | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_0/i_xxv_ethernet_0_core_gtwiz_userclk_rx_inst/gt_rxn_in_0                                         |
+| g10       | 11    | BUFG_GT/O       | None       |        1611 |               0 | 1532 |     76 |    2 |   0 |  1 |    0 |   0 |       0 | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_1/i_xxv_ethernet_0_core_gtwiz_userclk_rx_inst/gt_rxn_in_1                                         |
+| g12       | 7     | BUFG_GT/O       | None       |        1410 |               0 | 1333 |     76 |    0 |   0 |  1 |    0 |   0 |       0 | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_2/i_xxv_ethernet_0_core_gtwiz_userclk_rx_inst/gt_rxn_in_2                                         |
+| g14       | 3     | BUFG_GT/O       | None       |         525 |               0 |  524 |      0 |    0 |   0 |  1 |    0 |   0 |       0 | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_3/i_xxv_ethernet_0_core_gtwiz_userclk_rx_inst/gt_rxn_in_3                                         |
+| g16       | 23    | BUFGCE/O        | None       |           4 |               0 |    0 |      0 |    0 |   0 |  4 |    0 |   0 |       0 | axi_lite_clocking_i/s_axi_aclk                                                                                                                              |
+| g9        | 14    | BUFG_GT/O       | None       |           1 |               0 |    0 |      0 |    0 |   0 |  1 |    0 |   0 |       0 | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_0/i_xxv_ethernet_0_core_gtwiz_userclk_rx_inst/rxusrclk_in[0]                                      |
+| g1        | 12    | BUFG_GT/O       | None       |           1 |               0 |    0 |      0 |    0 |   0 |  1 |    0 |   0 |       0 | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_0/i_xxv_ethernet_0_core_gtwiz_userclk_tx_inst/txusrclk_in[0]                                      |
+| g11       | 10    | BUFG_GT/O       | None       |           1 |               0 |    0 |      0 |    0 |   0 |  1 |    0 |   0 |       0 | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_1/i_xxv_ethernet_0_core_gtwiz_userclk_rx_inst/rxusrclk_in[0]                                      |
+| g3        | 8     | BUFG_GT/O       | None       |           1 |               0 |    0 |      0 |    0 |   0 |  1 |    0 |   0 |       0 | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_1/i_xxv_ethernet_0_core_gtwiz_userclk_tx_inst/txusrclk_in[0]                                      |
+| g13       | 6     | BUFG_GT/O       | None       |           1 |               0 |    0 |      0 |    0 |   0 |  1 |    0 |   0 |       0 | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_2/i_xxv_ethernet_0_core_gtwiz_userclk_rx_inst/rxusrclk_in[0]                                      |
+| g5        | 4     | BUFG_GT/O       | None       |           1 |               0 |    0 |      0 |    0 |   0 |  1 |    0 |   0 |       0 | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_2/i_xxv_ethernet_0_core_gtwiz_userclk_tx_inst/txusrclk_in[0]                                      |
+| g15       | 2     | BUFG_GT/O       | None       |           1 |               0 |    0 |      0 |    0 |   0 |  1 |    0 |   0 |       0 | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_3/i_xxv_ethernet_0_core_gtwiz_userclk_rx_inst/rxusrclk_in[0]                                      |
+| g7        | 0     | BUFG_GT/O       | None       |           1 |               0 |    0 |      0 |    0 |   0 |  1 |    0 |   0 |       0 | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_3/i_xxv_ethernet_0_core_gtwiz_userclk_tx_inst/txusrclk_in[0]                                      |
+| g18       | 16    | BUFGCE/O        | None       |           0 |             994 |  994 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | i_xxv_ethernet_0_core_support/DUT/inst/i_xxv_ethernet_0_top_1/i_xxv_ethernet_0_CORE/i_TX_TOP/i_TX_CORE/i_TX_CORE_STRIPER/i_RESET_FLOP_TX_LBA/reset_flop_out |
+| g20       | 20    | BUFGCE/O        | None       |           0 |             115 |  115 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | i_xxv_ethernet_0_core_support/DUT/inst/i_xxv_ethernet_0_top_3/i_xxv_ethernet_0_CORE/i_TX_TOP/i_TX_CORE/i_TX_CORE_STRIPER/i_RESET_FLOP_TX_LBA/reset_flop_out |
++-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+* Clock Loads column represents the clock pin loads (pin count)
+** Non-Clock Loads column represents the non-clock pin loads (pin count)
+*** Columns FF, LUTRAM, RAMB through 'Hard IP' represents load cell counts
+
+
+36. Clock Region Cell Placement per Global Clock: Region X2Y4
+-------------------------------------------------------------
+
++-----------+-------+-----------------+------------+-------------+-----------------+----+--------+------+-----+----+------+-----+---------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                                                                                                                         |
++-----------+-------+-----------------+------------+-------------+-----------------+----+--------+------+-----+----+------+-----+---------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| g16       | 23    | BUFGCE/O        | None       |          13 |               0 | 13 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | axi_lite_clocking_i/s_axi_aclk                                                                                                                              |
+| g19+      | 18    | BUFGCE/O        | None       |           0 |               0 |  0 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | i_xxv_ethernet_0_core_support/DUT/inst/i_xxv_ethernet_0_top_2/i_xxv_ethernet_0_CORE/i_TX_TOP/i_TX_CORE/i_TX_CORE_STRIPER/i_RESET_FLOP_TX_LBA/reset_flop_out |
+| g20+      | 20    | BUFGCE/O        | None       |           0 |               0 |  0 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | i_xxv_ethernet_0_core_support/DUT/inst/i_xxv_ethernet_0_top_3/i_xxv_ethernet_0_CORE/i_TX_TOP/i_TX_CORE/i_TX_CORE_STRIPER/i_RESET_FLOP_TX_LBA/reset_flop_out |
++-----------+-------+-----------------+------------+-------------+-----------------+----+--------+------+-----+----+------+-----+---------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+* Clock Loads column represents the clock pin loads (pin count)
+** Non-Clock Loads column represents the non-clock pin loads (pin count)
+*** Columns FF, LUTRAM, RAMB through 'Hard IP' represents load cell counts
+**** In Global Id column, sympbol '+' indicates that global clock was used only to route through the clock region.
+
+
+37. Clock Region Cell Placement per Global Clock: Region X3Y4
+-------------------------------------------------------------
+
++-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                                                                                                                         |
++-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| g6        | 1     | BUFG_GT/O       | None       |        1810 |               0 | 1800 |      8 |    2 |   0 |  0 |    0 |   0 |       0 | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_3/i_xxv_ethernet_0_core_gtwiz_userclk_tx_inst/gt_rxn_in_3                                         |
+| g14       | 3     | BUFG_GT/O       | None       |        1092 |               0 | 1014 |     76 |    2 |   0 |  0 |    0 |   0 |       0 | i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_3/i_xxv_ethernet_0_core_gtwiz_userclk_rx_inst/gt_rxn_in_3                                         |
+| g16       | 23    | BUFGCE/O        | None       |         181 |               0 |  181 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | axi_lite_clocking_i/s_axi_aclk                                                                                                                              |
+| g20       | 20    | BUFGCE/O        | None       |           0 |            1019 | 1019 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | i_xxv_ethernet_0_core_support/DUT/inst/i_xxv_ethernet_0_top_3/i_xxv_ethernet_0_CORE/i_TX_TOP/i_TX_CORE/i_TX_CORE_STRIPER/i_RESET_FLOP_TX_LBA/reset_flop_out |
++-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+* Clock Loads column represents the clock pin loads (pin count)
+** Non-Clock Loads column represents the non-clock pin loads (pin count)
+*** Columns FF, LUTRAM, RAMB through 'Hard IP' represents load cell counts
+
+

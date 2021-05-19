@@ -1,0 +1,14 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "D:/Vivado_2020.2/Vivado/2020.2/data/xilinx_vip/include" \
+"../../../../xxv_ethernet_0_ex.gen/sources_1/ip/fifo_generator_0/sim/fifo_generator_0.v" \
+"../../../../xxv_ethernet_0_ex.srcs/sources_1/new/CWnd_Control.v" \
+"../../../../xxv_ethernet_0_ex.srcs/sources_1/new/CWnd_Rate_Computation_verilog.v" \
+"../../../../xxv_ethernet_0_ex.srcs/sources_1/new/Ports_for_CC.v" \
+"../../../../xxv_ethernet_0_ex.srcs/sources_1/new/Rate_Control.v" \
+"../../../../xxv_ethernet_0_ex.srcs/sim_1/new/sim_first.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Apr 14 14:43:14 2021
+# Process ID: 10104
+# Current directory: d:/project/xxxx/my_subsystem_2/xxv_ethernet_0_ex/xxv_ethernet_0_ex.runs/synth_1_copy_1
+# Command line: vivado.exe -log xxv_ethernet_0_exdes.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source xxv_ethernet_0_exdes.tcl
+# Log file: d:/project/xxxx/my_subsystem_2/xxv_ethernet_0_ex/xxv_ethernet_0_ex.runs/synth_1_copy_1/xxv_ethernet_0_exdes.vds
+# Journal file: d:/project/xxxx/my_subsystem_2/xxv_ethernet_0_ex/xxv_ethernet_0_ex.runs/synth_1_copy_1\vivado.jou
+#-----------------------------------------------------------
+source xxv_ethernet_0_exdes.tcl -notrace

@@ -1,0 +1,1 @@
+vopt +acc=npr -l elaborate.log -L xilinx_vip -L xpm -L xil_defaultlib -L xxv_ethernet_v3_3_0 -L unisims_ver -L unimacro_ver -L secureip -work xil_defaultlib xil_defaultlib.xxv_ethernet_0 xil_defaultlib.glbl -o xxv_ethernet_0_opt

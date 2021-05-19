@@ -1,0 +1,579 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Apr 15 19:21:02 2021
+# Process ID: 6512
+# Current directory: D:/project/xxxx/my_subsystem_2/New_NIC1_use_3_ports
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2820 D:\project\xxxx\my_subsystem_2\New_NIC1_use_3_ports\xxv_ethernet_0_ex.xpr
+# Log file: D:/project/xxxx/my_subsystem_2/New_NIC1_use_3_ports/vivado.log
+# Journal file: D:/project/xxxx/my_subsystem_2/New_NIC1_use_3_ports\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/project/xxxx/my_subsystem_2/New_NIC1_use_3_ports/xxv_ethernet_0_ex.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado_2020.2/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:31 . Memory (MB): peak = 1097.438 ; gain = 0.000
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/project/xxxx/my_subsystem_2/New_NIC1_use_3_ports/xxv_ethernet_0_ex.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Vivado_2020.2/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'D:/project/xxxx/my_subsystem_2/New_NIC1_use_3_ports/xxv_ethernet_0_ex.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'sim_first' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/project/xxxx/my_subsystem_2/New_NIC1_use_3_ports/xxv_ethernet_0_ex.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L xxv_ethernet_v3_3_0 -prj sim_first_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/xxxx/my_subsystem_2/New_NIC1_use_3_ports/xxv_ethernet_0_ex.gen/sources_1/ip/fifo_generator_0/sim/fifo_generator_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_generator_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/xxxx/my_subsystem_2/New_NIC1_use_3_ports/xxv_ethernet_0_ex.srcs/sources_1/new/CWnd_Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CWnd_Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/xxxx/my_subsystem_2/New_NIC1_use_3_ports/xxv_ethernet_0_ex.srcs/sources_1/new/CWnd_Rate_Computation_verilog.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CWnd_Rate_Computation_verilog
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/xxxx/my_subsystem_2/New_NIC1_use_3_ports/xxv_ethernet_0_ex.srcs/sources_1/new/Ports_for_CC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Ports_for_CC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/xxxx/my_subsystem_2/New_NIC1_use_3_ports/xxv_ethernet_0_ex.srcs/sources_1/new/Rate_Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Rate_Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/xxxx/my_subsystem_2/New_NIC1_use_3_ports/xxv_ethernet_0_ex.srcs/sim_1/new/sim_first.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim_first
+"xvhdl --incr --relax -prj sim_first_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/project/xxxx/my_subsystem_2/New_NIC1_use_3_ports/xxv_ethernet_0_ex.srcs/sources_1/new/RTT_Measurement.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'RTT_Measurement'
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 1133.680 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '10' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/project/xxxx/my_subsystem_2/New_NIC1_use_3_ports/xxv_ethernet_0_ex.sim/sim_1/behav/xsim'
+"xelab -wto d902e15df5cb4b228bc2d228a32de696 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_10 -L axi_utils_v2_0_6 -L xbip_pipe_v3_0_6 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_6 -L xbip_bram18k_v3_0_6 -L mult_gen_v12_0_16 -L floating_point_v7_0_18 -L xbip_dsp48_mult_v3_0_6 -L xbip_dsp48_multadd_v3_0_6 -L div_gen_v5_1_17 -L fifo_generator_v13_2_5 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot sim_first_behav xil_defaultlib.sim_first xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado_2020.2/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto d902e15df5cb4b228bc2d228a32de696 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_10 -L axi_utils_v2_0_6 -L xbip_pipe_v3_0_6 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_6 -L xbip_bram18k_v3_0_6 -L mult_gen_v12_0_16 -L floating_point_v7_0_18 -L xbip_dsp48_mult_v3_0_6 -L xbip_dsp48_multadd_v3_0_6 -L div_gen_v5_1_17 -L fifo_generator_v13_2_5 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot sim_first_behav xil_defaultlib.sim_first xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 17 for port 'cWnd' [D:/project/xxxx/my_subsystem_2/New_NIC1_use_3_ports/xxv_ethernet_0_ex.srcs/sources_1/new/Ports_for_CC.v:144]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling package xbip_utils_v3_0_10.xbip_utils_v3_0_10_pkg
+Compiling package div_gen_v5_1_17.div_gen_v5_1_17_viv_comp
+Compiling package xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv_comp
+Compiling package axi_utils_v2_0_6.axi_utils_v2_0_6_pkg
+Compiling package ieee.math_real
+Compiling package axi_utils_v2_0_6.global_util_pkg
+Compiling package axi_utils_v2_0_6.axi_utils_comps
+Compiling package xbip_bram18k_v3_0_6.xbip_bram18k_v3_0_6_pkg
+Compiling package div_gen_v5_1_17.div_gen_pkg
+Compiling package ieee.std_logic_signed
+Compiling package unisim.vcomponents
+Compiling package div_gen_v5_1_17.pkg_addsub
+Compiling architecture behavioral of entity xil_defaultlib.RTT_Measurement [rtt_measurement_default]
+Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_sync_stag...
+Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_bhv_ver_a...
+Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_bhv_ver_p...
+Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_CONV_VER(...
+Compiling module fifo_generator_v13_2_5.fifo_generator_vlog_beh(C_DATA_C...
+Compiling module xil_defaultlib.fifo_generator_0
+Compiling architecture synth of entity div_gen_v5_1_17.c_twos_comp_viv [\c_twos_comp_viv(c_width=24,c_ai...]
+Compiling architecture virtex of entity div_gen_v5_1_17.cmp2s_v [\cmp2s_v(c_bus_width=24,c_regist...]
+Compiling architecture synth of entity div_gen_v5_1_17.c_twos_comp_viv [\c_twos_comp_viv(c_width=16,c_ai...]
+Compiling architecture virtex of entity div_gen_v5_1_17.cmp2s_v [\cmp2s_v(c_bus_width=16,c_ainit_...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture muxcy_v of entity unisim.MUXCY [muxcy_default]
+Compiling architecture xorcy_v of entity unisim.XORCY [xorcy_default]
+Compiling architecture rtl of entity div_gen_v5_1_17.c_addsub_lut6 [\c_addsub_lut6(c_width=17,c_add_...]
+Compiling architecture synth of entity div_gen_v5_1_17.c_addsub_viv [\c_addsub_viv(c_a_width=17,c_b_w...]
+Compiling architecture virtex of entity div_gen_v5_1_17.addsubreg_v [\addsubreg_v(c_bus_width=17,c_ai...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity div_gen_v5_1_17.c_addsub_lut6 [\c_addsub_lut6(c_width=17,c_add_...]
+Compiling architecture synth of entity div_gen_v5_1_17.c_addsub_viv [\c_addsub_viv(c_a_width=17,c_b_w...]
+Compiling architecture virtex of entity div_gen_v5_1_17.addsubreg_v [\addsubreg_v(c_bus_width=17,c_ha...]
+Compiling architecture virtex of entity div_gen_v5_1_17.dividervdc_v [\dividervdc_v(bus_num=24,bus_div...]
+Compiling architecture synth of entity div_gen_v5_1_17.c_twos_comp_viv [\c_twos_comp_viv(c_width=17,c_ai...]
+Compiling architecture virtex of entity div_gen_v5_1_17.cmp2s_v [\cmp2s_v(c_bus_width=17,c_regist...]
+Compiling architecture synth of entity div_gen_v5_1_17.c_twos_comp_viv [\c_twos_comp_viv(c_width=25,c_ai...]
+Compiling architecture virtex of entity div_gen_v5_1_17.cmp2s_v [\cmp2s_v(c_bus_width=25,c_regist...]
+Compiling architecture synth of entity div_gen_v5_1_17.bip_sdivider_synth [\bip_sdivider_synth(c_xdevicefam...]
+Compiling architecture synth of entity div_gen_v5_1_17.div_gen_synth [\div_gen_synth(c_xdevicefamily="...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity div_gen_v5_1_17.div_gen_v5_1_17_viv [\div_gen_v5_1_17_viv(c_xdevicefa...]
+Compiling architecture xilinx of entity div_gen_v5_1_17.div_gen_v5_1_17 [\div_gen_v5_1_17(c_xdevicefamily...]
+Compiling architecture div_gen_0_arch of entity xil_defaultlib.div_gen_0 [div_gen_0_default]
+Compiling module xil_defaultlib.CWnd_Rate_Computation_verilog
+Compiling module xil_defaultlib.Rate_Control
+Compiling module xil_defaultlib.CWnd_Control
+Compiling architecture rtl of entity xil_defaultlib.send_data [send_data_default]
+Compiling module xil_defaultlib.Ports_for_CC
+Compiling module xil_defaultlib.sim_first
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sim_first_behav
+run_program: Time (s): cpu = 00:00:02 ; elapsed = 00:00:22 . Memory (MB): peak = 1133.680 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '21' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/project/xxxx/my_subsystem_2/New_NIC1_use_3_ports/xxv_ethernet_0_ex.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "sim_first_behav -key {Behavioral:sim_1:Functional:sim_first} -tclbatch {sim_first.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source sim_first.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'sim_first_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:17 ; elapsed = 00:00:40 . Memory (MB): peak = 1180.766 ; gain = 67.371
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/project/xxxx/my_subsystem_2/New_NIC1_use_3_ports/xxv_ethernet_0_ex.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Vivado_2020.2/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'D:/project/xxxx/my_subsystem_2/New_NIC1_use_3_ports/xxv_ethernet_0_ex.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'sim_first' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/project/xxxx/my_subsystem_2/New_NIC1_use_3_ports/xxv_ethernet_0_ex.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L xxv_ethernet_v3_3_0 -prj sim_first_vlog.prj"
+"xvhdl --incr --relax -prj sim_first_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/project/xxxx/my_subsystem_2/New_NIC1_use_3_ports/xxv_ethernet_0_ex.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/project/xxxx/my_subsystem_2/New_NIC1_use_3_ports/xxv_ethernet_0_ex.sim/sim_1/behav/xsim'
+"xelab -wto d902e15df5cb4b228bc2d228a32de696 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_10 -L axi_utils_v2_0_6 -L xbip_pipe_v3_0_6 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_6 -L xbip_bram18k_v3_0_6 -L mult_gen_v12_0_16 -L floating_point_v7_0_18 -L xbip_dsp48_mult_v3_0_6 -L xbip_dsp48_multadd_v3_0_6 -L div_gen_v5_1_17 -L fifo_generator_v13_2_5 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot sim_first_behav xil_defaultlib.sim_first xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado_2020.2/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto d902e15df5cb4b228bc2d228a32de696 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_10 -L axi_utils_v2_0_6 -L xbip_pipe_v3_0_6 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_6 -L xbip_bram18k_v3_0_6 -L mult_gen_v12_0_16 -L floating_point_v7_0_18 -L xbip_dsp48_mult_v3_0_6 -L xbip_dsp48_multadd_v3_0_6 -L div_gen_v5_1_17 -L fifo_generator_v13_2_5 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot sim_first_behav xil_defaultlib.sim_first xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 17 for port 'cWnd' [D:/project/xxxx/my_subsystem_2/New_NIC1_use_3_ports/xxv_ethernet_0_ex.srcs/sources_1/new/Ports_for_CC.v:144]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+relaunch_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 1180.766 ; gain = 0.000
+run all
+reset_run synth_1_copy_2
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/project/xxxx/my_subsystem_2/New_NIC1_use_3_ports/xxv_ethernet_0_ex.runs/synth_1_copy_2
+
+launch_runs impl_3 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/project/xxxx/my_subsystem_2/New_NIC1_use_3_ports/xxv_ethernet_0_ex.srcs/sources_1/ip/xxv_ethernet_0/xxv_ethernet_0.xci' is already up-to-date
+[Thu Apr 15 19:25:56 2021] Launched synth_1_copy_2...
+Run output will be captured here: D:/project/xxxx/my_subsystem_2/New_NIC1_use_3_ports/xxv_ethernet_0_ex.runs/synth_1_copy_2/runme.log
+[Thu Apr 15 19:25:56 2021] Launched impl_3...
+Run output will be captured here: D:/project/xxxx/my_subsystem_2/New_NIC1_use_3_ports/xxv_ethernet_0_ex.runs/impl_3/runme.log
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/project/xxxx/my_subsystem_2/New_NIC1_use_3_ports/xxv_ethernet_0_ex.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Vivado_2020.2/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'D:/project/xxxx/my_subsystem_2/New_NIC1_use_3_ports/xxv_ethernet_0_ex.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'sim_first' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/project/xxxx/my_subsystem_2/New_NIC1_use_3_ports/xxv_ethernet_0_ex.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L xxv_ethernet_v3_3_0 -prj sim_first_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/xxxx/my_subsystem_2/New_NIC1_use_3_ports/xxv_ethernet_0_ex.gen/sources_1/ip/fifo_generator_0/sim/fifo_generator_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_generator_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/xxxx/my_subsystem_2/New_NIC1_use_3_ports/xxv_ethernet_0_ex.srcs/sources_1/new/CWnd_Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CWnd_Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/xxxx/my_subsystem_2/New_NIC1_use_3_ports/xxv_ethernet_0_ex.srcs/sources_1/new/CWnd_Rate_Computation_verilog.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CWnd_Rate_Computation_verilog
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/xxxx/my_subsystem_2/New_NIC1_use_3_ports/xxv_ethernet_0_ex.srcs/sources_1/new/Ports_for_CC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Ports_for_CC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/xxxx/my_subsystem_2/New_NIC1_use_3_ports/xxv_ethernet_0_ex.srcs/sources_1/new/Rate_Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Rate_Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/xxxx/my_subsystem_2/New_NIC1_use_3_ports/xxv_ethernet_0_ex.srcs/sim_1/new/sim_first.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim_first
+"xvhdl --incr --relax -prj sim_first_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1223.332 ; gain = 0.000
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/project/xxxx/my_subsystem_2/New_NIC1_use_3_ports/xxv_ethernet_0_ex.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/project/xxxx/my_subsystem_2/New_NIC1_use_3_ports/xxv_ethernet_0_ex.sim/sim_1/behav/xsim'
+"xelab -wto d902e15df5cb4b228bc2d228a32de696 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_10 -L axi_utils_v2_0_6 -L xbip_pipe_v3_0_6 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_6 -L xbip_bram18k_v3_0_6 -L mult_gen_v12_0_16 -L floating_point_v7_0_18 -L xbip_dsp48_mult_v3_0_6 -L xbip_dsp48_multadd_v3_0_6 -L div_gen_v5_1_17 -L fifo_generator_v13_2_5 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot sim_first_behav xil_defaultlib.sim_first xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado_2020.2/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto d902e15df5cb4b228bc2d228a32de696 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_10 -L axi_utils_v2_0_6 -L xbip_pipe_v3_0_6 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_6 -L xbip_bram18k_v3_0_6 -L mult_gen_v12_0_16 -L floating_point_v7_0_18 -L xbip_dsp48_mult_v3_0_6 -L xbip_dsp48_multadd_v3_0_6 -L div_gen_v5_1_17 -L fifo_generator_v13_2_5 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot sim_first_behav xil_defaultlib.sim_first xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 17 for port 'cWnd' [D:/project/xxxx/my_subsystem_2/New_NIC1_use_3_ports/xxv_ethernet_0_ex.srcs/sources_1/new/Ports_for_CC.v:144]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling package xbip_utils_v3_0_10.xbip_utils_v3_0_10_pkg
+Compiling package div_gen_v5_1_17.div_gen_v5_1_17_viv_comp
+Compiling package xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv_comp
+Compiling package axi_utils_v2_0_6.axi_utils_v2_0_6_pkg
+Compiling package ieee.math_real
+Compiling package axi_utils_v2_0_6.global_util_pkg
+Compiling package axi_utils_v2_0_6.axi_utils_comps
+Compiling package xbip_bram18k_v3_0_6.xbip_bram18k_v3_0_6_pkg
+Compiling package div_gen_v5_1_17.div_gen_pkg
+Compiling package ieee.std_logic_signed
+Compiling package unisim.vcomponents
+Compiling package div_gen_v5_1_17.pkg_addsub
+Compiling architecture behavioral of entity xil_defaultlib.RTT_Measurement [rtt_measurement_default]
+Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_sync_stag...
+Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_bhv_ver_a...
+Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_bhv_ver_p...
+Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_CONV_VER(...
+Compiling module fifo_generator_v13_2_5.fifo_generator_vlog_beh(C_DATA_C...
+Compiling module xil_defaultlib.fifo_generator_0
+Compiling architecture synth of entity div_gen_v5_1_17.c_twos_comp_viv [\c_twos_comp_viv(c_width=24,c_ai...]
+Compiling architecture virtex of entity div_gen_v5_1_17.cmp2s_v [\cmp2s_v(c_bus_width=24,c_regist...]
+Compiling architecture synth of entity div_gen_v5_1_17.c_twos_comp_viv [\c_twos_comp_viv(c_width=16,c_ai...]
+Compiling architecture virtex of entity div_gen_v5_1_17.cmp2s_v [\cmp2s_v(c_bus_width=16,c_ainit_...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture muxcy_v of entity unisim.MUXCY [muxcy_default]
+Compiling architecture xorcy_v of entity unisim.XORCY [xorcy_default]
+Compiling architecture rtl of entity div_gen_v5_1_17.c_addsub_lut6 [\c_addsub_lut6(c_width=17,c_add_...]
+Compiling architecture synth of entity div_gen_v5_1_17.c_addsub_viv [\c_addsub_viv(c_a_width=17,c_b_w...]
+Compiling architecture virtex of entity div_gen_v5_1_17.addsubreg_v [\addsubreg_v(c_bus_width=17,c_ai...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity div_gen_v5_1_17.c_addsub_lut6 [\c_addsub_lut6(c_width=17,c_add_...]
+Compiling architecture synth of entity div_gen_v5_1_17.c_addsub_viv [\c_addsub_viv(c_a_width=17,c_b_w...]
+Compiling architecture virtex of entity div_gen_v5_1_17.addsubreg_v [\addsubreg_v(c_bus_width=17,c_ha...]
+Compiling architecture virtex of entity div_gen_v5_1_17.dividervdc_v [\dividervdc_v(bus_num=24,bus_div...]
+Compiling architecture synth of entity div_gen_v5_1_17.c_twos_comp_viv [\c_twos_comp_viv(c_width=17,c_ai...]
+Compiling architecture virtex of entity div_gen_v5_1_17.cmp2s_v [\cmp2s_v(c_bus_width=17,c_regist...]
+Compiling architecture synth of entity div_gen_v5_1_17.c_twos_comp_viv [\c_twos_comp_viv(c_width=25,c_ai...]
+Compiling architecture virtex of entity div_gen_v5_1_17.cmp2s_v [\cmp2s_v(c_bus_width=25,c_regist...]
+Compiling architecture synth of entity div_gen_v5_1_17.bip_sdivider_synth [\bip_sdivider_synth(c_xdevicefam...]
+Compiling architecture synth of entity div_gen_v5_1_17.div_gen_synth [\div_gen_synth(c_xdevicefamily="...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity div_gen_v5_1_17.div_gen_v5_1_17_viv [\div_gen_v5_1_17_viv(c_xdevicefa...]
+Compiling architecture xilinx of entity div_gen_v5_1_17.div_gen_v5_1_17 [\div_gen_v5_1_17(c_xdevicefamily...]
+Compiling architecture div_gen_0_arch of entity xil_defaultlib.div_gen_0 [div_gen_0_default]
+Compiling module xil_defaultlib.CWnd_Rate_Computation_verilog
+Compiling module xil_defaultlib.Rate_Control
+Compiling module xil_defaultlib.CWnd_Control
+Compiling architecture rtl of entity xil_defaultlib.send_data [send_data_default]
+Compiling module xil_defaultlib.Ports_for_CC
+Compiling module xil_defaultlib.sim_first
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sim_first_behav
+run_program: Time (s): cpu = 00:00:04 ; elapsed = 00:00:23 . Memory (MB): peak = 1223.332 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '23' seconds
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:23 . Memory (MB): peak = 1223.332 ; gain = 0.000
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+relaunch_sim: Time (s): cpu = 00:00:08 ; elapsed = 00:00:35 . Memory (MB): peak = 1223.332 ; gain = 0.000
+run all
+run: Time (s): cpu = 00:00:10 ; elapsed = 00:00:18 . Memory (MB): peak = 1283.332 ; gain = 59.578
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/project/xxxx/my_subsystem_2/New_NIC1_use_3_ports/xxv_ethernet_0_ex.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Vivado_2020.2/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'D:/project/xxxx/my_subsystem_2/New_NIC1_use_3_ports/xxv_ethernet_0_ex.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'sim_first' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/project/xxxx/my_subsystem_2/New_NIC1_use_3_ports/xxv_ethernet_0_ex.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L xxv_ethernet_v3_3_0 -prj sim_first_vlog.prj"
+"xvhdl --incr --relax -prj sim_first_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/project/xxxx/my_subsystem_2/New_NIC1_use_3_ports/xxv_ethernet_0_ex.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/project/xxxx/my_subsystem_2/New_NIC1_use_3_ports/xxv_ethernet_0_ex.sim/sim_1/behav/xsim'
+"xelab -wto d902e15df5cb4b228bc2d228a32de696 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_10 -L axi_utils_v2_0_6 -L xbip_pipe_v3_0_6 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_6 -L xbip_bram18k_v3_0_6 -L mult_gen_v12_0_16 -L floating_point_v7_0_18 -L xbip_dsp48_mult_v3_0_6 -L xbip_dsp48_multadd_v3_0_6 -L div_gen_v5_1_17 -L fifo_generator_v13_2_5 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot sim_first_behav xil_defaultlib.sim_first xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado_2020.2/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto d902e15df5cb4b228bc2d228a32de696 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_10 -L axi_utils_v2_0_6 -L xbip_pipe_v3_0_6 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_6 -L xbip_bram18k_v3_0_6 -L mult_gen_v12_0_16 -L floating_point_v7_0_18 -L xbip_dsp48_mult_v3_0_6 -L xbip_dsp48_multadd_v3_0_6 -L div_gen_v5_1_17 -L fifo_generator_v13_2_5 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot sim_first_behav xil_defaultlib.sim_first xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 17 for port 'cWnd' [D:/project/xxxx/my_subsystem_2/New_NIC1_use_3_ports/xxv_ethernet_0_ex.srcs/sources_1/new/Ports_for_CC.v:144]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+relaunch_sim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 1284.207 ; gain = 0.328
+run all
+run: Time (s): cpu = 00:00:12 ; elapsed = 00:00:19 . Memory (MB): peak = 1284.867 ; gain = 0.660
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/project/xxxx/my_subsystem_2/New_NIC1_use_3_ports/xxv_ethernet_0_ex.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Vivado_2020.2/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'D:/project/xxxx/my_subsystem_2/New_NIC1_use_3_ports/xxv_ethernet_0_ex.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'sim_first' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/project/xxxx/my_subsystem_2/New_NIC1_use_3_ports/xxv_ethernet_0_ex.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L xxv_ethernet_v3_3_0 -prj sim_first_vlog.prj"
+"xvhdl --incr --relax -prj sim_first_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/project/xxxx/my_subsystem_2/New_NIC1_use_3_ports/xxv_ethernet_0_ex.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/project/xxxx/my_subsystem_2/New_NIC1_use_3_ports/xxv_ethernet_0_ex.sim/sim_1/behav/xsim'
+"xelab -wto d902e15df5cb4b228bc2d228a32de696 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_10 -L axi_utils_v2_0_6 -L xbip_pipe_v3_0_6 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_6 -L xbip_bram18k_v3_0_6 -L mult_gen_v12_0_16 -L floating_point_v7_0_18 -L xbip_dsp48_mult_v3_0_6 -L xbip_dsp48_multadd_v3_0_6 -L div_gen_v5_1_17 -L fifo_generator_v13_2_5 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot sim_first_behav xil_defaultlib.sim_first xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado_2020.2/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto d902e15df5cb4b228bc2d228a32de696 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_10 -L axi_utils_v2_0_6 -L xbip_pipe_v3_0_6 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_6 -L xbip_bram18k_v3_0_6 -L mult_gen_v12_0_16 -L floating_point_v7_0_18 -L xbip_dsp48_mult_v3_0_6 -L xbip_dsp48_multadd_v3_0_6 -L div_gen_v5_1_17 -L fifo_generator_v13_2_5 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot sim_first_behav xil_defaultlib.sim_first xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 17 for port 'cWnd' [D:/project/xxxx/my_subsystem_2/New_NIC1_use_3_ports/xxv_ethernet_0_ex.srcs/sources_1/new/Ports_for_CC.v:144]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+relaunch_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 1356.352 ; gain = 0.160
+run all
+run: Time (s): cpu = 00:00:09 ; elapsed = 00:00:17 . Memory (MB): peak = 1356.574 ; gain = 0.223
+relaunch_sim
+ERROR: [Vivado 12-106] *** Exception: ui.utils.e: ui.frmwork.cmd.CommandFailedException: Unknown exception occurred ui.frmwork.cmd.CommandFailedException: Unknown exception occurred
+	at ui.views.simulator.executive.simulationi.SimulationExecutive_getCallStacksData(Native Method)
+	at ui.views.N.c.a.jJP(SourceFile:1302)
+	at ui.views.N.a.z.reset(SourceFile:393)
+	at ui.views.N.a.y.reset(SourceFile:274)
+	at ui.views.N.a.w.reset(SourceFile:67)
+	at ui.views.N.a.B.reset(SourceFile:124)
+	at ui.views.N.a.B.handleTclEvent(SourceFile:114)
+	at ui.frmwork.a.o.c(SourceFile:42)
+	at ui.frmwork.E.i(SourceFile:253)
+	at ui.frmwork.E.fireTclEvent(SourceFile:350)
+	at ui.views.simulator.executive.simulationi.SimulationExecutive_setTreeWindowTreeHeight(Native Method)
+	at ui.views.N.c.a.b(SourceFile:674)
+	at ui.views.N.i.e.jKe(SourceFile:122)
+	at ui.views.N.i.h.componentResized(SourceFile:145)
+	at java.desktop/java.awt.Component.processComponentEvent(Component.java:6458)
+	at java.desktop/java.awt.Component.processEvent(Component.java:6412)
+	at java.desktop/java.awt.Container.processEvent(Container.java:2263)
+	at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:5008)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2321)
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4840)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:772)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:721)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:715)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:95)
+	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:745)
+	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:743)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:742)
+	at ui.frmwork.a.d.dispatchEvent(SourceFile:92)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:117)
+	at java.desktop/java.awt.WaitDispatchSupport$2.run(WaitDispatchSupport.java:190)
+	at java.desktop/java.awt.WaitDispatchSupport$4.run(WaitDispatchSupport.java:235)
+	at java.desktop/java.awt.WaitDispatchSupport$4.run(WaitDispatchSupport.java:233)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.desktop/java.awt.WaitDispatchSupport.enter(WaitDispatchSupport.java:233)
+	at java.desktop/java.awt.Dialog.show(Dialog.java:1070)
+	at java.desktop/java.awt.Component.show(Component.java:1716)
+	at java.desktop/java.awt.Component.setVisible(Component.java:1663)
+	at java.desktop/java.awt.Window.setVisible(Window.java:1031)
+	at java.desktop/java.awt.Dialog.setVisible(Dialog.java:1005)
+	at ui.dlg.c.g.setVisible(SourceFile:864)
+	at ui.dlg.c.bz.bIi(SourceFile:595)
+	at ui.dlg.c.bI.actionPerformed(SourceFile:1182)
+	at ui.dlg.c.bz.fud(SourceFile:696)
+	at ui.views.c.t.b.a.run(SourceFile:81)
+	at ui.frmwork.cmd.a.hsT(SourceFile:132)
+	at ui.frmwork.cmd.d.htb(SourceFile:66)
+	at ui.bm.actionPerformed(SourceFile:491)
+	at java.desktop/javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:1967)
+	at ui.utils.swing.b.E.fireActionPerformed(SourceFile:243)
+	at java.desktop/javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2308)
+	at java.desktop/javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:405)
+	at java.desktop/javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:262)
+	at java.desktop/javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:279)
+	at com.jidesoft.plaf.basic.BasicJideButtonListener.mouseReleased(Unknown Source)
+	at java.desktop/java.awt.AWTEventMulticaster.mouseReleased(AWTEventMulticaster.java:297)
+	at java.desktop/java.awt.AWTEventMulticaster.mouseReleased(AWTEventMulticaster.java:297)
+	at java.desktop/java.awt.AWTEventMulticaster.mouseReleased(AWTEventMulticaster.java:297)
+	at java.desktop/java.awt.AWTEventMulticaster.mouseReleased(AWTEventMulticaster.java:297)
+	at java.desktop/java.awt.Component.processMouseEvent(Component.java:6632)
+	at java.desktop/javax.swing.JComponent.processMouseEvent(JComponent.java:3342)
+	at java.desktop/java.awt.Component.processEvent(Component.java:6397)
+	at java.desktop/java.awt.Container.processEvent(Container.java:2263)
+	at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:5008)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2321)
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4840)
+	at java.desktop/java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4918)
+	at java.desktop/java.awt.LightweightDispatcher.processMouseEvent(Container.java:4547)
+	at java.desktop/java.awt.LightweightDispatcher.dispatchEvent(Container.java:4488)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2307)
+	at java.desktop/java.awt.Window.dispatchEventImpl(Window.java:2772)
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4840)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:772)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:721)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:715)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:95)
+	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:745)
+	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:743)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:742)
+	at ui.frmwork.a.d.dispatchEvent(SourceFile:92)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+ (See D:/project/xxxx/my_subsystem_2/New_NIC1_use_3_ports/vivado_pid6512.debug)

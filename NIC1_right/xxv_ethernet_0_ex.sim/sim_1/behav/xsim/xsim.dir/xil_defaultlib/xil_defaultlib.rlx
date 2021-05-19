@@ -1,0 +1,14 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+D:/project/xxxx/my_subsystem_2/New_NIC1_use_3_ports/xxv_ethernet_0_ex.gen/sources_1/ip/div_gen_0/sim/div_gen_0.vhd,1618468491,vhdl,,,,div_gen_0,,,,,,,,
+D:/project/xxxx/my_subsystem_2/New_NIC1_use_3_ports/xxv_ethernet_0_ex.gen/sources_1/ip/fifo_generator_0/sim/fifo_generator_0.v,1618379967,verilog,,D:/project/xxxx/my_subsystem_2/New_NIC1_use_3_ports/xxv_ethernet_0_ex.srcs/sources_1/new/CWnd_Control.v,,fifo_generator_0,,xxv_ethernet_v3_3_0,D:/Vivado_2020.2/Vivado/2020.2/data/xilinx_vip/include,,,,,
+D:/project/xxxx/my_subsystem_2/New_NIC1_use_3_ports/xxv_ethernet_0_ex.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,xxv_ethernet_v3_3_0,,,,,,
+D:/project/xxxx/my_subsystem_2/New_NIC1_use_3_ports/xxv_ethernet_0_ex.srcs/sim_1/new/sim_first.v,1618553720,verilog,,,,sim_first,,xxv_ethernet_v3_3_0,D:/Vivado_2020.2/Vivado/2020.2/data/xilinx_vip/include,,,,,
+D:/project/xxxx/my_subsystem_2/New_NIC1_use_3_ports/xxv_ethernet_0_ex.srcs/sources_1/new/CWnd_Control.v,1618553572,verilog,,D:/project/xxxx/my_subsystem_2/New_NIC1_use_3_ports/xxv_ethernet_0_ex.srcs/sources_1/new/CWnd_Rate_Computation_verilog.v,,CWnd_Control,,xxv_ethernet_v3_3_0,D:/Vivado_2020.2/Vivado/2020.2/data/xilinx_vip/include,,,,,
+D:/project/xxxx/my_subsystem_2/New_NIC1_use_3_ports/xxv_ethernet_0_ex.srcs/sources_1/new/CWnd_Rate_Computation_verilog.v,1618495295,verilog,,D:/project/xxxx/my_subsystem_2/New_NIC1_use_3_ports/xxv_ethernet_0_ex.srcs/sources_1/new/Ports_for_CC.v,,CWnd_Rate_Computation_verilog,,xxv_ethernet_v3_3_0,D:/Vivado_2020.2/Vivado/2020.2/data/xilinx_vip/include,,,,,
+D:/project/xxxx/my_subsystem_2/New_NIC1_use_3_ports/xxv_ethernet_0_ex.srcs/sources_1/new/Ports_for_CC.v,1618495877,verilog,,D:/project/xxxx/my_subsystem_2/New_NIC1_use_3_ports/xxv_ethernet_0_ex.srcs/sources_1/new/Rate_Control.v,,Ports_for_CC,,xxv_ethernet_v3_3_0,D:/Vivado_2020.2/Vivado/2020.2/data/xilinx_vip/include,,,,,
+D:/project/xxxx/my_subsystem_2/New_NIC1_use_3_ports/xxv_ethernet_0_ex.srcs/sources_1/new/RTT_Measurement.vhd,1618485648,vhdl,,,,rtt_measurement,,,,,,,,
+D:/project/xxxx/my_subsystem_2/New_NIC1_use_3_ports/xxv_ethernet_0_ex.srcs/sources_1/new/Rate_Control.v,1618468520,verilog,,D:/project/xxxx/my_subsystem_2/New_NIC1_use_3_ports/xxv_ethernet_0_ex.srcs/sim_1/new/sim_first.v,,Rate_Control,,xxv_ethernet_v3_3_0,D:/Vivado_2020.2/Vivado/2020.2/data/xilinx_vip/include,,,,,
+D:/project/xxxx/my_subsystem_2/New_NIC1_use_3_ports/xxv_ethernet_0_ex.srcs/sources_1/new/send_data.vhd,1618468647,vhdl,,,,send_data,,,,,,,,

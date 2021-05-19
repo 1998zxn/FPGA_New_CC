@@ -1,0 +1,76 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Wed Apr 14 14:51:33 2021
+| Host         : zxn running 64-bit major release  (build 9200)
+| Command      : report_drc -file xxv_ethernet_0_exdes_drc_routed.rpt -pb xxv_ethernet_0_exdes_drc_routed.pb -rpx xxv_ethernet_0_exdes_drc_routed.rpx
+| Design       : xxv_ethernet_0_exdes
+| Device       : xcku040-ffva1156-2-e
+| Speed File   : -2
+| Design State : Fully Placed
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 3
++-----------+------------------+-----------------------------------------------------+------------+
+| Rule      | Severity         | Description                                         | Violations |
++-----------+------------------+-----------------------------------------------------+------------+
+| RTSTAT-1  | Critical Warning | Unrouted nets                                       | 1          |
+| CFGBVS-1  | Warning          | Missing CFGBVS and CONFIG_VOLTAGE Design Properties | 1          |
+| RTSTAT-10 | Warning          | No routable loads                                   | 1          |
++-----------+------------------+-----------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+RTSTAT-1#1 Critical Warning
+Unrouted nets  
+1 net(s) are unrouted. The problem bus(es) and/or net(s) are sys_reset.
+Related violations: <none>
+
+CFGBVS-1#1 Warning
+Missing CFGBVS and CONFIG_VOLTAGE Design Properties  
+Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:
+
+ set_property CFGBVS value1 [current_design]
+ #where value1 is either VCCO or GND
+
+ set_property CONFIG_VOLTAGE value2 [current_design]
+ #where value2 is the voltage provided to configuration bank 0
+
+Refer to the device configuration user guide for more information.
+Related violations: <none>
+
+RTSTAT-10#1 Warning
+No routable loads  
+297 net(s) have no routable loads. The problem bus(es) and/or net(s) are ethernet_mac_fifo_0/rx_fifo_inst/fifo_ram_inst/rx_axis_tdata_design_0[35:0],
+ethernet_mac_fifo_0/rx_fifo_inst/rx_axis_tdata_design_0[36],
+ethernet_mac_fifo_0/rx_fifo_inst/rx_axis_tdata_design_0[37],
+ethernet_mac_fifo_0/rx_fifo_inst/rx_axis_tdata_design_0[38],
+ethernet_mac_fifo_0/rx_fifo_inst/rx_axis_tdata_design_0[39],
+ethernet_mac_fifo_0/rx_fifo_inst/rx_axis_tdata_design_0[40],
+ethernet_mac_fifo_0/rx_fifo_inst/rx_axis_tdata_design_0[41],
+ethernet_mac_fifo_0/rx_fifo_inst/rx_axis_tdata_design_0[42],
+ethernet_mac_fifo_0/rx_fifo_inst/rx_axis_tdata_design_0[43],
+ethernet_mac_fifo_0/rx_fifo_inst/rx_axis_tdata_design_0[44],
+ethernet_mac_fifo_0/rx_fifo_inst/rx_axis_tdata_design_0[45],
+ethernet_mac_fifo_0/rx_fifo_inst/rx_axis_tdata_design_0[46],
+ethernet_mac_fifo_0/rx_fifo_inst/rx_axis_tdata_design_0[47],
+ethernet_mac_fifo_0/rx_fifo_inst/rx_axis_tdata_design_0[48],
+ethernet_mac_fifo_0/rx_fifo_inst/rx_axis_tdata_design_0[49]
+ (the first 15 of 129 listed).
+Related violations: <none>
+
+

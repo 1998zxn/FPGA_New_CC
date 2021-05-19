@@ -1,0 +1,112 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/xxxx/New_algorithm/NIC1_right/xxv_ethernet_0_ex.gen/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/xxxx/New_algorithm/NIC1_right/xxv_ethernet_0_ex.gen/sources_1/ip/fifo_generator_0/sim/fifo_generator_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_generator_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/xxxx/New_algorithm/NIC1_right/xxv_ethernet_0_ex.gen/sources_1/ip/xxv_ethernet_0_gt_3/sim/gtwizard_ultrascale_v1_7_gthe3_channel.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gtwizard_ultrascale_v1_7_9_gthe3_channel
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/xxxx/New_algorithm/NIC1_right/xxv_ethernet_0_ex.gen/sources_1/ip/xxv_ethernet_0_gt_3/sim/xxv_ethernet_0_gt_3_gthe3_channel_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xxv_ethernet_0_gt_3_gthe3_channel_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/xxxx/New_algorithm/NIC1_right/xxv_ethernet_0_ex.gen/sources_1/ip/xxv_ethernet_0_gt_3/sim/xxv_ethernet_0_gt_3_gtwizard_gthe3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xxv_ethernet_0_gt_3_gtwizard_gthe3
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/xxxx/New_algorithm/NIC1_right/xxv_ethernet_0_ex.gen/sources_1/ip/xxv_ethernet_0_gt_3/sim/xxv_ethernet_0_gt_3_gtwizard_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xxv_ethernet_0_gt_3_gtwizard_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/xxxx/New_algorithm/NIC1_right/xxv_ethernet_0_ex.gen/sources_1/ip/xxv_ethernet_0_gt_3/sim/xxv_ethernet_0_gt_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xxv_ethernet_0_gt_3
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/xxxx/New_algorithm/NIC1_right/xxv_ethernet_0_ex.gen/sources_1/ip/xxv_ethernet_0_gt_2/sim/xxv_ethernet_0_gt_2_gthe3_channel_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xxv_ethernet_0_gt_2_gthe3_channel_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/xxxx/New_algorithm/NIC1_right/xxv_ethernet_0_ex.gen/sources_1/ip/xxv_ethernet_0_gt_2/sim/xxv_ethernet_0_gt_2_gtwizard_gthe3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xxv_ethernet_0_gt_2_gtwizard_gthe3
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/xxxx/New_algorithm/NIC1_right/xxv_ethernet_0_ex.gen/sources_1/ip/xxv_ethernet_0_gt_2/sim/xxv_ethernet_0_gt_2_gtwizard_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xxv_ethernet_0_gt_2_gtwizard_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/xxxx/New_algorithm/NIC1_right/xxv_ethernet_0_ex.gen/sources_1/ip/xxv_ethernet_0_gt_2/sim/xxv_ethernet_0_gt_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xxv_ethernet_0_gt_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/xxxx/New_algorithm/NIC1_right/xxv_ethernet_0_ex.gen/sources_1/ip/xxv_ethernet_0_gt_1/sim/xxv_ethernet_0_gt_1_gthe3_channel_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xxv_ethernet_0_gt_1_gthe3_channel_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/xxxx/New_algorithm/NIC1_right/xxv_ethernet_0_ex.gen/sources_1/ip/xxv_ethernet_0_gt_1/sim/xxv_ethernet_0_gt_1_gtwizard_gthe3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xxv_ethernet_0_gt_1_gtwizard_gthe3
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/xxxx/New_algorithm/NIC1_right/xxv_ethernet_0_ex.gen/sources_1/ip/xxv_ethernet_0_gt_1/sim/xxv_ethernet_0_gt_1_gtwizard_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xxv_ethernet_0_gt_1_gtwizard_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/xxxx/New_algorithm/NIC1_right/xxv_ethernet_0_ex.gen/sources_1/ip/xxv_ethernet_0_gt_1/sim/xxv_ethernet_0_gt_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xxv_ethernet_0_gt_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/xxxx/New_algorithm/NIC1_right/xxv_ethernet_0_ex.gen/sources_1/ip/xxv_ethernet_0_gt_0/sim/xxv_ethernet_0_gt_0_gthe3_channel_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xxv_ethernet_0_gt_0_gthe3_channel_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/xxxx/New_algorithm/NIC1_right/xxv_ethernet_0_ex.gen/sources_1/ip/xxv_ethernet_0_gt_0/sim/xxv_ethernet_0_gt_0_gtwizard_gthe3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xxv_ethernet_0_gt_0_gtwizard_gthe3
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/xxxx/New_algorithm/NIC1_right/xxv_ethernet_0_ex.gen/sources_1/ip/xxv_ethernet_0_gt_0/sim/xxv_ethernet_0_gt_0_gtwizard_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xxv_ethernet_0_gt_0_gtwizard_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/xxxx/New_algorithm/NIC1_right/xxv_ethernet_0_ex.gen/sources_1/ip/xxv_ethernet_0_gt_0/sim/xxv_ethernet_0_gt_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xxv_ethernet_0_gt_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/xxxx/New_algorithm/NIC1_right/xxv_ethernet_0_ex.gen/sources_1/ip/xxv_ethernet_0/xxv_ethernet_v3_3_0/xxv_ethernet_0_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xxv_ethernet_0_wrapper
+INFO: [VRFC 10-311] analyzing module xxv_ethernet_0_cdc_sync
+INFO: [VRFC 10-311] analyzing module xxv_ethernet_0_retiming_sync
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/xxxx/New_algorithm/NIC1_right/xxv_ethernet_0_ex.gen/sources_1/ip/xxv_ethernet_0/xxv_ethernet_v3_3_0/xxv_ethernet_0_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xxv_ethernet_0_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/xxxx/New_algorithm/NIC1_right/xxv_ethernet_0_ex.gen/sources_1/ip/xxv_ethernet_0/xxv_ethernet_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xxv_ethernet_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/xxxx/New_algorithm/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/CWnd_Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CWnd_Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/xxxx/New_algorithm/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/CWnd_Rate_Computation_verilog.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CWnd_Rate_Computation_verilog
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/xxxx/New_algorithm/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/Ports_for_CC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Ports_for_CC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/xxxx/New_algorithm/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/Rate_Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Rate_Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/xxxx/New_algorithm/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/axi_10g_ethernet_0_axi_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_10g_ethernet_0_axi_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/xxxx/New_algorithm/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/axi_10g_ethernet_0_clocking.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_10g_ethernet_0_clocking
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/xxxx/New_algorithm/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/axi_10g_ethernet_0_fifo_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_10g_ethernet_0_fifo_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/xxxx/New_algorithm/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/axi_10g_ethernet_0_sync_block.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_10g_ethernet_0_sync_block
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/xxxx/New_algorithm/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/axi_10g_ethernet_0_sync_reset.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_10g_ethernet_0_sync_reset
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/xxxx/New_algorithm/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/axi_10g_ethernet_0_xgmac_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_10g_ethernet_0_xgmac_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/xxxx/New_algorithm/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/bao_cnt_debug.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bao_cnt_debug
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/xxxx/New_algorithm/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/bao_cnt_debug_myself.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bao_cnt_debug_myself
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/xxxx/New_algorithm/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module my_project
+INFO: [VRFC 10-2458] undeclared symbol tx_axis_tdkeep_0, assumed default net type wire [D:/project/xxxx/New_algorithm/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:260]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/xxxx/New_algorithm/NIC1_right/imports/xxv_ethernet_0_clocking_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xxv_ethernet_0_clocking_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/xxxx/New_algorithm/NIC1_right/imports/xxv_ethernet_0_common_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xxv_ethernet_0_common_wrapper
+INFO: [VRFC 10-311] analyzing module xxv_ethernet_0_gt_gthe3_common_wrapper
+INFO: [VRFC 10-311] analyzing module gtwizard_ultrascale_v1_6_3_gthe3_common
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/xxxx/New_algorithm/NIC1_right/imports/xxv_ethernet_0_core_support.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xxv_ethernet_0_core_support
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/xxxx/New_algorithm/NIC1_right/imports/xxv_ethernet_0_exdes.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xxv_ethernet_0_exdes
+INFO: [VRFC 10-2458] undeclared symbol dclk, assumed default net type wire [D:/project/xxxx/New_algorithm/NIC1_right/imports/xxv_ethernet_0_exdes.v:1259]
+INFO: [VRFC 10-2458] undeclared symbol gtwiz_reset_tx_datapath_0, assumed default net type wire [D:/project/xxxx/New_algorithm/NIC1_right/imports/xxv_ethernet_0_exdes.v:1260]
+INFO: [VRFC 10-2458] undeclared symbol gtwiz_reset_rx_datapath_0, assumed default net type wire [D:/project/xxxx/New_algorithm/NIC1_right/imports/xxv_ethernet_0_exdes.v:1261]
+INFO: [VRFC 10-2458] undeclared symbol gtwiz_reset_tx_datapath_1, assumed default net type wire [D:/project/xxxx/New_algorithm/NIC1_right/imports/xxv_ethernet_0_exdes.v:1452]
+INFO: [VRFC 10-2458] undeclared symbol gtwiz_reset_rx_datapath_1, assumed default net type wire [D:/project/xxxx/New_algorithm/NIC1_right/imports/xxv_ethernet_0_exdes.v:1453]
+INFO: [VRFC 10-2458] undeclared symbol gtwiz_reset_tx_datapath_2, assumed default net type wire [D:/project/xxxx/New_algorithm/NIC1_right/imports/xxv_ethernet_0_exdes.v:1644]
+INFO: [VRFC 10-2458] undeclared symbol gtwiz_reset_rx_datapath_2, assumed default net type wire [D:/project/xxxx/New_algorithm/NIC1_right/imports/xxv_ethernet_0_exdes.v:1645]
+INFO: [VRFC 10-2458] undeclared symbol gtwiz_reset_tx_datapath_3, assumed default net type wire [D:/project/xxxx/New_algorithm/NIC1_right/imports/xxv_ethernet_0_exdes.v:1836]
+INFO: [VRFC 10-2458] undeclared symbol gtwiz_reset_rx_datapath_3, assumed default net type wire [D:/project/xxxx/New_algorithm/NIC1_right/imports/xxv_ethernet_0_exdes.v:1837]
+INFO: [VRFC 10-2458] undeclared symbol tx_reset, assumed default net type wire [D:/project/xxxx/New_algorithm/NIC1_right/imports/xxv_ethernet_0_exdes.v:2650]
+INFO: [VRFC 10-2458] undeclared symbol tx_dcm_locked, assumed default net type wire [D:/project/xxxx/New_algorithm/NIC1_right/imports/xxv_ethernet_0_exdes.v:2651]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/xxxx/New_algorithm/NIC1_right/imports/xxv_ethernet_0_gt_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xxv_ethernet_0_gt_wrapper_0
+INFO: [VRFC 10-311] analyzing module xxv_ethernet_0_gt_wrapper_1
+INFO: [VRFC 10-311] analyzing module xxv_ethernet_0_gt_wrapper_2
+INFO: [VRFC 10-311] analyzing module xxv_ethernet_0_gt_wrapper_3
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/xxxx/New_algorithm/NIC1_right/imports/xxv_ethernet_0_pkt_gen_mon.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xxv_ethernet_0_pkt_gen_mon
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/xxxx/New_algorithm/NIC1_right/imports/xxv_ethernet_0_reset_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xxv_ethernet_0_reset_wrapper
+INFO: [VRFC 10-311] analyzing module xxv_ethernet_0_reset_wrapper_cdc_sync
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/xxxx/New_algorithm/NIC1_right/imports/xxv_ethernet_0_sharedlogic_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xxv_ethernet_0_sharedlogic_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/xxxx/New_algorithm/NIC1_right/imports/xxv_ethernet_0_ultrascale_rx_userclk.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xxv_ethernet_0_ultrascale_rx_userclk
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/xxxx/New_algorithm/NIC1_right/imports/xxv_ethernet_0_ultrascale_tx_userclk.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xxv_ethernet_0_ultrascale_tx_userclk
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project/xxxx/New_algorithm/NIC1_right/xxv_ethernet_0_ex.srcs/sim_3/new/sim_all.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim_all

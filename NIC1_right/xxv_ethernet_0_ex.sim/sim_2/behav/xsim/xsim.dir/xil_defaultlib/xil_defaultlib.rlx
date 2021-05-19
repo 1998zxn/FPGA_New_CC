@@ -1,0 +1,10 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+D:/project/xxxx/my_subsystem_2/New_NIC1_use_3_ports/xxv_ethernet_0_ex.sim/sim_2/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,xxv_ethernet_v3_3_0,,,,,,
+D:/project/xxxx/my_subsystem_2/New_NIC1_use_3_ports/xxv_ethernet_0_ex.srcs/sim_2/new/sim_fifo.v,1618646390,verilog,,,,sim_fifo,,xxv_ethernet_v3_3_0,D:/Vivado_2020.2/Vivado/2020.2/data/xilinx_vip/include,,,,,
+D:/project/xxxx/my_subsystem_2/New_NIC1_use_3_ports/xxv_ethernet_0_ex.srcs/sources_1/new/axi_10g_ethernet_0_axi_fifo.v,1618378197,verilog,,D:/project/xxxx/my_subsystem_2/New_NIC1_use_3_ports/xxv_ethernet_0_ex.srcs/sources_1/new/axi_10g_ethernet_0_fifo_ram.v,,axi_10g_ethernet_0_axi_fifo,,xxv_ethernet_v3_3_0,D:/Vivado_2020.2/Vivado/2020.2/data/xilinx_vip/include,,,,,
+D:/project/xxxx/my_subsystem_2/New_NIC1_use_3_ports/xxv_ethernet_0_ex.srcs/sources_1/new/axi_10g_ethernet_0_fifo_ram.v,1618378266,verilog,,D:/project/xxxx/my_subsystem_2/New_NIC1_use_3_ports/xxv_ethernet_0_ex.srcs/sources_1/new/axi_10g_ethernet_0_sync_block.v,,axi_10g_ethernet_0_fifo_ram,,xxv_ethernet_v3_3_0,D:/Vivado_2020.2/Vivado/2020.2/data/xilinx_vip/include,,,,,
+D:/project/xxxx/my_subsystem_2/New_NIC1_use_3_ports/xxv_ethernet_0_ex.srcs/sources_1/new/axi_10g_ethernet_0_sync_block.v,1618378247,verilog,,D:/project/xxxx/my_subsystem_2/New_NIC1_use_3_ports/xxv_ethernet_0_ex.srcs/sources_1/new/axi_10g_ethernet_0_sync_reset.v,,axi_10g_ethernet_0_sync_block,,xxv_ethernet_v3_3_0,D:/Vivado_2020.2/Vivado/2020.2/data/xilinx_vip/include,,,,,
+D:/project/xxxx/my_subsystem_2/New_NIC1_use_3_ports/xxv_ethernet_0_ex.srcs/sources_1/new/axi_10g_ethernet_0_sync_reset.v,1618378221,verilog,,D:/project/xxxx/my_subsystem_2/New_NIC1_use_3_ports/xxv_ethernet_0_ex.srcs/sim_2/new/sim_fifo.v,,axi_10g_ethernet_0_sync_reset,,xxv_ethernet_v3_3_0,D:/Vivado_2020.2/Vivado/2020.2/data/xilinx_vip/include,,,,,

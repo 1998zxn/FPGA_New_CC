@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Apr 15 14:34:56 2021
+# Process ID: 14860
+# Current directory: D:/project/xxxx/my_subsystem_2/New_NIC1_use_3_ports/xxv_ethernet_0_ex.runs/div_gen_0_synth_1
+# Command line: vivado.exe -log div_gen_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source div_gen_0.tcl
+# Log file: D:/project/xxxx/my_subsystem_2/New_NIC1_use_3_ports/xxv_ethernet_0_ex.runs/div_gen_0_synth_1/div_gen_0.vds
+# Journal file: D:/project/xxxx/my_subsystem_2/New_NIC1_use_3_ports/xxv_ethernet_0_ex.runs/div_gen_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source div_gen_0.tcl -notrace

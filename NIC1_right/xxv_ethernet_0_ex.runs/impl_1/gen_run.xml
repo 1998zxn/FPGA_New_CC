@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xcku040-ffva1156-2-e" LaunchTime="1618380024">
+  <File Type="PA-TCL" Name="xxv_ethernet_0_exdes.tcl"/>
+  <File Type="REPORTS-TCL" Name="xxv_ethernet_0_exdes_reports.tcl"/>
+  <File Type="BITSTR-MSK" Name="xxv_ethernet_0_exdes.msk"/>
+  <File Type="RDI-RDI" Name="xxv_ethernet_0_exdes.vdi"/>
+  <File Type="BG-BIT" Name="xxv_ethernet_0_exdes.bit"/>
+  <File Type="BG-DRC" Name="xxv_ethernet_0_exdes.drc"/>
+  <File Type="BG-BGN" Name="xxv_ethernet_0_exdes.bgn"/>
+  <File Type="BG-BIN" Name="xxv_ethernet_0_exdes.bin"/>
+  <File Type="BITSTR-RBT" Name="xxv_ethernet_0_exdes.rbt"/>
+  <File Type="BITSTR-NKY" Name="xxv_ethernet_0_exdes.nky"/>
+  <File Type="BITSTR-BMM" Name="xxv_ethernet_0_exdes_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="xxv_ethernet_0_exdes.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="xxv_ethernet_0_exdes.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="xxv_ethernet_0_exdes.ltx"/>
+  <File Type="RCFI_FILE" Name="xxv_ethernet_0_exdes.rcfi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="OPT-HWDEF" Name="xxv_ethernet_0_exdes.hwdef"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="xxv_ethernet_0_exdes_incremental_reuse_pre_placed.rpt"/>
+  <File Type="ROUTE-DCP" Name="xxv_ethernet_0_exdes_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="xxv_ethernet_0_exdes_routed_error.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="xxv_ethernet_0_exdes_routed_bb.dcp"/>
+  <File Type="ROUTE-TIMING-PB" Name="xxv_ethernet_0_exdes_timing_summary_routed.pb"/>
+  <File Type="OPT-DCP" Name="xxv_ethernet_0_exdes_opt.dcp"/>
+  <File Type="PLACE-DCP" Name="xxv_ethernet_0_exdes_placed.dcp"/>
+  <File Type="PWROPT-DCP" Name="xxv_ethernet_0_exdes_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="xxv_ethernet_0_exdes_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="xxv_ethernet_0_exdes_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="xxv_ethernet_0_exdes_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="xxv_ethernet_0_exdes_postroute_physopt_bb.dcp"/>
+  <File Type="PDI-FILE" Name="xxv_ethernet_0_exdes.pdi"/>
+  <File Type="CFI_FILE" Name="xxv_ethernet_0_exdes.cfi"/>
+  <File Type="RNPI_FILE" Name="xxv_ethernet_0_exdes.rnpi"/>
+  <File Type="NPI_FILE" Name="xxv_ethernet_0_exdes.npi"/>
+  <File Type="RBD_FILE" Name="xxv_ethernet_0_exdes.rbd"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/ip/xxv_ethernet_0_gt_3/xxv_ethernet_0_gt_3.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/xxv_ethernet_0_gt_2/xxv_ethernet_0_gt_2.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/xxv_ethernet_0_gt_1/xxv_ethernet_0_gt_1.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/xxv_ethernet_0_gt_0/xxv_ethernet_0_gt_0.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/xxv_ethernet_0/xxv_ethernet_0.xci">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/ip/xxv_ethernet_0/xxv_ethernet_0.xci"/>
+        <Attr Name="ImportTime" Val="1618323608"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/axi_10g_ethernet_0_axi_fifo.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/axi_10g_ethernet_0_clocking.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/axi_10g_ethernet_0_fifo_ram.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/axi_10g_ethernet_0_sync_block.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/axi_10g_ethernet_0_sync_reset.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/axi_10g_ethernet_0_xgmac_fifo.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/imports/xxv_ethernet_0_clocking_wrapper.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/imports/xxv_ethernet_0_common_wrapper.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/imports/xxv_ethernet_0_core_support.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/imports/xxv_ethernet_0_gt_wrapper.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/imports/xxv_ethernet_0_pkt_gen_mon.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/imports/xxv_ethernet_0_reset_wrapper.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/imports/xxv_ethernet_0_sharedlogic_wrapper.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/imports/xxv_ethernet_0_ultrascale_rx_userclk.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/imports/xxv_ethernet_0_ultrascale_tx_userclk.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/imports/xxv_ethernet_0_exdes.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/imports/xxv_ethernet_0_trans_debug.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/my_project.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/send_data.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Ports1.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Receive_Timestamp.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/send_ack.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="xxv_ethernet_0_exdes"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/imports/xxv_ethernet_0_example_top.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+    <Step Id="write_device_image"/>
+  </Strategy>
+</GenRun>

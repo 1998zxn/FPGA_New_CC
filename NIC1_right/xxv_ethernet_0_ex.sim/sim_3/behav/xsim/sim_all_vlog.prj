@@ -1,0 +1,54 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "D:/Vivado_2020.2/Vivado/2020.2/data/xilinx_vip/include" \
+"../../../../xxv_ethernet_0_ex.gen/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" \
+"../../../../xxv_ethernet_0_ex.gen/sources_1/ip/fifo_generator_0/sim/fifo_generator_0.v" \
+"../../../../xxv_ethernet_0_ex.gen/sources_1/ip/xxv_ethernet_0_gt_3/sim/gtwizard_ultrascale_v1_7_gthe3_channel.v" \
+"../../../../xxv_ethernet_0_ex.gen/sources_1/ip/xxv_ethernet_0_gt_3/sim/xxv_ethernet_0_gt_3_gthe3_channel_wrapper.v" \
+"../../../../xxv_ethernet_0_ex.gen/sources_1/ip/xxv_ethernet_0_gt_3/sim/xxv_ethernet_0_gt_3_gtwizard_gthe3.v" \
+"../../../../xxv_ethernet_0_ex.gen/sources_1/ip/xxv_ethernet_0_gt_3/sim/xxv_ethernet_0_gt_3_gtwizard_top.v" \
+"../../../../xxv_ethernet_0_ex.gen/sources_1/ip/xxv_ethernet_0_gt_3/sim/xxv_ethernet_0_gt_3.v" \
+"../../../../xxv_ethernet_0_ex.gen/sources_1/ip/xxv_ethernet_0_gt_2/sim/xxv_ethernet_0_gt_2_gthe3_channel_wrapper.v" \
+"../../../../xxv_ethernet_0_ex.gen/sources_1/ip/xxv_ethernet_0_gt_2/sim/xxv_ethernet_0_gt_2_gtwizard_gthe3.v" \
+"../../../../xxv_ethernet_0_ex.gen/sources_1/ip/xxv_ethernet_0_gt_2/sim/xxv_ethernet_0_gt_2_gtwizard_top.v" \
+"../../../../xxv_ethernet_0_ex.gen/sources_1/ip/xxv_ethernet_0_gt_2/sim/xxv_ethernet_0_gt_2.v" \
+"../../../../xxv_ethernet_0_ex.gen/sources_1/ip/xxv_ethernet_0_gt_1/sim/xxv_ethernet_0_gt_1_gthe3_channel_wrapper.v" \
+"../../../../xxv_ethernet_0_ex.gen/sources_1/ip/xxv_ethernet_0_gt_1/sim/xxv_ethernet_0_gt_1_gtwizard_gthe3.v" \
+"../../../../xxv_ethernet_0_ex.gen/sources_1/ip/xxv_ethernet_0_gt_1/sim/xxv_ethernet_0_gt_1_gtwizard_top.v" \
+"../../../../xxv_ethernet_0_ex.gen/sources_1/ip/xxv_ethernet_0_gt_1/sim/xxv_ethernet_0_gt_1.v" \
+"../../../../xxv_ethernet_0_ex.gen/sources_1/ip/xxv_ethernet_0_gt_0/sim/xxv_ethernet_0_gt_0_gthe3_channel_wrapper.v" \
+"../../../../xxv_ethernet_0_ex.gen/sources_1/ip/xxv_ethernet_0_gt_0/sim/xxv_ethernet_0_gt_0_gtwizard_gthe3.v" \
+"../../../../xxv_ethernet_0_ex.gen/sources_1/ip/xxv_ethernet_0_gt_0/sim/xxv_ethernet_0_gt_0_gtwizard_top.v" \
+"../../../../xxv_ethernet_0_ex.gen/sources_1/ip/xxv_ethernet_0_gt_0/sim/xxv_ethernet_0_gt_0.v" \
+"../../../../xxv_ethernet_0_ex.gen/sources_1/ip/xxv_ethernet_0/xxv_ethernet_v3_3_0/xxv_ethernet_0_wrapper.v" \
+"../../../../xxv_ethernet_0_ex.gen/sources_1/ip/xxv_ethernet_0/xxv_ethernet_v3_3_0/xxv_ethernet_0_top.v" \
+"../../../../xxv_ethernet_0_ex.gen/sources_1/ip/xxv_ethernet_0/xxv_ethernet_0.v" \
+"../../../../xxv_ethernet_0_ex.srcs/sources_1/new/CWnd_Control.v" \
+"../../../../xxv_ethernet_0_ex.srcs/sources_1/new/CWnd_Rate_Computation_verilog.v" \
+"../../../../xxv_ethernet_0_ex.srcs/sources_1/new/Ports_for_CC.v" \
+"../../../../xxv_ethernet_0_ex.srcs/sources_1/new/Rate_Control.v" \
+"../../../../xxv_ethernet_0_ex.srcs/sources_1/new/axi_10g_ethernet_0_axi_fifo.v" \
+"../../../../xxv_ethernet_0_ex.srcs/sources_1/new/axi_10g_ethernet_0_clocking.v" \
+"../../../../xxv_ethernet_0_ex.srcs/sources_1/new/axi_10g_ethernet_0_fifo_ram.v" \
+"../../../../xxv_ethernet_0_ex.srcs/sources_1/new/axi_10g_ethernet_0_sync_block.v" \
+"../../../../xxv_ethernet_0_ex.srcs/sources_1/new/axi_10g_ethernet_0_sync_reset.v" \
+"../../../../xxv_ethernet_0_ex.srcs/sources_1/new/axi_10g_ethernet_0_xgmac_fifo.v" \
+"../../../../xxv_ethernet_0_ex.srcs/sources_1/new/bao_cnt_debug.v" \
+"../../../../xxv_ethernet_0_ex.srcs/sources_1/new/bao_cnt_debug_myself.v" \
+"../../../../xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v" \
+"../../../../imports/xxv_ethernet_0_clocking_wrapper.v" \
+"../../../../imports/xxv_ethernet_0_common_wrapper.v" \
+"../../../../imports/xxv_ethernet_0_core_support.v" \
+"../../../../imports/xxv_ethernet_0_exdes.v" \
+"../../../../imports/xxv_ethernet_0_gt_wrapper.v" \
+"../../../../imports/xxv_ethernet_0_pkt_gen_mon.v" \
+"../../../../imports/xxv_ethernet_0_reset_wrapper.v" \
+"../../../../imports/xxv_ethernet_0_sharedlogic_wrapper.v" \
+"../../../../imports/xxv_ethernet_0_ultrascale_rx_userclk.v" \
+"../../../../imports/xxv_ethernet_0_ultrascale_tx_userclk.v" \
+"../../../../xxv_ethernet_0_ex.srcs/sim_3/new/sim_all.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

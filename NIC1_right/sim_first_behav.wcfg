@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="sim_first_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="sim_first" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="1098453400fs"></ZoomStartTime>
+      <ZoomEndTime time="1147203401fs"></ZoomEndTime>
+      <Cursor1Time time="1139078400fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="340"></NameColumnWidth>
+      <ValueColumnWidth column_width="150"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="5" />
+   <wvobject fp_name="group419" type="group">
+      <obj_property name="label">top</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/tx_clk_out_0" type="logic">
+         <obj_property name="ElementShortName">tx_clk_out_0</obj_property>
+         <obj_property name="ObjectShortName">tx_clk_out_0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/rx_core_clk_0" type="logic">
+         <obj_property name="ElementShortName">rx_core_clk_0</obj_property>
+         <obj_property name="ObjectShortName">rx_core_clk_0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/user_tx_reset_0" type="logic">
+         <obj_property name="ElementShortName">user_tx_reset_0</obj_property>
+         <obj_property name="ObjectShortName">user_tx_reset_0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/user_rx_reset_0" type="logic">
+         <obj_property name="ElementShortName">user_rx_reset_0</obj_property>
+         <obj_property name="ObjectShortName">user_rx_reset_0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/start_wait" type="logic">
+         <obj_property name="ElementShortName">start_wait</obj_property>
+         <obj_property name="ObjectShortName">start_wait</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/packet_frame_index" type="array">
+         <obj_property name="ElementShortName">packet_frame_index[47:0]</obj_property>
+         <obj_property name="ObjectShortName">packet_frame_index[47:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/Ports_for_CC_tdata" type="array">
+         <obj_property name="ElementShortName">Ports_for_CC_tdata[63:0]</obj_property>
+         <obj_property name="ObjectShortName">Ports_for_CC_tdata[63:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/Ports_for_CC_tkeep" type="array">
+         <obj_property name="ElementShortName">Ports_for_CC_tkeep[7:0]</obj_property>
+         <obj_property name="ObjectShortName">Ports_for_CC_tkeep[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/Ports_for_CC_tlast" type="logic">
+         <obj_property name="ElementShortName">Ports_for_CC_tlast</obj_property>
+         <obj_property name="ObjectShortName">Ports_for_CC_tlast</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/Ports_for_CC_tvalid" type="logic">
+         <obj_property name="ElementShortName">Ports_for_CC_tvalid</obj_property>
+         <obj_property name="ObjectShortName">Ports_for_CC_tvalid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/Ports_for_CC_tready" type="logic">
+         <obj_property name="ElementShortName">Ports_for_CC_tready</obj_property>
+         <obj_property name="ObjectShortName">Ports_for_CC_tready</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/Ports_for_CC_rdata" type="array">
+         <obj_property name="ElementShortName">Ports_for_CC_rdata[63:0]</obj_property>
+         <obj_property name="ObjectShortName">Ports_for_CC_rdata[63:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/Ports_for_CC_rkeep" type="array">
+         <obj_property name="ElementShortName">Ports_for_CC_rkeep[7:0]</obj_property>
+         <obj_property name="ObjectShortName">Ports_for_CC_rkeep[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/Ports_for_CC_rlast" type="logic">
+         <obj_property name="ElementShortName">Ports_for_CC_rlast</obj_property>
+         <obj_property name="ObjectShortName">Ports_for_CC_rlast</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/Ports_for_CC_rvalid" type="logic">
+         <obj_property name="ElementShortName">Ports_for_CC_rvalid</obj_property>
+         <obj_property name="ObjectShortName">Ports_for_CC_rvalid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/start_send_data" type="logic">
+         <obj_property name="ElementShortName">start_send_data</obj_property>
+         <obj_property name="ObjectShortName">start_send_data</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/m_cWnd" type="array">
+         <obj_property name="ElementShortName">m_cWnd[15:0]</obj_property>
+         <obj_property name="ObjectShortName">m_cWnd[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/Rate" type="array">
+         <obj_property name="ElementShortName">Rate[15:0]</obj_property>
+         <obj_property name="ObjectShortName">Rate[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/ECN" type="logic">
+         <obj_property name="ElementShortName">ECN</obj_property>
+         <obj_property name="ObjectShortName">ECN</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/cWnd_en" type="logic">
+         <obj_property name="ElementShortName">cWnd_en</obj_property>
+         <obj_property name="ObjectShortName">cWnd_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/Rate_en" type="logic">
+         <obj_property name="ElementShortName">Rate_en</obj_property>
+         <obj_property name="ObjectShortName">Rate_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/start_from_Rate" type="logic">
+         <obj_property name="ElementShortName">start_from_Rate</obj_property>
+         <obj_property name="ObjectShortName">start_from_Rate</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/start_from_CWnd" type="logic">
+         <obj_property name="ElementShortName">start_from_CWnd</obj_property>
+         <obj_property name="ObjectShortName">start_from_CWnd</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/RTT" type="array">
+         <obj_property name="ElementShortName">RTT[47:0]</obj_property>
+         <obj_property name="ObjectShortName">RTT[47:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/RTT_after_fifo" type="array">
+         <obj_property name="ElementShortName">RTT_after_fifo[47:0]</obj_property>
+         <obj_property name="ObjectShortName">RTT_after_fifo[47:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/RTT_fifo_wr_en" type="logic">
+         <obj_property name="ElementShortName">RTT_fifo_wr_en</obj_property>
+         <obj_property name="ObjectShortName">RTT_fifo_wr_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/RTT_fifo_full" type="logic">
+         <obj_property name="ElementShortName">RTT_fifo_full</obj_property>
+         <obj_property name="ObjectShortName">RTT_fifo_full</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/RTT_fifo_empty" type="logic">
+         <obj_property name="ElementShortName">RTT_fifo_empty</obj_property>
+         <obj_property name="ObjectShortName">RTT_fifo_empty</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/RTT_fifo_rd_en" type="logic">
+         <obj_property name="ElementShortName">RTT_fifo_rd_en</obj_property>
+         <obj_property name="ObjectShortName">RTT_fifo_rd_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/cnt_before_computer_number_3" type="array">
+         <obj_property name="ElementShortName">cnt_before_computer_number_3[47:0]</obj_property>
+         <obj_property name="ObjectShortName">cnt_before_computer_number_3[47:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group522" type="group">
+      <obj_property name="label">CWnd</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/inst_Control_CWnd/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/inst_Control_CWnd/reset" type="logic">
+         <obj_property name="ElementShortName">reset</obj_property>
+         <obj_property name="ObjectShortName">reset</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/inst_Control_CWnd/last" type="logic">
+         <obj_property name="ElementShortName">last</obj_property>
+         <obj_property name="ObjectShortName">last</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/inst_Control_CWnd/valid" type="logic">
+         <obj_property name="ElementShortName">valid</obj_property>
+         <obj_property name="ObjectShortName">valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/inst_Control_CWnd/cWnd" type="array">
+         <obj_property name="ElementShortName">cWnd[15:0]</obj_property>
+         <obj_property name="ObjectShortName">cWnd[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/inst_Control_CWnd/cWnd_en" type="logic">
+         <obj_property name="ElementShortName">cWnd_en</obj_property>
+         <obj_property name="ObjectShortName">cWnd_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/inst_Control_CWnd/ECN" type="logic">
+         <obj_property name="ElementShortName">ECN</obj_property>
+         <obj_property name="ObjectShortName">ECN</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/inst_Control_CWnd/start" type="logic">
+         <obj_property name="ElementShortName">start</obj_property>
+         <obj_property name="ObjectShortName">start</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/inst_Control_CWnd/state" type="array">
+         <obj_property name="ElementShortName">state[3:0]</obj_property>
+         <obj_property name="ObjectShortName">state[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/inst_Control_CWnd/next_state" type="array">
+         <obj_property name="ElementShortName">next_state[3:0]</obj_property>
+         <obj_property name="ObjectShortName">next_state[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/inst_Control_CWnd/cWnd_size" type="array">
+         <obj_property name="ElementShortName">cWnd_size[15:0]</obj_property>
+         <obj_property name="ObjectShortName">cWnd_size[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/inst_Control_CWnd/cWnd_now" type="array">
+         <obj_property name="ElementShortName">cWnd_now[15:0]</obj_property>
+         <obj_property name="ObjectShortName">cWnd_now[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/inst_Control_CWnd/cnt_cWnd_en" type="array">
+         <obj_property name="ElementShortName">cnt_cWnd_en[47:0]</obj_property>
+         <obj_property name="ObjectShortName">cnt_cWnd_en[47:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/inst_Control_CWnd/cnt_Wait" type="array">
+         <obj_property name="ElementShortName">cnt_Wait[7:0]</obj_property>
+         <obj_property name="ObjectShortName">cnt_Wait[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/inst_Control_CWnd/SM_IDLE_ST" type="array">
+         <obj_property name="ElementShortName">SM_IDLE_ST[3:0]</obj_property>
+         <obj_property name="ObjectShortName">SM_IDLE_ST[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/inst_Control_CWnd/SM_Begin_ST" type="array">
+         <obj_property name="ElementShortName">SM_Begin_ST[3:0]</obj_property>
+         <obj_property name="ObjectShortName">SM_Begin_ST[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/inst_Control_CWnd/SM_Wait_ST" type="array">
+         <obj_property name="ElementShortName">SM_Wait_ST[3:0]</obj_property>
+         <obj_property name="ObjectShortName">SM_Wait_ST[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/inst_Control_CWnd/SM_Noting_ST" type="array">
+         <obj_property name="ElementShortName">SM_Noting_ST[3:0]</obj_property>
+         <obj_property name="ObjectShortName">SM_Noting_ST[3:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group503" type="group">
+      <obj_property name="label">Computing</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/inst_CWnd_Rate_Computation_verilog/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/inst_CWnd_Rate_Computation_verilog/reset" type="logic">
+         <obj_property name="ElementShortName">reset</obj_property>
+         <obj_property name="ObjectShortName">reset</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/inst_CWnd_Rate_Computation_verilog/RTT_fifo_empty" type="logic">
+         <obj_property name="ElementShortName">RTT_fifo_empty</obj_property>
+         <obj_property name="ObjectShortName">RTT_fifo_empty</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/inst_CWnd_Rate_Computation_verilog/RTT_fifo_rd_en" type="logic">
+         <obj_property name="ElementShortName">RTT_fifo_rd_en</obj_property>
+         <obj_property name="ObjectShortName">RTT_fifo_rd_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/inst_CWnd_Rate_Computation_verilog/newRTT_in" type="array">
+         <obj_property name="ElementShortName">newRTT_in[47:0]</obj_property>
+         <obj_property name="ObjectShortName">newRTT_in[47:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/inst_CWnd_Rate_Computation_verilog/cWnd_or_Rate" type="logic">
+         <obj_property name="ElementShortName">cWnd_or_Rate</obj_property>
+         <obj_property name="ObjectShortName">cWnd_or_Rate</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/inst_CWnd_Rate_Computation_verilog/m_cWnd" type="array">
+         <obj_property name="ElementShortName">m_cWnd[15:0]</obj_property>
+         <obj_property name="ObjectShortName">m_cWnd[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/inst_CWnd_Rate_Computation_verilog/cWnd_en" type="logic">
+         <obj_property name="ElementShortName">cWnd_en</obj_property>
+         <obj_property name="ObjectShortName">cWnd_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/inst_CWnd_Rate_Computation_verilog/Rate" type="array">
+         <obj_property name="ElementShortName">Rate[15:0]</obj_property>
+         <obj_property name="ObjectShortName">Rate[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/inst_CWnd_Rate_Computation_verilog/Rate_en" type="logic">
+         <obj_property name="ElementShortName">Rate_en</obj_property>
+         <obj_property name="ObjectShortName">Rate_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/inst_CWnd_Rate_Computation_verilog/state" type="array">
+         <obj_property name="ElementShortName">state[7:0]</obj_property>
+         <obj_property name="ObjectShortName">state[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/inst_CWnd_Rate_Computation_verilog/next_state" type="array">
+         <obj_property name="ElementShortName">next_state[7:0]</obj_property>
+         <obj_property name="ObjectShortName">next_state[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/inst_CWnd_Rate_Computation_verilog/RTT_rd" type="array">
+         <obj_property name="ElementShortName">RTT_rd[47:0]</obj_property>
+         <obj_property name="ObjectShortName">RTT_rd[47:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/inst_CWnd_Rate_Computation_verilog/m_segmentSize" type="array">
+         <obj_property name="ElementShortName">m_segmentSize[15:0]</obj_property>
+         <obj_property name="ObjectShortName">m_segmentSize[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/inst_CWnd_Rate_Computation_verilog/m_segmentSize_square" type="array">
+         <obj_property name="ElementShortName">m_segmentSize_square[23:0]</obj_property>
+         <obj_property name="ObjectShortName">m_segmentSize_square[23:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/inst_CWnd_Rate_Computation_verilog/m_segmentSize_Zero_four" type="array">
+         <obj_property name="ElementShortName">m_segmentSize_Zero_four[15:0]</obj_property>
+         <obj_property name="ObjectShortName">m_segmentSize_Zero_four[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/inst_CWnd_Rate_Computation_verilog/m_segmentSize_half" type="array">
+         <obj_property name="ElementShortName">m_segmentSize_half[15:0]</obj_property>
+         <obj_property name="ObjectShortName">m_segmentSize_half[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/inst_CWnd_Rate_Computation_verilog/cWnd_min" type="array">
+         <obj_property name="ElementShortName">cWnd_min[15:0]</obj_property>
+         <obj_property name="ObjectShortName">cWnd_min[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/inst_CWnd_Rate_Computation_verilog/T_low" type="array">
+         <obj_property name="ElementShortName">T_low[7:0]</obj_property>
+         <obj_property name="ObjectShortName">T_low[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/inst_CWnd_Rate_Computation_verilog/T_high" type="array">
+         <obj_property name="ElementShortName">T_high[7:0]</obj_property>
+         <obj_property name="ObjectShortName">T_high[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/inst_CWnd_Rate_Computation_verilog/T_high_low" type="array">
+         <obj_property name="ElementShortName">T_high_low[7:0]</obj_property>
+         <obj_property name="ObjectShortName">T_high_low[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/inst_CWnd_Rate_Computation_verilog/rand" type="array">
+         <obj_property name="ElementShortName">rand[15:0]</obj_property>
+         <obj_property name="ObjectShortName">rand[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/inst_CWnd_Rate_Computation_verilog/rand2" type="array">
+         <obj_property name="ElementShortName">rand2[15:0]</obj_property>
+         <obj_property name="ObjectShortName">rand2[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/inst_CWnd_Rate_Computation_verilog/newRTT" type="array">
+         <obj_property name="ElementShortName">newRTT[15:0]</obj_property>
+         <obj_property name="ObjectShortName">newRTT[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/inst_CWnd_Rate_Computation_verilog/ECN_tmp" type="array">
+         <obj_property name="ElementShortName">ECN_tmp[15:0]</obj_property>
+         <obj_property name="ObjectShortName">ECN_tmp[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/inst_CWnd_Rate_Computation_verilog/m_cWnd_now" type="array">
+         <obj_property name="ElementShortName">m_cWnd_now[15:0]</obj_property>
+         <obj_property name="ObjectShortName">m_cWnd_now[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/inst_CWnd_Rate_Computation_verilog/m_cWnd_Low" type="array">
+         <obj_property name="ElementShortName">m_cWnd_Low[15:0]</obj_property>
+         <obj_property name="ObjectShortName">m_cWnd_Low[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/inst_CWnd_Rate_Computation_verilog/m_cWnd_High" type="array">
+         <obj_property name="ElementShortName">m_cWnd_High[15:0]</obj_property>
+         <obj_property name="ObjectShortName">m_cWnd_High[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/inst_CWnd_Rate_Computation_verilog/m_cWnd_ECN_0" type="array">
+         <obj_property name="ElementShortName">m_cWnd_ECN_0[15:0]</obj_property>
+         <obj_property name="ObjectShortName">m_cWnd_ECN_0[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/inst_CWnd_Rate_Computation_verilog/m_cWnd_ECN_1" type="array">
+         <obj_property name="ElementShortName">m_cWnd_ECN_1[15:0]</obj_property>
+         <obj_property name="ObjectShortName">m_cWnd_ECN_1[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/inst_CWnd_Rate_Computation_verilog/method" type="array">
+         <obj_property name="ElementShortName">method[3:0]</obj_property>
+         <obj_property name="ObjectShortName">method[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/inst_CWnd_Rate_Computation_verilog/cnt_A" type="array">
+         <obj_property name="ElementShortName">cnt_A[7:0]</obj_property>
+         <obj_property name="ObjectShortName">cnt_A[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/inst_CWnd_Rate_Computation_verilog/cnt_Low" type="array">
+         <obj_property name="ElementShortName">cnt_Low[7:0]</obj_property>
+         <obj_property name="ObjectShortName">cnt_Low[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/inst_CWnd_Rate_Computation_verilog/cnt_High" type="array">
+         <obj_property name="ElementShortName">cnt_High[7:0]</obj_property>
+         <obj_property name="ObjectShortName">cnt_High[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/inst_CWnd_Rate_Computation_verilog/cnt_Between" type="array">
+         <obj_property name="ElementShortName">cnt_Between[7:0]</obj_property>
+         <obj_property name="ObjectShortName">cnt_Between[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/inst_CWnd_Rate_Computation_verilog/cnt_ECN_0" type="array">
+         <obj_property name="ElementShortName">cnt_ECN_0[7:0]</obj_property>
+         <obj_property name="ObjectShortName">cnt_ECN_0[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/inst_CWnd_Rate_Computation_verilog/cnt_ECN_1" type="array">
+         <obj_property name="ElementShortName">cnt_ECN_1[7:0]</obj_property>
+         <obj_property name="ObjectShortName">cnt_ECN_1[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/inst_CWnd_Rate_Computation_verilog/cnt_Result" type="array">
+         <obj_property name="ElementShortName">cnt_Result[7:0]</obj_property>
+         <obj_property name="ObjectShortName">cnt_Result[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/inst_CWnd_Rate_Computation_verilog/adder_Low" type="array">
+         <obj_property name="ElementShortName">adder_Low[15:0]</obj_property>
+         <obj_property name="ObjectShortName">adder_Low[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/inst_CWnd_Rate_Computation_verilog/adder_High" type="array">
+         <obj_property name="ElementShortName">adder_High[15:0]</obj_property>
+         <obj_property name="ObjectShortName">adder_High[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/inst_CWnd_Rate_Computation_verilog/adder_ECN_0" type="array">
+         <obj_property name="ElementShortName">adder_ECN_0[15:0]</obj_property>
+         <obj_property name="ObjectShortName">adder_ECN_0[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/inst_CWnd_Rate_Computation_verilog/adder_ECN_1" type="array">
+         <obj_property name="ElementShortName">adder_ECN_1[15:0]</obj_property>
+         <obj_property name="ObjectShortName">adder_ECN_1[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/inst_CWnd_Rate_Computation_verilog/divisor_tvalid_Low" type="logic">
+         <obj_property name="ElementShortName">divisor_tvalid_Low</obj_property>
+         <obj_property name="ObjectShortName">divisor_tvalid_Low</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/inst_CWnd_Rate_Computation_verilog/dividend_tvalid_Low" type="logic">
+         <obj_property name="ElementShortName">dividend_tvalid_Low</obj_property>
+         <obj_property name="ObjectShortName">dividend_tvalid_Low</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/inst_CWnd_Rate_Computation_verilog/divisor_tvalid_ECN_0" type="logic">
+         <obj_property name="ElementShortName">divisor_tvalid_ECN_0</obj_property>
+         <obj_property name="ObjectShortName">divisor_tvalid_ECN_0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/inst_CWnd_Rate_Computation_verilog/dividend_tvalid_ECN_0" type="logic">
+         <obj_property name="ElementShortName">dividend_tvalid_ECN_0</obj_property>
+         <obj_property name="ObjectShortName">dividend_tvalid_ECN_0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/inst_CWnd_Rate_Computation_verilog/divisor_tvalid_Rate" type="logic">
+         <obj_property name="ElementShortName">divisor_tvalid_Rate</obj_property>
+         <obj_property name="ObjectShortName">divisor_tvalid_Rate</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/inst_CWnd_Rate_Computation_verilog/dividend_tvalid_Rate" type="logic">
+         <obj_property name="ElementShortName">dividend_tvalid_Rate</obj_property>
+         <obj_property name="ObjectShortName">dividend_tvalid_Rate</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/inst_CWnd_Rate_Computation_verilog/adder_Low_ALL" type="array">
+         <obj_property name="ElementShortName">adder_Low_ALL[39:0]</obj_property>
+         <obj_property name="ObjectShortName">adder_Low_ALL[39:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/inst_CWnd_Rate_Computation_verilog/adder_Low_ALL_valid" type="logic">
+         <obj_property name="ElementShortName">adder_Low_ALL_valid</obj_property>
+         <obj_property name="ObjectShortName">adder_Low_ALL_valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/inst_CWnd_Rate_Computation_verilog/adder_ECN_0_ALL" type="array">
+         <obj_property name="ElementShortName">adder_ECN_0_ALL[39:0]</obj_property>
+         <obj_property name="ObjectShortName">adder_ECN_0_ALL[39:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/inst_CWnd_Rate_Computation_verilog/adder_ECN_0_ALL_valid" type="logic">
+         <obj_property name="ElementShortName">adder_ECN_0_ALL_valid</obj_property>
+         <obj_property name="ObjectShortName">adder_ECN_0_ALL_valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/inst_CWnd_Rate_Computation_verilog/Rate_ALL" type="array">
+         <obj_property name="ElementShortName">Rate_ALL[39:0]</obj_property>
+         <obj_property name="ObjectShortName">Rate_ALL[39:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/inst_CWnd_Rate_Computation_verilog/Rate_ALL_valid" type="logic">
+         <obj_property name="ElementShortName">Rate_ALL_valid</obj_property>
+         <obj_property name="ObjectShortName">Rate_ALL_valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/inst_CWnd_Rate_Computation_verilog/Rate_mid" type="array">
+         <obj_property name="ElementShortName">Rate_mid[23:0]</obj_property>
+         <obj_property name="ObjectShortName">Rate_mid[23:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/inst_CWnd_Rate_Computation_verilog/cul_new_RTT" type="array">
+         <obj_property name="ElementShortName">cul_new_RTT[23:0]</obj_property>
+         <obj_property name="ObjectShortName">cul_new_RTT[23:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/inst_CWnd_Rate_Computation_verilog/cul_new_RTT2" type="array">
+         <obj_property name="ElementShortName">cul_new_RTT2[15:0]</obj_property>
+         <obj_property name="ObjectShortName">cul_new_RTT2[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/inst_CWnd_Rate_Computation_verilog/SM_IDLE_ST" type="array">
+         <obj_property name="ElementShortName">SM_IDLE_ST[7:0]</obj_property>
+         <obj_property name="ObjectShortName">SM_IDLE_ST[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/inst_CWnd_Rate_Computation_verilog/SM_A_ST" type="array">
+         <obj_property name="ElementShortName">SM_A_ST[7:0]</obj_property>
+         <obj_property name="ObjectShortName">SM_A_ST[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/inst_CWnd_Rate_Computation_verilog/SM_Low_ST" type="array">
+         <obj_property name="ElementShortName">SM_Low_ST[7:0]</obj_property>
+         <obj_property name="ObjectShortName">SM_Low_ST[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/inst_CWnd_Rate_Computation_verilog/SM_High_ST" type="array">
+         <obj_property name="ElementShortName">SM_High_ST[7:0]</obj_property>
+         <obj_property name="ObjectShortName">SM_High_ST[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/inst_CWnd_Rate_Computation_verilog/SM_Between_ST" type="array">
+         <obj_property name="ElementShortName">SM_Between_ST[7:0]</obj_property>
+         <obj_property name="ObjectShortName">SM_Between_ST[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/inst_CWnd_Rate_Computation_verilog/SM_ECN_0_ST" type="array">
+         <obj_property name="ElementShortName">SM_ECN_0_ST[7:0]</obj_property>
+         <obj_property name="ObjectShortName">SM_ECN_0_ST[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/inst_CWnd_Rate_Computation_verilog/SM_ECN_1_ST" type="array">
+         <obj_property name="ElementShortName">SM_ECN_1_ST[7:0]</obj_property>
+         <obj_property name="ObjectShortName">SM_ECN_1_ST[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/inst_CWnd_Rate_Computation_verilog/SM_Result_ST" type="array">
+         <obj_property name="ElementShortName">SM_Result_ST[7:0]</obj_property>
+         <obj_property name="ObjectShortName">SM_Result_ST[7:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group437" type="group">
+      <obj_property name="label">RTT_Measure</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/inst_RTT_Measurement/my_mac" type="array">
+         <obj_property name="ElementShortName">my_mac[63:0]</obj_property>
+         <obj_property name="ObjectShortName">my_mac[63:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/inst_RTT_Measurement/rx_tdata_out" type="array">
+         <obj_property name="ElementShortName">rx_tdata_out[63:0]</obj_property>
+         <obj_property name="ObjectShortName">rx_tdata_out[63:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/inst_RTT_Measurement/rx_tkeep_out" type="array">
+         <obj_property name="ElementShortName">rx_tkeep_out[7:0]</obj_property>
+         <obj_property name="ObjectShortName">rx_tkeep_out[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/inst_RTT_Measurement/rx_tlast_out" type="logic">
+         <obj_property name="ElementShortName">rx_tlast_out</obj_property>
+         <obj_property name="ObjectShortName">rx_tlast_out</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/inst_RTT_Measurement/rx_tvalid_out" type="logic">
+         <obj_property name="ElementShortName">rx_tvalid_out</obj_property>
+         <obj_property name="ObjectShortName">rx_tvalid_out</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/inst_RTT_Measurement/valid" type="logic">
+         <obj_property name="ElementShortName">valid</obj_property>
+         <obj_property name="ObjectShortName">valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/inst_RTT_Measurement/RTT" type="array">
+         <obj_property name="ElementShortName">RTT[47:0]</obj_property>
+         <obj_property name="ObjectShortName">RTT[47:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/inst_RTT_Measurement/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/inst_RTT_Measurement/reset" type="logic">
+         <obj_property name="ElementShortName">reset</obj_property>
+         <obj_property name="ObjectShortName">reset</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/inst_RTT_Measurement/packet_frame_index" type="array">
+         <obj_property name="ElementShortName">packet_frame_index[47:0]</obj_property>
+         <obj_property name="ObjectShortName">packet_frame_index[47:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/inst_RTT_Measurement/RTT_1" type="array">
+         <obj_property name="ElementShortName">RTT_1[47:0]</obj_property>
+         <obj_property name="ObjectShortName">RTT_1[47:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/inst_RTT_Measurement/Timestamp_47downto32_nxt" type="array">
+         <obj_property name="ElementShortName">Timestamp_47downto32_nxt[15:0]</obj_property>
+         <obj_property name="ObjectShortName">Timestamp_47downto32_nxt[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/inst_RTT_Measurement/Timestamp_47downto32" type="array">
+         <obj_property name="ElementShortName">Timestamp_47downto32[15:0]</obj_property>
+         <obj_property name="ObjectShortName">Timestamp_47downto32[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/inst_RTT_Measurement/Timestamp" type="array">
+         <obj_property name="ElementShortName">Timestamp[47:0]</obj_property>
+         <obj_property name="ObjectShortName">Timestamp[47:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/inst_RTT_Measurement/valid_1" type="logic">
+         <obj_property name="ElementShortName">valid_1</obj_property>
+         <obj_property name="ObjectShortName">valid_1</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/inst_RTT_Measurement/SM" type="other">
+         <obj_property name="ElementShortName">SM</obj_property>
+         <obj_property name="ObjectShortName">SM</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_first/inst_Ports_for_CC_port_3/inst_RTT_Measurement/SM_nxt" type="other">
+         <obj_property name="ElementShortName">SM_nxt</obj_property>
+         <obj_property name="ObjectShortName">SM_nxt</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/sim_first/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,376 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Apr 14 14:02:34 2021
+# Process ID: 16000
+# Current directory: d:/project/xxxx/my_subsystem_2/xxv_ethernet_0_ex/xxv_ethernet_0_ex.runs/impl_1
+# Command line: vivado.exe -log xxv_ethernet_0_exdes.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source xxv_ethernet_0_exdes.tcl -notrace
+# Log file: d:/project/xxxx/my_subsystem_2/xxv_ethernet_0_ex/xxv_ethernet_0_ex.runs/impl_1/xxv_ethernet_0_exdes.vdi
+# Journal file: d:/project/xxxx/my_subsystem_2/xxv_ethernet_0_ex/xxv_ethernet_0_ex.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source xxv_ethernet_0_exdes.tcl -notrace
+Command: link_design -top xxv_ethernet_0_exdes -part xcku040-ffva1156-2-e
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xcku040-ffva1156-2-e
+INFO: [Project 1-454] Reading design checkpoint 'd:/project/xxxx/my_subsystem_2/xxv_ethernet_0_ex/xxv_ethernet_0_ex.gen/sources_1/ip/xxv_ethernet_0/xxv_ethernet_0.dcp' for cell 'i_xxv_ethernet_0_core_support/DUT'
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.783 . Memory (MB): peak = 1300.871 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 811 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [d:/project/xxxx/my_subsystem_2/xxv_ethernet_0_ex/xxv_ethernet_0_ex.gen/sources_1/ip/xxv_ethernet_0_gt_3/synth/xxv_ethernet_0_gt_3.xdc] for cell 'i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_3/i_xxv_ethernet_0_gt_3/inst'
+Finished Parsing XDC File [d:/project/xxxx/my_subsystem_2/xxv_ethernet_0_ex/xxv_ethernet_0_ex.gen/sources_1/ip/xxv_ethernet_0_gt_3/synth/xxv_ethernet_0_gt_3.xdc] for cell 'i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_3/i_xxv_ethernet_0_gt_3/inst'
+Parsing XDC File [d:/project/xxxx/my_subsystem_2/xxv_ethernet_0_ex/xxv_ethernet_0_ex.gen/sources_1/ip/xxv_ethernet_0_gt_2/synth/xxv_ethernet_0_gt_2.xdc] for cell 'i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_2/i_xxv_ethernet_0_gt_2/inst'
+Finished Parsing XDC File [d:/project/xxxx/my_subsystem_2/xxv_ethernet_0_ex/xxv_ethernet_0_ex.gen/sources_1/ip/xxv_ethernet_0_gt_2/synth/xxv_ethernet_0_gt_2.xdc] for cell 'i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_2/i_xxv_ethernet_0_gt_2/inst'
+Parsing XDC File [d:/project/xxxx/my_subsystem_2/xxv_ethernet_0_ex/xxv_ethernet_0_ex.gen/sources_1/ip/xxv_ethernet_0_gt_1/synth/xxv_ethernet_0_gt_1.xdc] for cell 'i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_1/i_xxv_ethernet_0_gt_1/inst'
+Finished Parsing XDC File [d:/project/xxxx/my_subsystem_2/xxv_ethernet_0_ex/xxv_ethernet_0_ex.gen/sources_1/ip/xxv_ethernet_0_gt_1/synth/xxv_ethernet_0_gt_1.xdc] for cell 'i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_1/i_xxv_ethernet_0_gt_1/inst'
+Parsing XDC File [d:/project/xxxx/my_subsystem_2/xxv_ethernet_0_ex/xxv_ethernet_0_ex.gen/sources_1/ip/xxv_ethernet_0_gt_0/synth/xxv_ethernet_0_gt_0.xdc] for cell 'i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_0/i_xxv_ethernet_0_gt_0/inst'
+Finished Parsing XDC File [d:/project/xxxx/my_subsystem_2/xxv_ethernet_0_ex/xxv_ethernet_0_ex.gen/sources_1/ip/xxv_ethernet_0_gt_0/synth/xxv_ethernet_0_gt_0.xdc] for cell 'i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_0/i_xxv_ethernet_0_gt_0/inst'
+Parsing XDC File [d:/project/xxxx/my_subsystem_2/xxv_ethernet_0_ex/xxv_ethernet_0_ex.gen/sources_1/ip/xxv_ethernet_0/synth/xxv_ethernet_0_board.xdc] for cell 'i_xxv_ethernet_0_core_support/DUT/inst'
+Finished Parsing XDC File [d:/project/xxxx/my_subsystem_2/xxv_ethernet_0_ex/xxv_ethernet_0_ex.gen/sources_1/ip/xxv_ethernet_0/synth/xxv_ethernet_0_board.xdc] for cell 'i_xxv_ethernet_0_core_support/DUT/inst'
+Parsing XDC File [d:/project/xxxx/my_subsystem_2/xxv_ethernet_0_ex/xxv_ethernet_0_ex.gen/sources_1/ip/xxv_ethernet_0/synth/xxv_ethernet_0.xdc] for cell 'i_xxv_ethernet_0_core_support/DUT/inst'
+Finished Parsing XDC File [d:/project/xxxx/my_subsystem_2/xxv_ethernet_0_ex/xxv_ethernet_0_ex.gen/sources_1/ip/xxv_ethernet_0/synth/xxv_ethernet_0.xdc] for cell 'i_xxv_ethernet_0_core_support/DUT/inst'
+Parsing XDC File [d:/project/xxxx/my_subsystem_2/xxv_ethernet_0_ex/imports/xxv_ethernet_0_example_top.xdc]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_2/i_xxv_ethernet_0_gt_2/inst/gen_gtwizard_gthe3_top.xxv_ethernet_0_gt_2_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_channel_container[0].gen_enabled_channel.gthe3_channel_wrapper_inst/channel_inst/gthe3_channel_gen.gen_gthe3_channel_inst[0].GTHE3_CHANNEL_PRIM_INST Instance i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_2/i_xxv_ethernet_0_gt_2/inst/gen_gtwizard_gthe3_top.xxv_ethernet_0_gt_2_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_channel_container[0].gen_enabled_channel.gthe3_channel_wrapper_inst/channel_inst/gthe3_channel_gen.gen_gthe3_channel_inst[0].GTHE3_CHANNEL_PRIM_INST can not be placed in GTHE3_CHANNEL of site GTHE3_CHANNEL_X0Y13 because the bel is occupied by i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_1/i_xxv_ethernet_0_gt_1/inst/gen_gtwizard_gthe3_top.xxv_ethernet_0_gt_1_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_channel_container[0].gen_enabled_channel.gthe3_channel_wrapper_inst/channel_inst/gthe3_channel_gen.gen_gthe3_channel_inst[0].GTHE3_CHANNEL_PRIM_INST. This could be caused by bel constraint conflict [d:/project/xxxx/my_subsystem_2/xxv_ethernet_0_ex/imports/xxv_ethernet_0_example_top.xdc:79]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_3/i_xxv_ethernet_0_gt_3/inst/gen_gtwizard_gthe3_top.xxv_ethernet_0_gt_3_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_channel_container[0].gen_enabled_channel.gthe3_channel_wrapper_inst/channel_inst/gthe3_channel_gen.gen_gthe3_channel_inst[0].GTHE3_CHANNEL_PRIM_INST Instance i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_3/i_xxv_ethernet_0_gt_3/inst/gen_gtwizard_gthe3_top.xxv_ethernet_0_gt_3_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_channel_container[0].gen_enabled_channel.gthe3_channel_wrapper_inst/channel_inst/gthe3_channel_gen.gen_gthe3_channel_inst[0].GTHE3_CHANNEL_PRIM_INST can not be placed in GTHE3_CHANNEL of site GTHE3_CHANNEL_X0Y13 because the bel is occupied by i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_1/i_xxv_ethernet_0_gt_1/inst/gen_gtwizard_gthe3_top.xxv_ethernet_0_gt_1_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_channel_container[0].gen_enabled_channel.gthe3_channel_wrapper_inst/channel_inst/gthe3_channel_gen.gen_gthe3_channel_inst[0].GTHE3_CHANNEL_PRIM_INST. This could be caused by bel constraint conflict [d:/project/xxxx/my_subsystem_2/xxv_ethernet_0_ex/imports/xxv_ethernet_0_example_top.xdc:80]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter { name =~ */pktgen_enable_int_reg*}'. [d:/project/xxxx/my_subsystem_2/xxv_ethernet_0_ex/imports/xxv_ethernet_0_example_top.xdc:147]
+WARNING: [Vivado 12-508] No pins matched 'get_pins -of [get_cells -hier -filter { name =~ */pktgen_enable_int_reg*}] -filter { name =~ *C }'. [d:/project/xxxx/my_subsystem_2/xxv_ethernet_0_ex/imports/xxv_ethernet_0_example_top.xdc:147]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter { name =~ */*_sync_pkt_gen_enable/s_out_d2_cdc_to_reg*}'. [d:/project/xxxx/my_subsystem_2/xxv_ethernet_0_ex/imports/xxv_ethernet_0_example_top.xdc:147]
+WARNING: [Vivado 12-508] No pins matched 'get_pins -of [get_cells -hier -filter { name =~ */*_sync_pkt_gen_enable/s_out_d2_cdc_to_reg*}] -filter { name =~ *D }'. [d:/project/xxxx/my_subsystem_2/xxv_ethernet_0_ex/imports/xxv_ethernet_0_example_top.xdc:147]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter { name =~ */rx_errors_int_reg*}'. [d:/project/xxxx/my_subsystem_2/xxv_ethernet_0_ex/imports/xxv_ethernet_0_example_top.xdc:151]
+WARNING: [Vivado 12-508] No pins matched 'get_pins -of [get_cells -hier -filter { name =~ */rx_errors_int_reg*}] -filter { name =~ *C }'. [d:/project/xxxx/my_subsystem_2/xxv_ethernet_0_ex/imports/xxv_ethernet_0_example_top.xdc:151]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter { name =~ */s_out_d2_cdc_to_reg[*]*}'. [d:/project/xxxx/my_subsystem_2/xxv_ethernet_0_ex/imports/xxv_ethernet_0_example_top.xdc:151]
+WARNING: [Vivado 12-508] No pins matched 'get_pins -of [get_cells -hier -filter { name =~ */s_out_d2_cdc_to_reg[*]*}] -filter { name =~ *D }'. [d:/project/xxxx/my_subsystem_2/xxv_ethernet_0_ex/imports/xxv_ethernet_0_example_top.xdc:151]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter { name =~ */rx_packet_count_int_reg[*]*}'. [d:/project/xxxx/my_subsystem_2/xxv_ethernet_0_ex/imports/xxv_ethernet_0_example_top.xdc:155]
+WARNING: [Vivado 12-508] No pins matched 'get_pins -of [get_cells -hier -filter { name =~ */rx_packet_count_int_reg[*]*}] -filter { name =~ *C }'. [d:/project/xxxx/my_subsystem_2/xxv_ethernet_0_ex/imports/xxv_ethernet_0_example_top.xdc:155]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter { name =~ */s_out_d2_cdc_to_reg[*]*}'. [d:/project/xxxx/my_subsystem_2/xxv_ethernet_0_ex/imports/xxv_ethernet_0_example_top.xdc:155]
+WARNING: [Vivado 12-508] No pins matched 'get_pins -of [get_cells -hier -filter { name =~ */s_out_d2_cdc_to_reg[*]*}] -filter { name =~ *D }'. [d:/project/xxxx/my_subsystem_2/xxv_ethernet_0_ex/imports/xxv_ethernet_0_example_top.xdc:155]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter { name =~ */tx_sent_count_int_reg[*]*}'. [d:/project/xxxx/my_subsystem_2/xxv_ethernet_0_ex/imports/xxv_ethernet_0_example_top.xdc:157]
+WARNING: [Vivado 12-508] No pins matched 'get_pins -of [get_cells -hier -filter { name =~ */tx_sent_count_int_reg[*]*}] -filter { name =~ *C }'. [d:/project/xxxx/my_subsystem_2/xxv_ethernet_0_ex/imports/xxv_ethernet_0_example_top.xdc:157]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter { name =~ */s_out_d2_cdc_to_reg[*]*}'. [d:/project/xxxx/my_subsystem_2/xxv_ethernet_0_ex/imports/xxv_ethernet_0_example_top.xdc:157]
+WARNING: [Vivado 12-508] No pins matched 'get_pins -of [get_cells -hier -filter { name =~ */s_out_d2_cdc_to_reg[*]*}] -filter { name =~ *D }'. [d:/project/xxxx/my_subsystem_2/xxv_ethernet_0_ex/imports/xxv_ethernet_0_example_top.xdc:157]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter { name =~ */rx_total_bytes_int_reg*}'. [d:/project/xxxx/my_subsystem_2/xxv_ethernet_0_ex/imports/xxv_ethernet_0_example_top.xdc:159]
+WARNING: [Vivado 12-508] No pins matched 'get_pins -of [get_cells -hier -filter { name =~ */rx_total_bytes_int_reg*}] -filter { name =~ *C }'. [d:/project/xxxx/my_subsystem_2/xxv_ethernet_0_ex/imports/xxv_ethernet_0_example_top.xdc:159]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter { name =~ */tx_total_bytes_int_reg[*]*}'. [d:/project/xxxx/my_subsystem_2/xxv_ethernet_0_ex/imports/xxv_ethernet_0_example_top.xdc:161]
+WARNING: [Vivado 12-508] No pins matched 'get_pins -of [get_cells -hier -filter { name =~ */tx_total_bytes_int_reg[*]*}] -filter { name =~ *C }'. [d:/project/xxxx/my_subsystem_2/xxv_ethernet_0_ex/imports/xxv_ethernet_0_example_top.xdc:161]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter { name =~ */s_out_d2_cdc_to_reg[*]*}'. [d:/project/xxxx/my_subsystem_2/xxv_ethernet_0_ex/imports/xxv_ethernet_0_example_top.xdc:161]
+WARNING: [Vivado 12-508] No pins matched 'get_pins -of [get_cells -hier -filter { name =~ */s_out_d2_cdc_to_reg[*]*}] -filter { name =~ *D }'. [d:/project/xxxx/my_subsystem_2/xxv_ethernet_0_ex/imports/xxv_ethernet_0_example_top.xdc:161]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter { name =~ */tx_time_out_int_reg*}'. [d:/project/xxxx/my_subsystem_2/xxv_ethernet_0_ex/imports/xxv_ethernet_0_example_top.xdc:163]
+WARNING: [Vivado 12-508] No pins matched 'get_pins -of [get_cells -hier -filter { name =~ */tx_time_out_int_reg*}] -filter { name =~ *C }'. [d:/project/xxxx/my_subsystem_2/xxv_ethernet_0_ex/imports/xxv_ethernet_0_example_top.xdc:163]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter { name =~ */s_out_d2_cdc_to_reg[*]*}'. [d:/project/xxxx/my_subsystem_2/xxv_ethernet_0_ex/imports/xxv_ethernet_0_example_top.xdc:163]
+WARNING: [Vivado 12-508] No pins matched 'get_pins -of [get_cells -hier -filter { name =~ */s_out_d2_cdc_to_reg[*]*}] -filter { name =~ *D }'. [d:/project/xxxx/my_subsystem_2/xxv_ethernet_0_ex/imports/xxv_ethernet_0_example_top.xdc:163]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter { name =~ */tx_done_int_reg*}'. [d:/project/xxxx/my_subsystem_2/xxv_ethernet_0_ex/imports/xxv_ethernet_0_example_top.xdc:165]
+WARNING: [Vivado 12-508] No pins matched 'get_pins -of [get_cells -hier -filter { name =~ */tx_done_int_reg*}] -filter { name =~ *C }'. [d:/project/xxxx/my_subsystem_2/xxv_ethernet_0_ex/imports/xxv_ethernet_0_example_top.xdc:165]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter { name =~ */s_out_d2_cdc_to_reg[*]*}'. [d:/project/xxxx/my_subsystem_2/xxv_ethernet_0_ex/imports/xxv_ethernet_0_example_top.xdc:165]
+WARNING: [Vivado 12-508] No pins matched 'get_pins -of [get_cells -hier -filter { name =~ */s_out_d2_cdc_to_reg[*]*}] -filter { name =~ *D }'. [d:/project/xxxx/my_subsystem_2/xxv_ethernet_0_ex/imports/xxv_ethernet_0_example_top.xdc:165]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter { name =~ */rx_data_err_reg_reg*}'. [d:/project/xxxx/my_subsystem_2/xxv_ethernet_0_ex/imports/xxv_ethernet_0_example_top.xdc:168]
+WARNING: [Vivado 12-508] No pins matched 'get_pins -of [get_cells -hier -filter { name =~ */rx_data_err_reg_reg*}] -filter { name =~ *C }'. [d:/project/xxxx/my_subsystem_2/xxv_ethernet_0_ex/imports/xxv_ethernet_0_example_top.xdc:168]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter { name =~ */s_out_d2_cdc_to_reg[*]*}'. [d:/project/xxxx/my_subsystem_2/xxv_ethernet_0_ex/imports/xxv_ethernet_0_example_top.xdc:168]
+WARNING: [Vivado 12-508] No pins matched 'get_pins -of [get_cells -hier -filter { name =~ */s_out_d2_cdc_to_reg[*]*}] -filter { name =~ *D }'. [d:/project/xxxx/my_subsystem_2/xxv_ethernet_0_ex/imports/xxv_ethernet_0_example_top.xdc:168]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter { name =~ */mode_switch_reg*}'. [d:/project/xxxx/my_subsystem_2/xxv_ethernet_0_ex/imports/xxv_ethernet_0_example_top.xdc:170]
+WARNING: [Vivado 12-508] No pins matched 'get_pins -of [get_cells -hier -filter { name =~ */mode_switch_reg*}] -filter { name =~ *C }'. [d:/project/xxxx/my_subsystem_2/xxv_ethernet_0_ex/imports/xxv_ethernet_0_example_top.xdc:170]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter { name =~ */pipe_reg*}'. [d:/project/xxxx/my_subsystem_2/xxv_ethernet_0_ex/imports/xxv_ethernet_0_example_top.xdc:171]
+WARNING: [Vivado 12-508] No pins matched 'get_pins -of [get_cells -hier -filter { name =~ */pipe_reg*}] -filter { name =~ *C }'. [d:/project/xxxx/my_subsystem_2/xxv_ethernet_0_ex/imports/xxv_ethernet_0_example_top.xdc:171]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter { name =~ */i_pif_registers/ctl_rsfec_enable_r_reg*}'. [d:/project/xxxx/my_subsystem_2/xxv_ethernet_0_ex/imports/xxv_ethernet_0_example_top.xdc:180]
+WARNING: [Vivado 12-508] No pins matched 'get_pins -of [get_cells -hier -filter { name =~ */i_pif_registers/ctl_rsfec_enable_r_reg*}] -filter { name =~ *C }'. [d:/project/xxxx/my_subsystem_2/xxv_ethernet_0_ex/imports/xxv_ethernet_0_example_top.xdc:180]
+Finished Parsing XDC File [d:/project/xxxx/my_subsystem_2/xxv_ethernet_0_ex/imports/xxv_ethernet_0_example_top.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-1687] 56 scoped IP constraints or related sub-commands were skipped due to synthesis logic optimizations usually triggered by constant connectivity or unconnected output pins. To review the skipped constraints and messages, run the command 'set_param netlist.IPMsgFiltering false' before opening the design.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1418.375 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 394 instances were transformed.
+  IBUF => IBUF (IBUFCTRL, INBUF): 297 instances
+  IBUFDS => IBUFDS (DIFFINBUF, IBUFCTRL): 1 instance 
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 88 instances
+  RAM64X1S => RAM64X1S (RAMS64E): 8 instances
+
+9 Infos, 40 Warnings, 2 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1418.375 ; gain = 305.773
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xcku040'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xcku040'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1440.348 ; gain = 21.973
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-2] Deriving generated clocks
+Ending Cache Timing Information Task | Checksum: 1a04e1266
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1671.531 ; gain = 231.184
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 8 inverter(s) to 12 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 25b694e50
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1906.617 ; gain = 0.254
+INFO: [Opt 31-389] Phase Retarget created 1786 cells and removed 2018 cells
+INFO: [Opt 31-1021] In phase Retarget, 1 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 4 inverter(s) to 4 load pin(s).
+Phase 2 Constant propagation | Checksum: 21681d7bf
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1906.617 ; gain = 0.254
+INFO: [Opt 31-389] Phase Constant propagation created 644 cells and removed 1888 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 1842bd795
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1906.617 ; gain = 0.254
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 13388 cells
+INFO: [Opt 31-1021] In phase Sweep, 4 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 BUFG optimization
+INFO: [Opt 31-1077] Phase BUFG optimization inserted 0 global clock buffer(s) for CLOCK_LOW_FANOUT.
+Phase 4 BUFG optimization | Checksum: 1842bd795
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1906.617 ; gain = 0.254
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: 1842bd795
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1906.617 ; gain = 0.254
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 1842bd795
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1906.617 ; gain = 0.254
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |            1786  |            2018  |                                              1  |
+|  Constant propagation         |             644  |            1888  |                                              0  |
+|  Sweep                        |               0  |           13388  |                                              4  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.058 . Memory (MB): peak = 1906.617 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 1e5d728f3
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1906.617 ; gain = 0.254
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 16 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 16 WE to EN ports
+Number of BRAM Ports augmented: 16 newly gated: 16 Total Ports: 32
+Ending PowerOpt Patch Enables Task | Checksum: 1c0e60fd7
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.271 . Memory (MB): peak = 3348.449 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 1c0e60fd7
+
+Time (s): cpu = 00:00:49 ; elapsed = 00:00:44 . Memory (MB): peak = 3348.449 ; gain = 1441.832
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 1c0e60fd7
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 3348.449 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.058 . Memory (MB): peak = 3348.449 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 2229b1ded
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.058 . Memory (MB): peak = 3348.449 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+35 Infos, 40 Warnings, 2 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:01:07 ; elapsed = 00:01:01 . Memory (MB): peak = 3348.449 ; gain = 1930.074
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.073 . Memory (MB): peak = 3348.449 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'd:/project/xxxx/my_subsystem_2/xxv_ethernet_0_ex/xxv_ethernet_0_ex.runs/impl_1/xxv_ethernet_0_exdes_opt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 3348.449 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_drc -file xxv_ethernet_0_exdes_drc_opted.rpt -pb xxv_ethernet_0_exdes_drc_opted.pb -rpx xxv_ethernet_0_exdes_drc_opted.rpx
+Command: report_drc -file xxv_ethernet_0_exdes_drc_opted.rpt -pb xxv_ethernet_0_exdes_drc_opted.pb -rpx xxv_ethernet_0_exdes_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file d:/project/xxxx/my_subsystem_2/xxv_ethernet_0_ex/xxv_ethernet_0_ex.runs/impl_1/xxv_ethernet_0_exdes_drc_opted.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 3348.449 ; gain = 0.000
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xcku040'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xcku040'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.012 . Memory (MB): peak = 3348.449 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 1532093ce
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.062 . Memory (MB): peak = 3348.449 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 3348.449 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+ERROR: [Place 30-415] IO Placement failed due to overutilization. This design contains 612 I/O ports
+ while the target  device: xcku040 package: ffva1156, contains only 600 available user I/O. The target device has 622 usable I/O pins of which 22 are already occupied by user-locked I/Os.
+ To rectify this issue:
+ 1. Ensure you are targeting the correct device and package.  Select a larger device or different package if necessary.
+ 2. Check the top-level ports of the design to ensure the correct number of ports are specified.
+ 3. Consider design changes to reduce the number of I/Os necessary.
+ERROR: [Place 30-68] Instance axi_lite_clocking_i/s_axi_aclk_bufg0 (BUFGCE) is not placed
+ERROR: [Place 30-68] Instance axi_lite_clocking_i/tx_mmcm (MMCME3_ADV) is not placed
+ERROR: [Place 30-68] Instance i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_0/i_xxv_ethernet_0_core_gtwiz_userclk_rx_inst/gen_gtwiz_userclk_rx_main.bufg_gt_usrclk2_inst (BUFG_GT) is not placed
+ERROR: [Place 30-68] Instance i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_0/i_xxv_ethernet_0_core_gtwiz_userclk_rx_inst/gen_gtwiz_userclk_rx_main.bufg_gt_usrclk_inst (BUFG_GT) is not placed
+ERROR: [Place 30-68] Instance i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_0/i_xxv_ethernet_0_core_gtwiz_userclk_tx_inst/gen_gtwiz_userclk_tx_main.bufg_gt_usrclk2_inst (BUFG_GT) is not placed
+ERROR: [Place 30-68] Instance i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_0/i_xxv_ethernet_0_core_gtwiz_userclk_tx_inst/gen_gtwiz_userclk_tx_main.bufg_gt_usrclk_inst (BUFG_GT) is not placed
+ERROR: [Place 30-68] Instance i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_1/i_xxv_ethernet_0_core_gtwiz_userclk_rx_inst/gen_gtwiz_userclk_rx_main.bufg_gt_usrclk2_inst (BUFG_GT) is not placed
+ERROR: [Place 30-68] Instance i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_1/i_xxv_ethernet_0_core_gtwiz_userclk_rx_inst/gen_gtwiz_userclk_rx_main.bufg_gt_usrclk_inst (BUFG_GT) is not placed
+ERROR: [Place 30-68] Instance i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_1/i_xxv_ethernet_0_core_gtwiz_userclk_tx_inst/gen_gtwiz_userclk_tx_main.bufg_gt_usrclk2_inst (BUFG_GT) is not placed
+ERROR: [Place 30-68] Instance i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_1/i_xxv_ethernet_0_core_gtwiz_userclk_tx_inst/gen_gtwiz_userclk_tx_main.bufg_gt_usrclk_inst (BUFG_GT) is not placed
+ERROR: [Place 30-68] Instance i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_2/i_xxv_ethernet_0_core_gtwiz_userclk_rx_inst/gen_gtwiz_userclk_rx_main.bufg_gt_usrclk2_inst (BUFG_GT) is not placed
+ERROR: [Place 30-68] Instance i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_2/i_xxv_ethernet_0_core_gtwiz_userclk_rx_inst/gen_gtwiz_userclk_rx_main.bufg_gt_usrclk_inst (BUFG_GT) is not placed
+ERROR: [Place 30-68] Instance i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_2/i_xxv_ethernet_0_core_gtwiz_userclk_tx_inst/gen_gtwiz_userclk_tx_main.bufg_gt_usrclk2_inst (BUFG_GT) is not placed
+ERROR: [Place 30-68] Instance i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_2/i_xxv_ethernet_0_core_gtwiz_userclk_tx_inst/gen_gtwiz_userclk_tx_main.bufg_gt_usrclk_inst (BUFG_GT) is not placed
+ERROR: [Place 30-68] Instance i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_3/i_xxv_ethernet_0_core_gtwiz_userclk_rx_inst/gen_gtwiz_userclk_rx_main.bufg_gt_usrclk2_inst (BUFG_GT) is not placed
+ERROR: [Place 30-68] Instance i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_3/i_xxv_ethernet_0_core_gtwiz_userclk_rx_inst/gen_gtwiz_userclk_rx_main.bufg_gt_usrclk_inst (BUFG_GT) is not placed
+ERROR: [Place 30-68] Instance i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_3/i_xxv_ethernet_0_core_gtwiz_userclk_tx_inst/gen_gtwiz_userclk_tx_main.bufg_gt_usrclk2_inst (BUFG_GT) is not placed
+ERROR: [Place 30-68] Instance i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_3/i_xxv_ethernet_0_core_gtwiz_userclk_tx_inst/gen_gtwiz_userclk_tx_main.bufg_gt_usrclk_inst (BUFG_GT) is not placed
+ERROR: [Place 30-68] Instance i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_sharedlogic_wrapper/i_xxv_ethernet_0_common_wrapper/xxv_ethernet_0_gt_gthe3_common_wrapper_i/common_inst/gthe3_common_gen.GTHE3_COMMON_PRIM_INST (GTHE3_COMMON) is not placed
+ERROR: [Place 30-68] Instance rx_axis_tdata_design_0_OBUF[0]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance rx_axis_tdata_design_0_OBUF[10]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance rx_axis_tdata_design_0_OBUF[11]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance rx_axis_tdata_design_0_OBUF[12]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance rx_axis_tdata_design_0_OBUF[13]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance rx_axis_tdata_design_0_OBUF[14]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance rx_axis_tdata_design_0_OBUF[15]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance rx_axis_tdata_design_0_OBUF[16]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance rx_axis_tdata_design_0_OBUF[17]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance rx_axis_tdata_design_0_OBUF[18]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance rx_axis_tdata_design_0_OBUF[19]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance rx_axis_tdata_design_0_OBUF[1]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance rx_axis_tdata_design_0_OBUF[20]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance rx_axis_tdata_design_0_OBUF[21]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance rx_axis_tdata_design_0_OBUF[22]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance rx_axis_tdata_design_0_OBUF[23]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance rx_axis_tdata_design_0_OBUF[24]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance rx_axis_tdata_design_0_OBUF[25]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance rx_axis_tdata_design_0_OBUF[26]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance rx_axis_tdata_design_0_OBUF[27]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance rx_axis_tdata_design_0_OBUF[28]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance rx_axis_tdata_design_0_OBUF[29]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance rx_axis_tdata_design_0_OBUF[2]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance rx_axis_tdata_design_0_OBUF[30]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance rx_axis_tdata_design_0_OBUF[31]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance rx_axis_tdata_design_0_OBUF[32]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance rx_axis_tdata_design_0_OBUF[33]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance rx_axis_tdata_design_0_OBUF[34]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance rx_axis_tdata_design_0_OBUF[35]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance rx_axis_tdata_design_0_OBUF[36]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance rx_axis_tdata_design_0_OBUF[37]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance rx_axis_tdata_design_0_OBUF[38]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance rx_axis_tdata_design_0_OBUF[39]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance rx_axis_tdata_design_0_OBUF[3]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance rx_axis_tdata_design_0_OBUF[40]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance rx_axis_tdata_design_0_OBUF[41]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance rx_axis_tdata_design_0_OBUF[42]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance rx_axis_tdata_design_0_OBUF[43]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance rx_axis_tdata_design_0_OBUF[44]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance rx_axis_tdata_design_0_OBUF[45]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance rx_axis_tdata_design_0_OBUF[46]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance rx_axis_tdata_design_0_OBUF[47]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance rx_axis_tdata_design_0_OBUF[48]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance rx_axis_tdata_design_0_OBUF[49]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance rx_axis_tdata_design_0_OBUF[4]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance rx_axis_tdata_design_0_OBUF[50]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance rx_axis_tdata_design_0_OBUF[51]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance rx_axis_tdata_design_0_OBUF[52]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance rx_axis_tdata_design_0_OBUF[53]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance rx_axis_tdata_design_0_OBUF[54]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance rx_axis_tdata_design_0_OBUF[55]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance rx_axis_tdata_design_0_OBUF[56]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance rx_axis_tdata_design_0_OBUF[57]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance rx_axis_tdata_design_0_OBUF[58]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance rx_axis_tdata_design_0_OBUF[59]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance rx_axis_tdata_design_0_OBUF[5]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance rx_axis_tdata_design_0_OBUF[60]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance rx_axis_tdata_design_0_OBUF[61]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance rx_axis_tdata_design_0_OBUF[62]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance rx_axis_tdata_design_0_OBUF[63]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance rx_axis_tdata_design_0_OBUF[6]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance rx_axis_tdata_design_0_OBUF[7]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance rx_axis_tdata_design_0_OBUF[8]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance rx_axis_tdata_design_0_OBUF[9]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance rx_axis_tdata_design_1_OBUF[0]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance rx_axis_tdata_design_1_OBUF[10]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance rx_axis_tdata_design_1_OBUF[11]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance rx_axis_tdata_design_1_OBUF[12]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance rx_axis_tdata_design_1_OBUF[13]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance rx_axis_tdata_design_1_OBUF[14]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance rx_axis_tdata_design_1_OBUF[15]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance rx_axis_tdata_design_1_OBUF[16]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance rx_axis_tdata_design_1_OBUF[17]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance rx_axis_tdata_design_1_OBUF[18]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance rx_axis_tdata_design_1_OBUF[19]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance rx_axis_tdata_design_1_OBUF[1]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance rx_axis_tdata_design_1_OBUF[20]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance rx_axis_tdata_design_1_OBUF[21]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance rx_axis_tdata_design_1_OBUF[22]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance rx_axis_tdata_design_1_OBUF[23]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance rx_axis_tdata_design_1_OBUF[24]_inst (OBUF) is not placed
+INFO: [Common 17-14] Message 'Place 30-68' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 147b8f83b
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 3348.449 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 147b8f83b
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 3348.449 ; gain = 0.000
+ERROR: [Place 30-99] Placer failed with error: 'IO Clock Placer failed'
+Please review all ERROR, CRITICAL WARNING, and WARNING messages during placement to understand the cause for failure.
+Ending Placer Task | Checksum: 12edfc064
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 3348.449 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+52 Infos, 40 Warnings, 2 Critical Warnings and 103 Errors encountered.
+place_design failed
+ERROR: [Common 17-69] Command failed: Placer could not place all instances
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 14 14:04:35 2021...

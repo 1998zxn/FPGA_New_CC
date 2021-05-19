@@ -1,0 +1,19 @@
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado_2020.2/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto d902e15df5cb4b228bc2d228a32de696 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot sim_fifo_behav xil_defaultlib.sim_fifo xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'rd_axis_tready' [D:/project/xxxx/my_subsystem_2/New_NIC1_use_3_ports/xxv_ethernet_0_ex.srcs/sim_2/new/sim_fifo.v:56]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'fifo_status' [D:/project/xxxx/my_subsystem_2/New_NIC1_use_3_ports/xxv_ethernet_0_ex.srcs/sim_2/new/sim_fifo.v:57]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.axi_10g_ethernet_0_sync_reset
+Compiling module xil_defaultlib.axi_10g_ethernet_0_sync_block
+Compiling module xil_defaultlib.axi_10g_ethernet_0_fifo_ram_defa...
+Compiling module xil_defaultlib.axi_10g_ethernet_0_axi_fifo_defa...
+Compiling module xil_defaultlib.sim_fifo
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sim_fifo_behav
