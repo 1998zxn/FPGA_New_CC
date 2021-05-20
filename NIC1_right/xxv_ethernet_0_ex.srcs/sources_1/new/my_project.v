@@ -163,7 +163,7 @@ xxv_ethernet_0_exdes my_xxv_ethernet_0_exdes
   .tx_axis_tkeep_design_0 (tx_axis_tkeep_0),
   
   .tx_axis_tready_design_1 (tx_axis_tready_1),
-  .tx_axis_tvalid_design_1 (tx_axis_tvalid_1),
+  .tx_axis_tvalid_design_1 (0),
   .tx_axis_tdata_design_1 (tx_axis_tdata_1),
   .tx_axis_tlast_design_1 (tx_axis_tlast_1),
   .tx_axis_tkeep_design_1 (tx_axis_tkeep_1),
@@ -400,7 +400,7 @@ begin
   if (user_tx_reset_2)
     cnt_send_number_2 <= 48'd0 ;
   else 
-    if(tx_axis_tlast_2 == 1)
+    if(tx_axis_tlast_2 == 1 && cnt_send_number_2 < 48'h0000FFFFFFFFFFFF)
       cnt_send_number_2 <= cnt_send_number_2 + 1;
     else
       cnt_send_number_2 <= cnt_send_number_2;
@@ -411,7 +411,7 @@ begin
   if (user_tx_reset_2)
     start_send_data_2 <= 0 ;
   else 
-    if(wait_cnt_2 < 31'hFFFFFFFF)
+    if(wait_cnt_2 < 31'hFFFFFFFF && cnt_send_number_2 == 48'h0000FFFFFFFFFFFF)
       start_send_data_2 <= 0;
     else
       start_send_data_2 <= 1;

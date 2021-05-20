@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='D:/project/xxxx/New_algorithm/NIC1_right/xxv_ethernet_0_ex.runs/impl_3'
+HD_PWD='D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.runs/impl_3'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

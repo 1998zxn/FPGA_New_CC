@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Mon May 10 16:16:23 2021
+| Date         : Thu May 20 16:39:57 2021
 | Host         : zxn running 64-bit major release  (build 9200)
 | Command      : report_methodology -file my_project_methodology_drc_routed.rpt -pb my_project_methodology_drc_routed.pb -rpx my_project_methodology_drc_routed.rpx
 | Design       : my_project
@@ -20,16 +20,16 @@ Table of Contents
 1. REPORT SUMMARY
 -----------------
             Netlist: netlist
-          Floorplan: checkpoint_my_project
+          Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 763
+             Violations found: 762
 +-----------+------------------+---------------------------------------+------------+
 | Rule      | Severity         | Description                           | Violations |
 +-----------+------------------+---------------------------------------+------------+
 | TIMING-7  | Critical Warning | No common node between related clocks | 1          |
 | TIMING-17 | Critical Warning | Non-clocked sequential cell           | 744        |
-| AVAL-324  | Warning          | Hard_blocks_needs_LOCs                | 2          |
+| AVAL-324  | Warning          | Hard_blocks_needs_LOCs                | 1          |
 | LUTAR-1   | Warning          | LUT drives async reset alert          | 13         |
 | SYNTH-13  | Warning          | combinational multiplier              | 1          |
 | TIMING-9  | Warning          | Unknown CDC Logic                     | 1          |
@@ -3766,11 +3766,6 @@ Related violations: <none>
 AVAL-324#1 Warning
 Hard_blocks_needs_LOCs  
 The hard block GTHE3_COMMON cell my_xxv_ethernet_0_exdes/i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_sharedlogic_wrapper/i_xxv_ethernet_0_common_wrapper/xxv_ethernet_0_gt_gthe3_common_wrapper_i/common_inst/gthe3_common_gen.GTHE3_COMMON_PRIM_INST is missing a valid LOC constraint for placement assignment, normally supplied by IP generation or manually assigned using the LOC property. Unguided placement of this block may cause problems in routing. Please set a valid LOC for this block to avoid these problem.
-Related violations: <none>
-
-AVAL-324#2 Warning
-Hard_blocks_needs_LOCs  
-The hard block IBUFDS_GTE3 cell my_xxv_ethernet_0_exdes/i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_sharedlogic_wrapper/i_xxv_ethernet_0_clocking_wrapper/IBUFDS_GTE3_GTREFCLK0_INST is missing a valid LOC constraint for placement assignment, normally supplied by IP generation or manually assigned using the LOC property. Unguided placement of this block may cause problems in routing. Please set a valid LOC for this block to avoid these problem.
 Related violations: <none>
 
 LUTAR-1#1 Warning
