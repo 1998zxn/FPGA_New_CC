@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Thu May 20 16:23:32 2021
+| Date         : Thu May 20 17:26:02 2021
 | Host         : zxn running 64-bit major release  (build 9200)
 | Command      : report_utilization -file my_project_utilization_synth.rpt -pb my_project_utilization_synth.pb
 | Design       : my_project
@@ -31,8 +31,8 @@ Table of Contents
 +-------------------------+------+-------+-----------+-------+
 |        Site Type        | Used | Fixed | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
-| CLB LUTs*               | 3601 |     0 |    242400 |  1.49 |
-|   LUT as Logic          | 3601 |     0 |    242400 |  1.49 |
+| CLB LUTs*               | 3596 |     0 |    242400 |  1.48 |
+|   LUT as Logic          | 3596 |     0 |    242400 |  1.48 |
 |   LUT as Memory         |    0 |     0 |    112800 |  0.00 |
 | CLB Registers           | 6312 |     0 |    484800 |  1.30 |
 |   Register as Flip Flop | 6312 |     0 |    484800 |  1.30 |
@@ -158,8 +158,8 @@ Table of Contents
 | FDCE          | 1803 |            Register |
 | LUT6          | 1015 |                 CLB |
 | LUT3          |  801 |                 CLB |
-| LUT5          |  724 |                 CLB |
-| LUT4          |  651 |                 CLB |
+| LUT5          |  726 |                 CLB |
+| LUT4          |  644 |                 CLB |
 | LUT2          |  627 |                 CLB |
 | CARRY8        |  402 |                 CLB |
 | FDPE          |  363 |            Register |

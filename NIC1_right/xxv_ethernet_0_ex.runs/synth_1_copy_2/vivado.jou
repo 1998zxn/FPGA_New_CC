@@ -2,8 +2,8 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Thu May 20 16:20:57 2021
-# Process ID: 10920
+# Start of session at: Thu May 20 17:24:03 2021
+# Process ID: 11164
 # Current directory: D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.runs/synth_1_copy_2
 # Command line: vivado.exe -log my_project.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source my_project.tcl
 # Log file: D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.runs/synth_1_copy_2/my_project.vds
