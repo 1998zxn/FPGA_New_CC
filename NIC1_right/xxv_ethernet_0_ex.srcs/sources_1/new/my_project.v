@@ -163,7 +163,7 @@ xxv_ethernet_0_exdes my_xxv_ethernet_0_exdes
   .tx_axis_tkeep_design_0 (tx_axis_tkeep_0),
   
   .tx_axis_tready_design_1 (tx_axis_tready_1),
-  .tx_axis_tvalid_design_1 (0),
+  .tx_axis_tvalid_design_1 (tx_axis_tvalid_1),
   .tx_axis_tdata_design_1 (tx_axis_tdata_1),
   .tx_axis_tlast_design_1 (tx_axis_tlast_1),
   .tx_axis_tkeep_design_1 (tx_axis_tkeep_1),
@@ -268,7 +268,8 @@ Ports_for_CC inst_Ports_for_CC_port_1(
 .user_tx_reset_0(user_tx_reset_1),
 .user_rx_reset_0(user_rx_reset_1),
 
-.start_wait(start_send_data_1),
+//.start_wait(start_send_data_1),
+.start_wait(0),
 .packet_frame_index(packet_frame_index_1),
 .Ports_for_CC_tdata(tx_axis_tdata_1),
 .Ports_for_CC_tkeep(tx_axis_tkeep_1),
@@ -400,7 +401,7 @@ begin
   if (user_tx_reset_2)
     cnt_send_number_2 <= 48'd0 ;
   else 
-    if(tx_axis_tlast_2 == 1 && cnt_send_number_2 < 48'h0000FFFFFFFFFFFF)
+    if(tx_axis_tlast_2 == 1 && cnt_send_number_2 < 48'h0000FFFFFFFF)
       cnt_send_number_2 <= cnt_send_number_2 + 1;
     else
       cnt_send_number_2 <= cnt_send_number_2;
@@ -411,7 +412,7 @@ begin
   if (user_tx_reset_2)
     start_send_data_2 <= 0 ;
   else 
-    if(wait_cnt_2 < 31'hFFFFFFFF || cnt_send_number_2 > 48'h00000000FFFFFFFF)
+    if(wait_cnt_2 < 31'hFFFFFFFF || cnt_send_number_2 > 48'h0000000FFFFF)
       start_send_data_2 <= 0;
     else
       start_send_data_2 <= 1;

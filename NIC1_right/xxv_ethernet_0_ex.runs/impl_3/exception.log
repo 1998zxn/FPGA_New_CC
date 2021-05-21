@@ -1,0 +1,4 @@
+ERROR: Exception caught trying to open file D:\project\FPGA_New_CC\NIC1_right\xxv_ethernet_0_ex.runs\impl_3/runme.log
+	Exception name: Error
+	Exception error code: 70
+	Exception message: 没有权限
