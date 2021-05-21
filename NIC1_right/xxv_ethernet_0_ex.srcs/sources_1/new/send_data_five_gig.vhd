@@ -51,8 +51,8 @@ architecture rtl of send_data_five_gig is
   signal SM_nxt : SM_T := SM_IDLE_ST;
   signal beat_cnt       : integer range 0 to 5000 := 0;
   signal beat_cnt_nxt     : integer range 0 to 5000 := 0;
-  signal cnt_T_pai       : integer range 0 to 7000 := 0;
-  signal cnt_T_pai_nxt     : integer range 0 to 7000 := 0;
+  signal cnt_T_pai       : integer range 0 to 15000 := 0;
+  signal cnt_T_pai_nxt     : integer range 0 to 15000 := 0;
   signal tx_axis_tready_this_code : std_logic := '0';
   signal packet_frame_index_this_code : std_logic_vector(47 downto 0) := X"FFFFFFFFFFF0";
   signal start_this_code : std_logic := '0';
@@ -198,7 +198,7 @@ begin
         tx_axis_tdata <= tx_axis_tdata_1;
         tx_axis_tvalid <= '1';
       when SM_WAIT_1_ST =>
-        if( cnt_T_pai = 6000 ) then
+        if( cnt_T_pai = 12000 ) then
         --if( cnt_T_pai = 128 ) then
           SM_nxt <= SM_IDLE_ST;
         end if;
