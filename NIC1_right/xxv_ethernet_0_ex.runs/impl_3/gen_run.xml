@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_3" LaunchPart="xcku040-ffva1156-2-e" LaunchTime="1621837248">
-  <File Type="OPT-HWDEF" Name="my_project.hwdef"/>
-  <File Type="ROUTE-BUS-SKEW" Name="my_project_bus_skew_routed.rpt"/>
-  <File Type="PA-DCP" Name="my_project.dcp"/>
+<GenRun Id="impl_3" LaunchPart="xcku040-ffva1156-2-e" LaunchTime="1621839656">
   <File Type="BITSTR-BMM" Name="my_project_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="my_project_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="my_project_timing_summary_init.rpt"/>
@@ -13,6 +10,7 @@
   <File Type="ROUTE-PWR-SUM" Name="my_project_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="my_project_reports.tcl"/>
   <File Type="OPT-DRC" Name="my_project_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="my_project.hwdef"/>
   <File Type="PWROPT-DCP" Name="my_project_pwropt.dcp"/>
   <File Type="PWROPT-DRC" Name="my_project_drc_pwropted.rpt"/>
   <File Type="PWROPT-TIMING" Name="my_project_timing_summary_pwropted.rpt"/>
@@ -50,6 +48,7 @@
   <File Type="ROUTE-TIMING-RPX" Name="my_project_timing_summary_routed.rpx"/>
   <File Type="ROUTE-SIMILARITY" Name="my_project_incremental_reuse_routed.rpt"/>
   <File Type="ROUTE-CLK" Name="my_project_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="my_project_bus_skew_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="my_project_bus_skew_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="my_project_bus_skew_routed.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="my_project_postroute_physopt.dcp"/>
