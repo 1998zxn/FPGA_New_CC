@@ -44,6 +44,7 @@ module my_project
     input             SYS_CLK_P,
     input             SYS_CLK_N
 );
+wire receive_data_packet = 1'd0;
 
 (*mark_debug = "true"*) wire tx_clk_out_0;//tx_clk
 (*mark_debug = "true"*) wire rx_core_clk_0;//rx_clk
@@ -230,7 +231,7 @@ Ports1 inst_Ports0(
 .user_tx_reset_0(user_tx_reset_0),
 .user_rx_reset_0(user_rx_reset_0),
 .packet_frame_index(packet_frame_index_0),
-
+.receive_data_packet(receive_data_packet),
 
 .Ports1_tdata(tx_axis_tdata_0),
 .Ports1_tkeep(tx_axis_tkeep_0),
@@ -367,7 +368,7 @@ begin
   if (user_tx_reset_1)
     start_send_data_1 <= 0 ;
   else 
-    if(wait_cnt_1 < 32'hFFFFFFFF)
+    if(wait_cnt_1 < 32'hFFFFFFFF || receive_data_packet == 0)
       start_send_data_1 <= 0;
     else
       start_send_data_1 <= 1;
@@ -412,7 +413,7 @@ begin
   if (user_tx_reset_2)
     start_send_data_2 <= 0 ;
   else 
-    if(wait_cnt_2 < 31'hFFFFFFFF || cnt_send_number_2 > 48'h0000000FFFFF)
+    if(wait_cnt_2 < 31'hFFFFFFFF || cnt_send_number_2 > 48'h000000FFFFFF)
       start_send_data_2 <= 0;
     else
       start_send_data_2 <= 1;

@@ -72,6 +72,7 @@ Port (
     user_tx_reset_0 : in  std_logic;
     user_rx_reset_0 : in  std_logic;
     packet_frame_index : in std_logic_vector(47 downto 0);
+    receive_data_packet : out  std_logic;
     Ports1_tdata : out std_logic_vector(63 downto 0);
     Ports1_tkeep : out std_logic_vector(7 downto 0);
     Ports1_tlast : out  std_logic;
@@ -188,12 +189,17 @@ architecture Behavioral of Ports1 is
     signal MAC_fifo_rd_en            : std_logic := '0';
     signal Ports_fifo_rd_en            : std_logic := '0';
     signal start_ack            : std_logic := '0';
+    signal help_for_receive_data_packet : std_logic := '0';
+    signal help_for_receive_data_packet_nxt : std_logic := '0';
     attribute mark_debug   : string; 
     attribute mark_debug of start_ack    : signal is "true";
     attribute mark_debug of RTT_fifo_wr_en    : signal is "true";
     attribute mark_debug of RTT    : signal is "true";
     attribute mark_debug of RTT_fifo_rd_en    : signal is "true";
     attribute mark_debug of RTT_after_fifo    : signal is "true";
+    attribute mark_debug of RTT_fifo_empty    : signal is "true";
+    attribute mark_debug of help_for_receive_data_packet    : signal is "true";
+    attribute mark_debug of help_for_receive_data_packet_nxt    : signal is "true";
 begin
     inst_RTT_Measurement : Receive_Timestamp
     port map (  
@@ -247,7 +253,9 @@ begin
 --        wr_clk => rx_core_clk_0,
 --        rd_clk => tx_clk_out_0
 --    );
-    start_ack <= NOT RTT_fifo_empty;    
+--    start_ack <= NOT RTT_fifo_empty;    
+--    help_for_receive_data_packet <= (help_for_receive_data_packet XOR RTT_fifo_empty) OR help_for_receive_data_packet;
+--    receive_data_packet <= help_for_receive_data_packet;    
     --start_ack <= '1';   
     inst_send_ack : send_ack
     port map (  
@@ -266,5 +274,23 @@ begin
         MAC => MAC_after_fifo,
         RTT => RTT_after_fifo
     );
-
+  
+  process(user_tx_reset_0, tx_clk_out_0)
+  begin
+    if( user_tx_reset_0 = '1') then
+      help_for_receive_data_packet <= '0';
+    elsif( rising_edge(tx_clk_out_0) ) then
+      help_for_receive_data_packet <= help_for_receive_data_packet_nxt;
+      receive_data_packet <= help_for_receive_data_packet;    
+      start_ack <= NOT RTT_fifo_empty;
+    end if;
+  end process;
+  process(user_tx_reset_0, tx_clk_out_0)
+  begin
+    if( user_tx_reset_0 = '1') then
+      help_for_receive_data_packet_nxt <= '0';
+    elsif( rising_edge(tx_clk_out_0) ) then
+      help_for_receive_data_packet_nxt <= (help_for_receive_data_packet XOR RTT_fifo_empty) OR help_for_receive_data_packet;
+    end if;
+  end process;
 end Behavioral;
