@@ -44,7 +44,7 @@ module my_project
     input             SYS_CLK_P,
     input             SYS_CLK_N
 );
-wire receive_data_packet = 1'd0;
+(*mark_debug = "true"*) wire receive_data_packet;
 
 (*mark_debug = "true"*) wire tx_clk_out_0;//tx_clk
 (*mark_debug = "true"*) wire rx_core_clk_0;//rx_clk
@@ -269,8 +269,8 @@ Ports_for_CC inst_Ports_for_CC_port_1(
 .user_tx_reset_0(user_tx_reset_1),
 .user_rx_reset_0(user_rx_reset_1),
 
-//.start_wait(start_send_data_1),
-.start_wait(0),
+.start_wait(start_send_data_1),
+//.start_wait(0),
 .packet_frame_index(packet_frame_index_1),
 .Ports_for_CC_tdata(tx_axis_tdata_1),
 .Ports_for_CC_tkeep(tx_axis_tkeep_1),
@@ -402,7 +402,7 @@ begin
   if (user_tx_reset_2)
     cnt_send_number_2 <= 48'd0 ;
   else 
-    if(tx_axis_tlast_2 == 1 && cnt_send_number_2 < 48'h0000FFFFFFFF)
+    if(tx_axis_tlast_2 == 1)
       cnt_send_number_2 <= cnt_send_number_2 + 1;
     else
       cnt_send_number_2 <= cnt_send_number_2;
@@ -413,7 +413,7 @@ begin
   if (user_tx_reset_2)
     start_send_data_2 <= 0 ;
   else 
-    if(wait_cnt_2 < 31'hFFFFFFFF || cnt_send_number_2 > 48'h000000FFFFFF)
+    if(wait_cnt_2 < 31'hFFFFFFFF)
       start_send_data_2 <= 0;
     else
       start_send_data_2 <= 1;

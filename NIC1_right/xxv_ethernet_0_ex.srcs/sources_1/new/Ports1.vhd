@@ -281,7 +281,7 @@ begin
       help_for_receive_data_packet <= '0';
     elsif( rising_edge(tx_clk_out_0) ) then
       help_for_receive_data_packet <= help_for_receive_data_packet_nxt;
-      receive_data_packet <= help_for_receive_data_packet;    
+      receive_data_packet <= help_for_receive_data_packet_nxt;    
       start_ack <= NOT RTT_fifo_empty;
     end if;
   end process;
