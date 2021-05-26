@@ -260,7 +260,7 @@ bao_cnt_debug inst_post_0_send(
 .reset(user_tx_reset_0),
 .my_mac(64'hFDFE02FAFBFCFDFE),
 .rx_axis_fifo_tdata(tx_axis_tdata_0),
-.rx_axis_fifo_tkeep(tx_axis_tdkeep_0),
+.rx_axis_fifo_tkeep(tx_axis_tkeep_0),
 .rx_axis_fifo_tvalid(tx_axis_tvalid_0),
 .rx_axis_fifo_tlast(tx_axis_tlast_0)
 );  
@@ -402,7 +402,7 @@ begin
   if (user_tx_reset_1)
     start_send_data_1 <= 0 ;
   else 
-    if(wait_cnt_1 < 32'hFFFFFFFF || receive_data_packet == 0)
+    if(wait_cnt_1 < 32'h000000FF || receive_data_packet == 0)
       start_send_data_1 <= 0;
     else
       start_send_data_1 <= 1;
@@ -454,7 +454,7 @@ begin
   if (user_rx_reset_2)
     cnt_receive_from_01_number_2 <= 48'd0 ;
   else 
-    if(rx_axis_tdata_2 == 64'hFDFE03FAFBFCFDFE && tx_axis_tvalid_2 == 1)
+    if(rx_axis_tdata_2 == 64'hFDFE03FAFBFCFDFE && rx_axis_tvalid_2 == 1)
       cnt_receive_from_01_number_2 <= cnt_receive_from_01_number_2 + 1;
     else
       cnt_receive_from_01_number_2 <= cnt_receive_from_01_number_2;
@@ -464,7 +464,7 @@ begin
   if (user_tx_reset_2)
     start_send_data_2 <= 0 ;
   else 
-    if(wait_cnt_2 < 31'hFFFFFFFF || cnt_send_number_2 > 48'h000000FFFFFF)
+    if(wait_cnt_2 < 31'h000000FF || cnt_send_number_2 > 48'h0000000000FF)
       start_send_data_2 <= 0;
     else
       start_send_data_2 <= 1;

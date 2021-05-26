@@ -4,8 +4,8 @@ Running: D:/Vivado_2020.2/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto d90
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wea' [D:/project/xxxx/New_algorithm/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/CWnd_Rate_Computation_verilog.v:135]
-WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 8 for port 'rx_axis_fifo_tkeep' [D:/project/xxxx/New_algorithm/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:260]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'start_wait' [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:275]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wea' [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/CWnd_Rate_Computation_verilog.v:135]
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
