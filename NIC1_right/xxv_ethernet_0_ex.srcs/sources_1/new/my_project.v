@@ -113,6 +113,7 @@ module my_project
 (*mark_debug = "true"*) reg  [47:0] packet_frame_index_0 = 48'd0;
 (*mark_debug = "true"*) reg  [31:0] wait_cnt_0 = 32'd0;
 (*mark_debug = "true"*) reg  [47:0] cnt_send_number_0 = 48'd0;
+(*mark_debug = "true"*) reg  [47:0] cnt_send_to_03_number_0 = 48'd0;
 (*mark_debug = "true"*) reg  start_send_data_0 = 1'd0;
 (*mark_debug = "true"*) reg  [47:0] cnt_receive_number_0 = 48'd0;
 
@@ -127,6 +128,7 @@ module my_project
 (*mark_debug = "true"*) reg  [47:0] cnt_send_number_2 = 48'd0;
 (*mark_debug = "true"*) reg  start_send_data_2 = 1'd0;
 (*mark_debug = "true"*) reg  [47:0] cnt_receive_number_2 = 48'd0;
+(*mark_debug = "true"*) reg  [47:0] cnt_receive_from_01_number_2 = 48'd0;
 
 (*mark_debug = "true"*) reg  [47:0] packet_frame_index_3 = 48'd0;
 (*mark_debug = "true"*) reg  [31:0] wait_cnt_3 = 32'd0;
@@ -269,8 +271,8 @@ Ports_for_CC inst_Ports_for_CC_port_1(
 .user_tx_reset_0(user_tx_reset_1),
 .user_rx_reset_0(user_rx_reset_1),
 
-.start_wait(start_send_data_1),
-//.start_wait(0),
+//.start_wait(start_send_data_1),
+.start_wait(0),
 .packet_frame_index(packet_frame_index_1),
 .Ports_for_CC_tdata(tx_axis_tdata_1),
 .Ports_for_CC_tkeep(tx_axis_tkeep_1),
@@ -322,6 +324,38 @@ begin
     else
       packet_frame_index_0 <= packet_frame_index_0 + 1;
 end
+always @(posedge tx_clk_out_0 or posedge user_tx_reset_0)
+begin
+  if (user_tx_reset_0)
+    cnt_send_number_0 <= 48'd0 ;
+  else 
+    if(tx_axis_tlast_0 == 1)
+      cnt_send_number_0 <= cnt_send_number_0 + 1;
+    else
+      cnt_send_number_0 <= cnt_send_number_0;
+end
+always @(posedge tx_clk_out_0 or posedge user_tx_reset_0)
+begin
+  if (user_tx_reset_0)
+    cnt_send_to_03_number_0 <= 48'd0 ;
+  else 
+    if(tx_axis_tdata_0 == 64'hFDFE03FAFBFCFDFE && tx_axis_tvalid_0 == 1)
+      cnt_send_to_03_number_0 <= cnt_send_to_03_number_0 + 1;
+    else
+      cnt_send_to_03_number_0 <= cnt_send_to_03_number_0;
+end
+always @(posedge rx_core_clk_0 or posedge user_rx_reset_0)
+begin
+  if (user_rx_reset_0)
+    cnt_receive_number_0 <= 48'd0 ;
+  else 
+    if(rx_axis_tlast_0 == 1)
+      cnt_receive_number_0 <= cnt_receive_number_0 + 1;
+    else
+      cnt_receive_number_0 <= cnt_receive_number_0;
+end
+
+
 
 always @(posedge tx_clk_out_1 or posedge user_tx_reset_1)
 begin
@@ -385,7 +419,6 @@ begin
     else
       packet_frame_index_2 <= packet_frame_index_2 + 1;
 end
-
 always @(posedge tx_clk_out_2 or posedge user_tx_reset_2)
 begin
   if (user_tx_reset_2)
@@ -396,24 +429,42 @@ begin
     else
       wait_cnt_2 <= wait_cnt_2 + 1;
 end
-
 always @(posedge tx_clk_out_2 or posedge user_tx_reset_2)
 begin
   if (user_tx_reset_2)
     cnt_send_number_2 <= 48'd0 ;
   else 
-    if(tx_axis_tlast_2 == 1)
+    if(tx_axis_tlast_2 == 1 && cnt_send_number_2 < 48'h0000FFFFFFFF)
       cnt_send_number_2 <= cnt_send_number_2 + 1;
     else
       cnt_send_number_2 <= cnt_send_number_2;
 end
-
+always @(posedge rx_core_clk_2 or posedge user_rx_reset_2)
+begin
+  if (user_rx_reset_2)
+    cnt_receive_number_2 <= 48'd0 ;
+  else 
+    if(rx_axis_tlast_2 == 1)
+      cnt_receive_number_2 <= cnt_receive_number_2 + 1;
+    else
+      cnt_receive_number_2 <= cnt_receive_number_2;
+end
+always @(posedge rx_core_clk_2 or posedge user_rx_reset_2)
+begin
+  if (user_rx_reset_2)
+    cnt_receive_from_01_number_2 <= 48'd0 ;
+  else 
+    if(rx_axis_tdata_2 == 64'hFDFE03FAFBFCFDFE && tx_axis_tvalid_2 == 1)
+      cnt_receive_from_01_number_2 <= cnt_receive_from_01_number_2 + 1;
+    else
+      cnt_receive_from_01_number_2 <= cnt_receive_from_01_number_2;
+end
 always @(posedge tx_clk_out_2 or posedge user_tx_reset_2)
 begin
   if (user_tx_reset_2)
     start_send_data_2 <= 0 ;
   else 
-    if(wait_cnt_2 < 31'hFFFFFFFF)
+    if(wait_cnt_2 < 31'hFFFFFFFF || cnt_send_number_2 > 48'h000000FFFFFF)
       start_send_data_2 <= 0;
     else
       start_send_data_2 <= 1;
