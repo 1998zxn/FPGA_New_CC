@@ -464,7 +464,7 @@ begin
   if (user_tx_reset_2)
     start_send_data_2 <= 0 ;
   else 
-    if(wait_cnt_2 < 31'hFFFF00FF || cnt_send_number_2 > 48'h000000FFFFFF)
+    if(wait_cnt_2 < 31'hFFFFFFFF || cnt_send_number_2 > 48'h000000FFFFFF)
       start_send_data_2 <= 0;
     else
       start_send_data_2 <= 1;
