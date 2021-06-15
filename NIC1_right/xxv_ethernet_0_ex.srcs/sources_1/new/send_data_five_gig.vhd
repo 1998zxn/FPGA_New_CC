@@ -199,7 +199,7 @@ begin
         tx_axis_tvalid <= '1';
       when SM_WAIT_1_ST =>
         --if( cnt_T_pai = 6000 ) then
-        if( cnt_T_pai = 32 ) then
+        if( cnt_T_pai = 128 ) then
         --if( cnt_T_pai = 12 ) then
           SM_nxt <= SM_IDLE_ST;
         end if;
