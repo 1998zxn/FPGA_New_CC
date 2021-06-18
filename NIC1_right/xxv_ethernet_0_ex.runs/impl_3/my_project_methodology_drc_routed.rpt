@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Tue Jun 15 15:46:41 2021
+| Date         : Fri Jun 18 17:03:20 2021
 | Host         : zxn running 64-bit major release  (build 9200)
 | Command      : report_methodology -file my_project_methodology_drc_routed.rpt -pb my_project_methodology_drc_routed.pb -rpx my_project_methodology_drc_routed.rpx
 | Design       : my_project
@@ -23,11 +23,11 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 769
+             Violations found: 766
 +-----------+------------------+---------------------------------------+------------+
 | Rule      | Severity         | Description                           | Violations |
 +-----------+------------------+---------------------------------------+------------+
-| TIMING-7  | Critical Warning | No common node between related clocks | 8          |
+| TIMING-7  | Critical Warning | No common node between related clocks | 5          |
 | TIMING-17 | Critical Warning | Non-clocked sequential cell           | 744        |
 | AVAL-324  | Warning          | Hard_blocks_needs_LOCs                | 1          |
 | LUTAR-1   | Warning          | LUT drives async reset alert          | 13         |
@@ -40,7 +40,7 @@ Table of Contents
 -----------------
 TIMING-7#1 Critical Warning
 No common node between related clocks  
-The clocks rx_core_clk_0 and rx_core_clk_2 are related (timed together) but they have no common node. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks rx_core_clk_0] -to [get_clocks rx_core_clk_2]
+The clocks rx_core_clk_0 and rx_core_clk_1 are related (timed together) but they have no common node. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks rx_core_clk_0] -to [get_clocks rx_core_clk_1]
 Related violations: <none>
 
 TIMING-7#2 Critical Warning
@@ -50,32 +50,17 @@ Related violations: <none>
 
 TIMING-7#3 Critical Warning
 No common node between related clocks  
-The clocks rx_core_clk_2 and rx_core_clk_1 are related (timed together) but they have no common node. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks rx_core_clk_2] -to [get_clocks rx_core_clk_1]
+The clocks tx_clk_out_0 and tx_clk_out_1 are related (timed together) but they have no common node. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks tx_clk_out_0] -to [get_clocks tx_clk_out_1]
 Related violations: <none>
 
 TIMING-7#4 Critical Warning
 No common node between related clocks  
-The clocks tx_clk_out_0 and tx_clk_out_1 are related (timed together) but they have no common node. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks tx_clk_out_0] -to [get_clocks tx_clk_out_1]
+The clocks tx_clk_out_1 and rx_core_clk_1 are related (timed together) but they have no common node. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks tx_clk_out_1] -to [get_clocks rx_core_clk_1]
 Related violations: <none>
 
 TIMING-7#5 Critical Warning
 No common node between related clocks  
-The clocks tx_clk_out_0 and tx_clk_out_2 are related (timed together) but they have no common node. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks tx_clk_out_0] -to [get_clocks tx_clk_out_2]
-Related violations: <none>
-
-TIMING-7#6 Critical Warning
-No common node between related clocks  
-The clocks tx_clk_out_1 and rx_core_clk_1 are related (timed together) but they have no common node. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks tx_clk_out_1] -to [get_clocks rx_core_clk_1]
-Related violations: <none>
-
-TIMING-7#7 Critical Warning
-No common node between related clocks  
 The clocks tx_clk_out_1 and tx_clk_out_0 are related (timed together) but they have no common node. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks tx_clk_out_1] -to [get_clocks tx_clk_out_0]
-Related violations: <none>
-
-TIMING-7#8 Critical Warning
-No common node between related clocks  
-The clocks tx_clk_out_2 and tx_clk_out_1 are related (timed together) but they have no common node. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks tx_clk_out_2] -to [get_clocks tx_clk_out_1]
 Related violations: <none>
 
 TIMING-17#1 Critical Warning

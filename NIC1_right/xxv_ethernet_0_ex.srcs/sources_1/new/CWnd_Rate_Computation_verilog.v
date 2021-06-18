@@ -265,7 +265,7 @@ end
 always @(posedge clk or negedge reset)
 begin
   if (~reset)
-    cWnd_or_Rate <= 1 ;
+    cWnd_or_Rate <= 0 ;
   else if (state == SM_Result_ST )
   begin
     if(m_cWnd_now < 16'd1024)

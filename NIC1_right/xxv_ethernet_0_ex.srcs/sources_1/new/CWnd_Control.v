@@ -29,6 +29,7 @@ module CWnd_Control
  input      [15:0]          cWnd,                //RTT_fifo not empty
  input                      cWnd_en,                //RTT_fifo not empty
  input                      ECN,                //RTT_fifo not empty
+ input                      start_wait,
 
  output     reg             start                 //put rate to Rate_fifo
 
@@ -76,7 +77,7 @@ always @(*)
 begin
     case(state)
       SM_IDLE_ST:begin
-        if (ECN == 0)
+        if (ECN == 0 && start_wait == 1)
           next_state <= SM_Begin_ST;
         else
           next_state <= SM_IDLE_ST;

@@ -145,6 +145,7 @@ CWnd_Control inst_Control_CWnd(
 .cWnd(m_cWnd),
 .cWnd_en(cWnd_en),
 .ECN(ECN),
+.start_wait(start_wait),
 .start(start_from_CWnd)
 );
 send_data inst_send_data(  
