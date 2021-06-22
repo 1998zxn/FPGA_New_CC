@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date             : Fri Jun 18 17:03:46 2021
+| Date             : Mon Jun 21 20:29:14 2021
 | Host             : zxn running 64-bit major release  (build 9200)
 | Command          : report_power -file my_project_power_routed.rpt -pb my_project_power_summary_routed.pb -rpx my_project_power_routed.rpx
 | Design           : my_project
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 2.615        |
+| Total On-Chip Power (W)  | 2.619        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 2.070        |
+| Dynamic (W)              | 2.074        |
 | Device Static (W)        | 0.545        |
 | Effective TJA (C/W)      | 1.4          |
 | Max Ambient (C)          | 96.3         |
@@ -52,24 +52,24 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.305 |       22 |       --- |             --- |
-| CLB Logic                |     0.255 |    98535 |       --- |             --- |
-|   LUT as Logic           |     0.136 |    28172 |    242400 |           11.62 |
-|   LUT as Shift Register  |     0.098 |     3893 |    112800 |            3.45 |
-|   Register               |     0.016 |    50897 |    484800 |           10.50 |
+| Clocks                   |     0.297 |       22 |       --- |             --- |
+| CLB Logic                |     0.259 |    99540 |       --- |             --- |
+|   LUT as Logic           |     0.137 |    28324 |    242400 |           11.68 |
+|   LUT as Shift Register  |     0.101 |     3991 |    112800 |            3.54 |
+|   Register               |     0.016 |    51470 |    484800 |           10.62 |
 |   LUT as Distributed RAM |     0.004 |      248 |    112800 |            0.22 |
-|   CARRY8                 |     0.002 |     1010 |     30300 |            3.33 |
+|   CARRY8                 |     0.002 |     1033 |     30300 |            3.41 |
 |   BUFG                   |    <0.001 |        5 |        80 |            6.25 |
-|   F7/F8 Muxes            |    <0.001 |      827 |    242400 |            0.34 |
-|   Others                 |     0.000 |     4757 |       --- |             --- |
-| Signals                  |     0.199 |    73393 |       --- |             --- |
-| Block RAM                |     0.134 |    101.5 |       600 |           16.92 |
+|   F7/F8 Muxes            |    <0.001 |      845 |    242400 |            0.35 |
+|   Others                 |     0.000 |     4803 |       --- |             --- |
+| Signals                  |     0.201 |    74172 |       --- |             --- |
+| Block RAM                |     0.139 |    104.5 |       600 |           17.42 |
 | MMCM                     |     0.063 |        1 |        10 |           10.00 |
 | DSPs                     |    <0.001 |        1 |      1920 |            0.05 |
 | I/O                      |     0.004 |        3 |       520 |            0.58 |
 | GTH                      |     1.110 |        4 |        20 |           20.00 |
 | Static Power             |     0.545 |          |           |                 |
-| Total                    |     2.615 |          |           |                 |
+| Total                    |     2.619 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -79,7 +79,7 @@ Table of Contents
 +------------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source     | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +------------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint     |       0.950 |     1.237 |       1.077 |      0.160 |       NA    | Unspecified | NA         |
+| Vccint     |       0.950 |     1.241 |       1.081 |      0.160 |       NA    | Unspecified | NA         |
 | Vccaux     |       1.800 |     0.132 |       0.035 |      0.097 |       NA    | Unspecified | NA         |
 | Vccaux_io  |       1.800 |     0.067 |       0.002 |      0.065 |       NA    | Unspecified | NA         |
 | Vccint_io  |       0.950 |     0.017 |       0.001 |      0.017 |       NA    | Unspecified | NA         |
@@ -90,7 +90,7 @@ Table of Contents
 | Vcco135    |       1.350 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco12     |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco10     |       1.000 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
-| Vccbram    |       0.950 |     0.017 |       0.004 |      0.013 |       NA    | Unspecified | NA         |
+| Vccbram    |       0.950 |     0.018 |       0.004 |      0.013 |       NA    | Unspecified | NA         |
 | MGTAVcc    |       1.000 |     0.677 |       0.645 |      0.032 |       NA    | Unspecified | NA         |
 | MGTAVtt    |       1.200 |     0.270 |       0.255 |      0.014 |       NA    | Unspecified | NA         |
 | MGTVccaux  |       1.800 |     0.013 |       0.013 |      0.000 |       NA    | Unspecified | NA         |
@@ -145,16 +145,16 @@ Table of Contents
 | gt_refclk_p                                                                                | gt_refclk_p                                                                                                                                                                                                                                                                                           |             6.4 |
 | qpll0clk_in[0]                                                                             | my_xxv_ethernet_0_exdes/i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_sharedlogic_wrapper/i_xxv_ethernet_0_common_wrapper/xxv_ethernet_0_gt_gthe3_common_wrapper_i/common_inst/qpll0clk_in[0]                                                                                                        |             0.2 |
 | qpll0refclk_in[0]                                                                          | my_xxv_ethernet_0_exdes/i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_sharedlogic_wrapper/i_xxv_ethernet_0_common_wrapper/xxv_ethernet_0_gt_gthe3_common_wrapper_i/common_inst/qpll0refclk_in[0]                                                                                                     |             6.4 |
-| rx_core_clk_0                                                                              | my_xxv_ethernet_0_exdes/i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_1/i_xxv_ethernet_0_core_gtwiz_userclk_rx_inst/gt_rxn_in_1                                                                                                                                                           |             6.4 |
-| rx_core_clk_1                                                                              | my_xxv_ethernet_0_exdes/i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_0/i_xxv_ethernet_0_core_gtwiz_userclk_rx_inst/gt_rxn_in_0                                                                                                                                                           |             6.4 |
+| rx_core_clk_0                                                                              | my_xxv_ethernet_0_exdes/i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_0/i_xxv_ethernet_0_core_gtwiz_userclk_rx_inst/gt_rxn_in_0                                                                                                                                                           |             6.4 |
+| rx_core_clk_1                                                                              | my_xxv_ethernet_0_exdes/i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_1/i_xxv_ethernet_0_core_gtwiz_userclk_rx_inst/gt_rxn_in_1                                                                                                                                                           |             6.4 |
 | rx_core_clk_2                                                                              | my_xxv_ethernet_0_exdes/i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_2/i_xxv_ethernet_0_core_gtwiz_userclk_rx_inst/gt_rxn_in_2                                                                                                                                                           |             6.4 |
 | rx_core_clk_3                                                                              | my_xxv_ethernet_0_exdes/i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_3/i_xxv_ethernet_0_core_gtwiz_userclk_rx_inst/gt_rxn_in_3                                                                                                                                                           |             6.4 |
 | rxoutclk_out[0]                                                                            | my_xxv_ethernet_0_exdes/i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_0/i_xxv_ethernet_0_gt_0/inst/gen_gtwizard_gthe3_top.xxv_ethernet_0_gt_0_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_channel_container[0].gen_enabled_channel.gthe3_channel_wrapper_inst/channel_inst/rxoutclk_out[0] |             3.2 |
 | rxoutclk_out[0]_1                                                                          | my_xxv_ethernet_0_exdes/i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_1/i_xxv_ethernet_0_gt_1/inst/gen_gtwizard_gthe3_top.xxv_ethernet_0_gt_1_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_channel_container[0].gen_enabled_channel.gthe3_channel_wrapper_inst/channel_inst/rxoutclk_out[0] |             3.2 |
 | rxoutclk_out[0]_2                                                                          | my_xxv_ethernet_0_exdes/i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_2/i_xxv_ethernet_0_gt_2/inst/gen_gtwizard_gthe3_top.xxv_ethernet_0_gt_2_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_channel_container[0].gen_enabled_channel.gthe3_channel_wrapper_inst/channel_inst/rxoutclk_out[0] |             3.2 |
 | rxoutclk_out[0]_3                                                                          | my_xxv_ethernet_0_exdes/i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_3/i_xxv_ethernet_0_gt_3/inst/gen_gtwizard_gthe3_top.xxv_ethernet_0_gt_3_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_channel_container[0].gen_enabled_channel.gthe3_channel_wrapper_inst/channel_inst/rxoutclk_out[0] |             3.2 |
-| tx_clk_out_0                                                                               | my_xxv_ethernet_0_exdes/i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_1/i_xxv_ethernet_0_core_gtwiz_userclk_tx_inst/gt_rxn_in_1                                                                                                                                                           |             6.4 |
-| tx_clk_out_1                                                                               | my_xxv_ethernet_0_exdes/i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_0/i_xxv_ethernet_0_core_gtwiz_userclk_tx_inst/gt_rxn_in_0                                                                                                                                                           |             6.4 |
+| tx_clk_out_0                                                                               | my_xxv_ethernet_0_exdes/i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_0/i_xxv_ethernet_0_core_gtwiz_userclk_tx_inst/gt_rxn_in_0                                                                                                                                                           |             6.4 |
+| tx_clk_out_1                                                                               | my_xxv_ethernet_0_exdes/i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_1/i_xxv_ethernet_0_core_gtwiz_userclk_tx_inst/gt_rxn_in_1                                                                                                                                                           |             6.4 |
 | tx_clk_out_2                                                                               | my_xxv_ethernet_0_exdes/i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_2/i_xxv_ethernet_0_core_gtwiz_userclk_tx_inst/gt_rxn_in_2                                                                                                                                                           |             6.4 |
 | tx_clk_out_3                                                                               | my_xxv_ethernet_0_exdes/i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_3/i_xxv_ethernet_0_core_gtwiz_userclk_tx_inst/gt_rxn_in_3                                                                                                                                                           |             6.4 |
 | txoutclk_out[0]                                                                            | my_xxv_ethernet_0_exdes/i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_0/i_xxv_ethernet_0_gt_0/inst/gen_gtwizard_gthe3_top.xxv_ethernet_0_gt_0_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_channel_container[0].gen_enabled_channel.gthe3_channel_wrapper_inst/channel_inst/txoutclk_out[0] |             3.2 |
@@ -173,7 +173,7 @@ Table of Contents
 +--------------------------------------------+-----------+
 | Name                                       | Power (W) |
 +--------------------------------------------+-----------+
-| my_project                                 |     2.070 |
+| my_project                                 |     2.074 |
 |   dbg_hub                                  |     0.005 |
 |     inst                                   |     0.005 |
 |       BSCANID.u_xsdbm_id                   |     0.005 |
@@ -184,54 +184,53 @@ Table of Contents
 |       U0                                   |     0.002 |
 |     inst_RTT_Measurement                   |     0.001 |
 |     inst_send_ack                          |     0.002 |
-|   inst_Ports_for_CC_port_1                 |     0.092 |
+|   inst_Ports_for_CC_port_1                 |     0.088 |
 |     fifo_generator_for_RTT                 |     0.002 |
 |       U0                                   |     0.002 |
-|     inst_CWnd_Rate_Computation_verilog     |     0.065 |
-|       C_Rate                               |     0.019 |
-|       C_adder_ECN_0                        |     0.016 |
-|       C_adder_Low                          |     0.016 |
+|     inst_CWnd_Rate_Computation_verilog     |     0.061 |
+|       C_Rate                               |     0.018 |
+|       C_adder_ECN_0                        |     0.015 |
+|       C_adder_Low                          |     0.015 |
 |       ram                                  |     0.002 |
-|     inst_Control_CWnd                      |     0.001 |
-|     inst_Control_Rate                      |     0.016 |
-|       C_T_pai                              |     0.016 |
+|     inst_Control_Rate                      |     0.015 |
+|       C_T_pai                              |     0.015 |
 |     inst_RTT_Measurement                   |     0.003 |
 |     inst_send_data                         |     0.003 |
 |   inst_send_data_2                         |     0.003 |
-|   my_xxv_ethernet_0_exdes                  |     1.580 |
+|   my_xxv_ethernet_0_exdes                  |     1.581 |
 |     axi_lite_clocking_i                    |     0.067 |
 |       clkin1_buf                           |     0.004 |
-|     ethernet_mac_fifo_0                    |     0.019 |
-|       i_tx_fifo                            |     0.010 |
+|     ethernet_mac_fifo_0                    |     0.016 |
+|       i_tx_fifo                            |     0.006 |
 |       rx_fifo_inst                         |     0.009 |
-|     ethernet_mac_fifo_1                    |     0.016 |
-|       i_tx_fifo                            |     0.007 |
-|       rx_fifo_inst                         |     0.009 |
-|     ethernet_mac_fifo_2                    |     0.019 |
+|     ethernet_mac_fifo_1                    |     0.020 |
 |       i_tx_fifo                            |     0.011 |
-|       rx_fifo_inst                         |     0.008 |
+|       rx_fifo_inst                         |     0.009 |
+|     ethernet_mac_fifo_2                    |     0.020 |
+|       i_tx_fifo                            |     0.011 |
+|       rx_fifo_inst                         |     0.009 |
 |     ethernet_mac_fifo_3                    |     0.014 |
 |       i_tx_fifo                            |     0.005 |
 |       rx_fifo_inst                         |     0.009 |
-|     i_xxv_ethernet_0_core_support          |     1.440 |
+|     i_xxv_ethernet_0_core_support          |     1.441 |
 |       DUT                                  |     0.305 |
 |       i_xxv_ethernet_0_gt_wrapper_0        |     0.283 |
-|       i_xxv_ethernet_0_gt_wrapper_1        |     0.284 |
+|       i_xxv_ethernet_0_gt_wrapper_1        |     0.283 |
 |       i_xxv_ethernet_0_gt_wrapper_2        |     0.284 |
 |       i_xxv_ethernet_0_gt_wrapper_3        |     0.283 |
 |       i_xxv_ethernet_0_sharedlogic_wrapper |     0.002 |
-|   u_ila_0                                  |     0.101 |
-|     inst                                   |     0.101 |
-|       ila_core_inst                        |     0.101 |
-|   u_ila_1                                  |     0.088 |
-|     inst                                   |     0.088 |
-|       ila_core_inst                        |     0.088 |
+|   u_ila_0                                  |     0.097 |
+|     inst                                   |     0.097 |
+|       ila_core_inst                        |     0.097 |
+|   u_ila_1                                  |     0.094 |
+|     inst                                   |     0.094 |
+|       ila_core_inst                        |     0.094 |
 |   u_ila_2                                  |     0.027 |
 |     inst                                   |     0.027 |
 |       ila_core_inst                        |     0.027 |
-|   u_ila_3                                  |     0.037 |
-|     inst                                   |     0.037 |
-|       ila_core_inst                        |     0.037 |
+|   u_ila_3                                  |     0.041 |
+|     inst                                   |     0.041 |
+|       ila_core_inst                        |     0.041 |
 |   u_ila_4                                  |     0.040 |
 |     inst                                   |     0.040 |
 |       ila_core_inst                        |     0.040 |

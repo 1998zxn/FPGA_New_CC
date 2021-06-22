@@ -123,37 +123,13 @@ set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
   set_param chipscope.maxJobs 1
-OPTRACE "create in-memory project" START { }
-  create_project -in_memory -part xcku040-ffva1156-2-e
-  set_property design_mode GateLvl [current_fileset]
-  set_param project.singleFileAddWarning.threshold 0
-OPTRACE "create in-memory project" END { }
-OPTRACE "set parameters" START { }
+  reset_param project.defaultXPMLibraries 
+  open_checkpoint D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.runs/impl_3/my_project.dcp
   set_property webtalk.parent_dir D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.cache/wt [current_project]
   set_property parent.project_path D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.xpr [current_project]
   set_property ip_output_repo D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
-OPTRACE "set parameters" END { }
-OPTRACE "add files" START { }
-  add_files -quiet D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.runs/synth_1_copy_2/my_project.dcp
-  read_ip -quiet D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/ip/xxv_ethernet_0_gt_3/xxv_ethernet_0_gt_3.xci
-  read_ip -quiet D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/ip/xxv_ethernet_0_gt_2/xxv_ethernet_0_gt_2.xci
-  read_ip -quiet D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/ip/xxv_ethernet_0_gt_1/xxv_ethernet_0_gt_1.xci
-  read_ip -quiet D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/ip/xxv_ethernet_0_gt_0/xxv_ethernet_0_gt_0.xci
-  read_ip -quiet D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/ip/xxv_ethernet_0/xxv_ethernet_0.xci
-  read_ip -quiet D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xci
-  read_ip -quiet D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/ip/div_gen_0/div_gen_0.xci
-  read_ip -quiet D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci
-OPTRACE "read constraints: implementation" START { }
-  read_xdc D:/project/FPGA_New_CC/NIC1_right/imports/xxv_ethernet_0_example_top.xdc
-OPTRACE "read constraints: implementation" END { }
-OPTRACE "add files" END { }
-OPTRACE "link_design" START { }
-  link_design -top my_project -part xcku040-ffva1156-2-e
-OPTRACE "link_design" END { }
-OPTRACE "gray box cells" START { }
-OPTRACE "gray box cells" END { }
 OPTRACE "init_design_reports" START { REPORT }
 OPTRACE "init_design_reports" END { }
 OPTRACE "init_design_write_hwdef" START { }

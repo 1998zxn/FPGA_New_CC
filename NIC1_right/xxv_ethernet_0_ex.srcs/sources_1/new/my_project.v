@@ -113,15 +113,18 @@ module my_project
 (*mark_debug = "true"*) reg  [47:0] packet_frame_index_0 = 48'd0;
 (*mark_debug = "true"*) reg  [31:0] wait_cnt_0 = 32'd0;
 (*mark_debug = "true"*) reg  [47:0] cnt_send_number_0 = 48'd0;
+(*mark_debug = "true"*) reg  [47:0] cnt_send_to_02_number_0 = 48'd0;
 (*mark_debug = "true"*) reg  [47:0] cnt_send_to_03_number_0 = 48'd0;
 (*mark_debug = "true"*) reg  start_send_data_0 = 1'd0;
-(*mark_debug = "true"*) reg  [47:0] cnt_receive_number_0 = 48'd0;
+(*mark_debug = "true"*) reg  [47:0] cnt_receive_from_02_number_0 = 48'd0;
+(*mark_debug = "true"*) reg  [47:0] cnt_receive_from_03_number_0 = 48'd0;
 
 (*mark_debug = "true"*) reg  [47:0] packet_frame_index_1 = 48'd0;
 (*mark_debug = "true"*) reg  [31:0] wait_cnt_1 = 32'd0;
 (*mark_debug = "true"*) reg  [47:0] cnt_send_number_1 = 48'd0;
 (*mark_debug = "true"*) reg  start_send_data_1 = 1'd0;
 (*mark_debug = "true"*) reg  [47:0] cnt_receive_number_1 = 48'd0;
+(*mark_debug = "true"*) reg  [47:0] cnt_receive_from_01_number_1 = 48'd0;
 
 (*mark_debug = "true"*) reg  [47:0] packet_frame_index_2 = 48'd0;
 (*mark_debug = "true"*) reg  [31:0] wait_cnt_2 = 32'd0;
@@ -139,15 +142,15 @@ module my_project
 
 xxv_ethernet_0_exdes my_xxv_ethernet_0_exdes
 (
-  .tx_clk_out_0 (tx_clk_out_1),
-  .rx_core_clk_0 (rx_core_clk_1),
-  .user_tx_reset_0 (user_tx_reset_1),
-  .user_rx_reset_0 (user_rx_reset_1),
+  .tx_clk_out_0 (tx_clk_out_0),
+  .rx_core_clk_0 (rx_core_clk_0),
+  .user_tx_reset_0 (user_tx_reset_0),
+  .user_rx_reset_0 (user_rx_reset_0),
  
-  .tx_clk_out_1 (tx_clk_out_0),
-  .rx_core_clk_1 (rx_core_clk_0),
-  .user_tx_reset_1 (user_tx_reset_0),
-  .user_rx_reset_1 (user_rx_reset_0),
+  .tx_clk_out_1 (tx_clk_out_1),
+  .rx_core_clk_1 (rx_core_clk_1),
+  .user_tx_reset_1 (user_tx_reset_1),
+  .user_rx_reset_1 (user_rx_reset_1),
 
   .tx_clk_out_2 (tx_clk_out_2),
   .rx_core_clk_2 (rx_core_clk_2),
@@ -159,17 +162,17 @@ xxv_ethernet_0_exdes my_xxv_ethernet_0_exdes
   .user_tx_reset_3 (user_tx_reset_3),
   .user_rx_reset_3 (user_rx_reset_3),
 
-  .tx_axis_tready_design_0 (tx_axis_tready_1),
-  .tx_axis_tvalid_design_0 (tx_axis_tvalid_1),
-  .tx_axis_tdata_design_0 (tx_axis_tdata_1),
-  .tx_axis_tlast_design_0 (tx_axis_tlast_1),
-  .tx_axis_tkeep_design_0 (tx_axis_tkeep_1),
+  .tx_axis_tready_design_0 (tx_axis_tready_0),
+  .tx_axis_tvalid_design_0 (tx_axis_tvalid_0),
+  .tx_axis_tdata_design_0 (tx_axis_tdata_0),
+  .tx_axis_tlast_design_0 (tx_axis_tlast_0),
+  .tx_axis_tkeep_design_0 (tx_axis_tkeep_0),
   
-  .tx_axis_tready_design_1 (tx_axis_tready_0),
-  .tx_axis_tvalid_design_1 (tx_axis_tvalid_0),
-  .tx_axis_tdata_design_1 (tx_axis_tdata_0),
-  .tx_axis_tlast_design_1 (tx_axis_tlast_0),
-  .tx_axis_tkeep_design_1 (tx_axis_tkeep_0),
+  .tx_axis_tready_design_1 (tx_axis_tready_1),
+  .tx_axis_tvalid_design_1 (tx_axis_tvalid_1),
+  .tx_axis_tdata_design_1 (tx_axis_tdata_1),
+  .tx_axis_tlast_design_1 (tx_axis_tlast_1),
+  .tx_axis_tkeep_design_1 (tx_axis_tkeep_1),
 
   .tx_axis_tready_design_2 (tx_axis_tready_2),
   .tx_axis_tvalid_design_2 (tx_axis_tvalid_2),
@@ -183,15 +186,15 @@ xxv_ethernet_0_exdes my_xxv_ethernet_0_exdes
   .tx_axis_tlast_design_3 (tx_axis_tlast_3),
   .tx_axis_tkeep_design_3 (tx_axis_tkeep_3),
   
-  .rx_axis_tvalid_design_0 (rx_axis_tvalid_1),
-  .rx_axis_tdata_design_0 (rx_axis_tdata_1),
-  .rx_axis_tlast_design_0 (rx_axis_tlast_1),
-  .rx_axis_tkeep_design_0 (rx_axis_tkeep_1),
+  .rx_axis_tvalid_design_0 (rx_axis_tvalid_0),
+  .rx_axis_tdata_design_0 (rx_axis_tdata_0),
+  .rx_axis_tlast_design_0 (rx_axis_tlast_0),
+  .rx_axis_tkeep_design_0 (rx_axis_tkeep_0),
   
-  .rx_axis_tvalid_design_1 (rx_axis_tvalid_0),
-  .rx_axis_tdata_design_1 (rx_axis_tdata_0),
-  .rx_axis_tlast_design_1 (rx_axis_tlast_0),
-  .rx_axis_tkeep_design_1 (rx_axis_tkeep_0),
+  .rx_axis_tvalid_design_1 (rx_axis_tvalid_1),
+  .rx_axis_tdata_design_1 (rx_axis_tdata_1),
+  .rx_axis_tlast_design_1 (rx_axis_tlast_1),
+  .rx_axis_tkeep_design_1 (rx_axis_tkeep_1),
 
   .rx_axis_tvalid_design_2 (rx_axis_tvalid_2),
   .rx_axis_tdata_design_2 (rx_axis_tdata_2),
@@ -347,14 +350,23 @@ end
 always @(posedge rx_core_clk_0 or posedge user_rx_reset_0)
 begin
   if (user_rx_reset_0)
-    cnt_receive_number_0 <= 48'd0 ;
+    cnt_receive_from_02_number_0 <= 48'd0 ;
   else 
     if(rx_axis_tlast_0 == 1)
-      cnt_receive_number_0 <= cnt_receive_number_0 + 1;
+      cnt_receive_from_02_number_0 <= cnt_receive_from_02_number_0 + 1;
     else
-      cnt_receive_number_0 <= cnt_receive_number_0;
+      cnt_receive_from_02_number_0 <= cnt_receive_from_02_number_0;
 end
-
+always @(posedge rx_core_clk_0 or posedge user_rx_reset_0)
+begin
+  if (user_rx_reset_0)
+    cnt_receive_from_03_number_0 <= 48'd0 ;
+  else 
+    if(rx_axis_tlast_0 == 1)
+      cnt_receive_from_03_number_0 <= cnt_receive_from_03_number_0 + 1;
+    else
+      cnt_receive_from_03_number_0 <= cnt_receive_from_03_number_0;
+end
 
 
 always @(posedge tx_clk_out_1 or posedge user_tx_reset_1)
@@ -397,12 +409,23 @@ begin
     else
       cnt_receive_number_1 <= cnt_receive_number_1;
 end
+always @(posedge rx_core_clk_1 or posedge user_rx_reset_1)
+begin
+  if (user_rx_reset_1)
+    cnt_receive_from_01_number_1 <= 48'd0 ;
+  else 
+    if(rx_axis_tdata_1 == 64'hFDFE03FAFBFCFDFE && rx_axis_tvalid_1 == 1)
+      cnt_receive_from_01_number_1 <= cnt_receive_from_01_number_1 + 1;
+    else
+      cnt_receive_from_01_number_1 <= cnt_receive_from_01_number_1;
+end
 always @(posedge tx_clk_out_1 or posedge user_tx_reset_1)
 begin
   if (user_tx_reset_1)
     start_send_data_1 <= 0 ;
   else 
-    if(wait_cnt_1 < 31'hFFFFFFFF || cnt_send_number_1 > 48'h000000FFFFFF)
+    if(wait_cnt_1 < 31'hFFFFFFFF || cnt_send_number_1 > 48'h000000FFFFFF || receive_data_packet == 0)
+    //if(wait_cnt_1 < 31'hFFFFFFFF || cnt_send_number_1 > 48'h000000FFFFFF)
     //if(wait_cnt_1 < 32'hFFFFFFFF || receive_data_packet == 0)//h000000FF
       start_send_data_1 <= 0;
     else

@@ -11,139 +11,242 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="212488081921fs"></ZoomStartTime>
-      <ZoomEndTime time="222288081922fs"></ZoomEndTime>
-      <Cursor1Time time="218368081921fs"></Cursor1Time>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="338400000001fs"></ZoomEndTime>
+      <Cursor1Time time="20997916000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="340"></NameColumnWidth>
-      <ValueColumnWidth column_width="145"></ValueColumnWidth>
+      <ValueColumnWidth column_width="140"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="30" />
-   <wvobject fp_name="/sim_all/my_project/tx_axis_tready_0" type="logic">
-      <obj_property name="ElementShortName">tx_axis_tready_0</obj_property>
-      <obj_property name="ObjectShortName">tx_axis_tready_0</obj_property>
+   <WVObjectSize size="8" />
+   <wvobject fp_name="group62" type="group">
+      <obj_property name="label">CC</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/sim_all/my_project/inst_Ports_for_CC_port_1/tx_clk_out_0" type="logic">
+         <obj_property name="ElementShortName">tx_clk_out_0</obj_property>
+         <obj_property name="ObjectShortName">tx_clk_out_0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_all/my_project/inst_Ports_for_CC_port_1/rx_core_clk_0" type="logic">
+         <obj_property name="ElementShortName">rx_core_clk_0</obj_property>
+         <obj_property name="ObjectShortName">rx_core_clk_0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_all/my_project/inst_Ports_for_CC_port_1/user_tx_reset_0" type="logic">
+         <obj_property name="ElementShortName">user_tx_reset_0</obj_property>
+         <obj_property name="ObjectShortName">user_tx_reset_0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_all/my_project/inst_Ports_for_CC_port_1/user_rx_reset_0" type="logic">
+         <obj_property name="ElementShortName">user_rx_reset_0</obj_property>
+         <obj_property name="ObjectShortName">user_rx_reset_0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_all/my_project/inst_Ports_for_CC_port_1/start_wait" type="logic">
+         <obj_property name="ElementShortName">start_wait</obj_property>
+         <obj_property name="ObjectShortName">start_wait</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_all/my_project/inst_Ports_for_CC_port_1/packet_frame_index" type="array">
+         <obj_property name="ElementShortName">packet_frame_index[47:0]</obj_property>
+         <obj_property name="ObjectShortName">packet_frame_index[47:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_all/my_project/inst_Ports_for_CC_port_1/Ports_for_CC_tdata" type="array">
+         <obj_property name="ElementShortName">Ports_for_CC_tdata[63:0]</obj_property>
+         <obj_property name="ObjectShortName">Ports_for_CC_tdata[63:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_all/my_project/inst_Ports_for_CC_port_1/Ports_for_CC_tkeep" type="array">
+         <obj_property name="ElementShortName">Ports_for_CC_tkeep[7:0]</obj_property>
+         <obj_property name="ObjectShortName">Ports_for_CC_tkeep[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_all/my_project/inst_Ports_for_CC_port_1/Ports_for_CC_tlast" type="logic">
+         <obj_property name="ElementShortName">Ports_for_CC_tlast</obj_property>
+         <obj_property name="ObjectShortName">Ports_for_CC_tlast</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_all/my_project/inst_Ports_for_CC_port_1/Ports_for_CC_tvalid" type="logic">
+         <obj_property name="ElementShortName">Ports_for_CC_tvalid</obj_property>
+         <obj_property name="ObjectShortName">Ports_for_CC_tvalid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_all/my_project/inst_Ports_for_CC_port_1/Ports_for_CC_tready" type="logic">
+         <obj_property name="ElementShortName">Ports_for_CC_tready</obj_property>
+         <obj_property name="ObjectShortName">Ports_for_CC_tready</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_all/my_project/inst_Ports_for_CC_port_1/Ports_for_CC_rdata" type="array">
+         <obj_property name="ElementShortName">Ports_for_CC_rdata[63:0]</obj_property>
+         <obj_property name="ObjectShortName">Ports_for_CC_rdata[63:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_all/my_project/inst_Ports_for_CC_port_1/Ports_for_CC_rkeep" type="array">
+         <obj_property name="ElementShortName">Ports_for_CC_rkeep[7:0]</obj_property>
+         <obj_property name="ObjectShortName">Ports_for_CC_rkeep[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_all/my_project/inst_Ports_for_CC_port_1/Ports_for_CC_rlast" type="logic">
+         <obj_property name="ElementShortName">Ports_for_CC_rlast</obj_property>
+         <obj_property name="ObjectShortName">Ports_for_CC_rlast</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_all/my_project/inst_Ports_for_CC_port_1/Ports_for_CC_rvalid" type="logic">
+         <obj_property name="ElementShortName">Ports_for_CC_rvalid</obj_property>
+         <obj_property name="ObjectShortName">Ports_for_CC_rvalid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_all/my_project/inst_Ports_for_CC_port_1/start_send_data" type="logic">
+         <obj_property name="ElementShortName">start_send_data</obj_property>
+         <obj_property name="ObjectShortName">start_send_data</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_all/my_project/inst_Ports_for_CC_port_1/m_cWnd" type="array">
+         <obj_property name="ElementShortName">m_cWnd[15:0]</obj_property>
+         <obj_property name="ObjectShortName">m_cWnd[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_all/my_project/inst_Ports_for_CC_port_1/Rate" type="array">
+         <obj_property name="ElementShortName">Rate[15:0]</obj_property>
+         <obj_property name="ObjectShortName">Rate[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_all/my_project/inst_Ports_for_CC_port_1/ECN" type="logic">
+         <obj_property name="ElementShortName">ECN</obj_property>
+         <obj_property name="ObjectShortName">ECN</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_all/my_project/inst_Ports_for_CC_port_1/cWnd_en" type="logic">
+         <obj_property name="ElementShortName">cWnd_en</obj_property>
+         <obj_property name="ObjectShortName">cWnd_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_all/my_project/inst_Ports_for_CC_port_1/Rate_en" type="logic">
+         <obj_property name="ElementShortName">Rate_en</obj_property>
+         <obj_property name="ObjectShortName">Rate_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_all/my_project/inst_Ports_for_CC_port_1/start_from_Rate" type="logic">
+         <obj_property name="ElementShortName">start_from_Rate</obj_property>
+         <obj_property name="ObjectShortName">start_from_Rate</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_all/my_project/inst_Ports_for_CC_port_1/start_from_CWnd" type="logic">
+         <obj_property name="ElementShortName">start_from_CWnd</obj_property>
+         <obj_property name="ObjectShortName">start_from_CWnd</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_all/my_project/inst_Ports_for_CC_port_1/RTT" type="array">
+         <obj_property name="ElementShortName">RTT[47:0]</obj_property>
+         <obj_property name="ObjectShortName">RTT[47:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_all/my_project/inst_Ports_for_CC_port_1/RTT_after_fifo" type="array">
+         <obj_property name="ElementShortName">RTT_after_fifo[47:0]</obj_property>
+         <obj_property name="ObjectShortName">RTT_after_fifo[47:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_all/my_project/inst_Ports_for_CC_port_1/RTT_fifo_wr_en" type="logic">
+         <obj_property name="ElementShortName">RTT_fifo_wr_en</obj_property>
+         <obj_property name="ObjectShortName">RTT_fifo_wr_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_all/my_project/inst_Ports_for_CC_port_1/RTT_fifo_full" type="logic">
+         <obj_property name="ElementShortName">RTT_fifo_full</obj_property>
+         <obj_property name="ObjectShortName">RTT_fifo_full</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_all/my_project/inst_Ports_for_CC_port_1/RTT_fifo_empty" type="logic">
+         <obj_property name="ElementShortName">RTT_fifo_empty</obj_property>
+         <obj_property name="ObjectShortName">RTT_fifo_empty</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_all/my_project/inst_Ports_for_CC_port_1/RTT_fifo_rd_en" type="logic">
+         <obj_property name="ElementShortName">RTT_fifo_rd_en</obj_property>
+         <obj_property name="ObjectShortName">RTT_fifo_rd_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_all/my_project/inst_Ports_for_CC_port_1/cnt_before_computer_number_3" type="array">
+         <obj_property name="ElementShortName">cnt_before_computer_number_3[47:0]</obj_property>
+         <obj_property name="ObjectShortName">cnt_before_computer_number_3[47:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_all/my_project/inst_Ports_for_CC_port_1/cnt_before_FIFO_number_3" type="array">
+         <obj_property name="ElementShortName">cnt_before_FIFO_number_3[47:0]</obj_property>
+         <obj_property name="ObjectShortName">cnt_before_FIFO_number_3[47:0]</obj_property>
+      </wvobject>
    </wvobject>
-   <wvobject fp_name="/sim_all/my_project/tx_axis_tvalid_0" type="logic">
-      <obj_property name="ElementShortName">tx_axis_tvalid_0</obj_property>
-      <obj_property name="ObjectShortName">tx_axis_tvalid_0</obj_property>
+   <wvobject fp_name="group82" type="group">
+      <obj_property name="label">CWnd</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/sim_all/my_project/inst_Ports_for_CC_port_1/inst_Control_CWnd/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_all/my_project/inst_Ports_for_CC_port_1/inst_Control_CWnd/reset" type="logic">
+         <obj_property name="ElementShortName">reset</obj_property>
+         <obj_property name="ObjectShortName">reset</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_all/my_project/inst_Ports_for_CC_port_1/inst_Control_CWnd/last" type="logic">
+         <obj_property name="ElementShortName">last</obj_property>
+         <obj_property name="ObjectShortName">last</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_all/my_project/inst_Ports_for_CC_port_1/inst_Control_CWnd/valid" type="logic">
+         <obj_property name="ElementShortName">valid</obj_property>
+         <obj_property name="ObjectShortName">valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_all/my_project/inst_Ports_for_CC_port_1/inst_Control_CWnd/cWnd" type="array">
+         <obj_property name="ElementShortName">cWnd[15:0]</obj_property>
+         <obj_property name="ObjectShortName">cWnd[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_all/my_project/inst_Ports_for_CC_port_1/inst_Control_CWnd/cWnd_en" type="logic">
+         <obj_property name="ElementShortName">cWnd_en</obj_property>
+         <obj_property name="ObjectShortName">cWnd_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_all/my_project/inst_Ports_for_CC_port_1/inst_Control_CWnd/ECN" type="logic">
+         <obj_property name="ElementShortName">ECN</obj_property>
+         <obj_property name="ObjectShortName">ECN</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_all/my_project/inst_Ports_for_CC_port_1/inst_Control_CWnd/start" type="logic">
+         <obj_property name="ElementShortName">start</obj_property>
+         <obj_property name="ObjectShortName">start</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_all/my_project/inst_Ports_for_CC_port_1/inst_Control_CWnd/state" type="array">
+         <obj_property name="ElementShortName">state[3:0]</obj_property>
+         <obj_property name="ObjectShortName">state[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_all/my_project/inst_Ports_for_CC_port_1/inst_Control_CWnd/next_state" type="array">
+         <obj_property name="ElementShortName">next_state[3:0]</obj_property>
+         <obj_property name="ObjectShortName">next_state[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_all/my_project/inst_Ports_for_CC_port_1/inst_Control_CWnd/cWnd_size" type="array">
+         <obj_property name="ElementShortName">cWnd_size[15:0]</obj_property>
+         <obj_property name="ObjectShortName">cWnd_size[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_all/my_project/inst_Ports_for_CC_port_1/inst_Control_CWnd/cWnd_now" type="array">
+         <obj_property name="ElementShortName">cWnd_now[15:0]</obj_property>
+         <obj_property name="ObjectShortName">cWnd_now[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_all/my_project/inst_Ports_for_CC_port_1/inst_Control_CWnd/cnt_cWnd_en" type="array">
+         <obj_property name="ElementShortName">cnt_cWnd_en[47:0]</obj_property>
+         <obj_property name="ObjectShortName">cnt_cWnd_en[47:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_all/my_project/inst_Ports_for_CC_port_1/inst_Control_CWnd/cnt_Wait" type="array">
+         <obj_property name="ElementShortName">cnt_Wait[7:0]</obj_property>
+         <obj_property name="ObjectShortName">cnt_Wait[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_all/my_project/inst_Ports_for_CC_port_1/inst_Control_CWnd/SM_IDLE_ST" type="array">
+         <obj_property name="ElementShortName">SM_IDLE_ST[3:0]</obj_property>
+         <obj_property name="ObjectShortName">SM_IDLE_ST[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_all/my_project/inst_Ports_for_CC_port_1/inst_Control_CWnd/SM_Begin_ST" type="array">
+         <obj_property name="ElementShortName">SM_Begin_ST[3:0]</obj_property>
+         <obj_property name="ObjectShortName">SM_Begin_ST[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_all/my_project/inst_Ports_for_CC_port_1/inst_Control_CWnd/SM_Wait_ST" type="array">
+         <obj_property name="ElementShortName">SM_Wait_ST[3:0]</obj_property>
+         <obj_property name="ObjectShortName">SM_Wait_ST[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sim_all/my_project/inst_Ports_for_CC_port_1/inst_Control_CWnd/SM_Noting_ST" type="array">
+         <obj_property name="ElementShortName">SM_Noting_ST[3:0]</obj_property>
+         <obj_property name="ObjectShortName">SM_Noting_ST[3:0]</obj_property>
+      </wvobject>
    </wvobject>
-   <wvobject fp_name="/sim_all/my_project/tx_axis_tdata_0" type="array">
-      <obj_property name="ElementShortName">tx_axis_tdata_0[63:0]</obj_property>
-      <obj_property name="ObjectShortName">tx_axis_tdata_0[63:0]</obj_property>
+   <wvobject fp_name="/sim_all/my_project/inst_Ports_for_CC_port_1/user_tx_reset_0" type="logic">
+      <obj_property name="ElementShortName">user_tx_reset_0</obj_property>
+      <obj_property name="ObjectShortName">user_tx_reset_0</obj_property>
    </wvobject>
-   <wvobject fp_name="/sim_all/my_project/tx_axis_tlast_0" type="logic">
-      <obj_property name="ElementShortName">tx_axis_tlast_0</obj_property>
-      <obj_property name="ObjectShortName">tx_axis_tlast_0</obj_property>
+   <wvobject fp_name="/sim_all/my_project/packet_frame_index_1" type="array">
+      <obj_property name="ElementShortName">packet_frame_index_1[47:0]</obj_property>
+      <obj_property name="ObjectShortName">packet_frame_index_1[47:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/sim_all/my_project/tx_axis_tkeep_0" type="array">
-      <obj_property name="ElementShortName">tx_axis_tkeep_0[7:0]</obj_property>
-      <obj_property name="ObjectShortName">tx_axis_tkeep_0[7:0]</obj_property>
+   <wvobject fp_name="/sim_all/my_project/wait_cnt_1" type="array">
+      <obj_property name="ElementShortName">wait_cnt_1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">wait_cnt_1[31:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/sim_all/my_project/tx_axis_tready_2" type="logic">
-      <obj_property name="ElementShortName">tx_axis_tready_2</obj_property>
-      <obj_property name="ObjectShortName">tx_axis_tready_2</obj_property>
+   <wvobject fp_name="/sim_all/my_project/cnt_send_number_1" type="array">
+      <obj_property name="ElementShortName">cnt_send_number_1[47:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_send_number_1[47:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/sim_all/my_project/tx_axis_tvalid_2" type="logic">
-      <obj_property name="ElementShortName">tx_axis_tvalid_2</obj_property>
-      <obj_property name="ObjectShortName">tx_axis_tvalid_2</obj_property>
+   <wvobject fp_name="/sim_all/my_project/start_send_data_1" type="logic">
+      <obj_property name="ElementShortName">start_send_data_1</obj_property>
+      <obj_property name="ObjectShortName">start_send_data_1</obj_property>
    </wvobject>
-   <wvobject fp_name="/sim_all/my_project/tx_axis_tdata_2" type="array">
-      <obj_property name="ElementShortName">tx_axis_tdata_2[63:0]</obj_property>
-      <obj_property name="ObjectShortName">tx_axis_tdata_2[63:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/sim_all/my_project/tx_axis_tlast_2" type="logic">
-      <obj_property name="ElementShortName">tx_axis_tlast_2</obj_property>
-      <obj_property name="ObjectShortName">tx_axis_tlast_2</obj_property>
-   </wvobject>
-   <wvobject fp_name="/sim_all/my_project/tx_axis_tkeep_2" type="array">
-      <obj_property name="ElementShortName">tx_axis_tkeep_2[7:0]</obj_property>
-      <obj_property name="ObjectShortName">tx_axis_tkeep_2[7:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/sim_all/my_project/rx_axis_tvalid_0" type="logic">
-      <obj_property name="ElementShortName">rx_axis_tvalid_0</obj_property>
-      <obj_property name="ObjectShortName">rx_axis_tvalid_0</obj_property>
-   </wvobject>
-   <wvobject fp_name="/sim_all/my_project/rx_axis_tdata_0" type="array">
-      <obj_property name="ElementShortName">rx_axis_tdata_0[63:0]</obj_property>
-      <obj_property name="ObjectShortName">rx_axis_tdata_0[63:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/sim_all/my_project/rx_axis_tlast_0" type="logic">
-      <obj_property name="ElementShortName">rx_axis_tlast_0</obj_property>
-      <obj_property name="ObjectShortName">rx_axis_tlast_0</obj_property>
-   </wvobject>
-   <wvobject fp_name="/sim_all/my_project/rx_axis_tkeep_0" type="array">
-      <obj_property name="ElementShortName">rx_axis_tkeep_0[7:0]</obj_property>
-      <obj_property name="ObjectShortName">rx_axis_tkeep_0[7:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/sim_all/my_project/rx_axis_tvalid_2" type="logic">
-      <obj_property name="ElementShortName">rx_axis_tvalid_2</obj_property>
-      <obj_property name="ObjectShortName">rx_axis_tvalid_2</obj_property>
-   </wvobject>
-   <wvobject fp_name="/sim_all/my_project/rx_axis_tdata_2" type="array">
-      <obj_property name="ElementShortName">rx_axis_tdata_2[63:0]</obj_property>
-      <obj_property name="ObjectShortName">rx_axis_tdata_2[63:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/sim_all/my_project/rx_axis_tlast_2" type="logic">
-      <obj_property name="ElementShortName">rx_axis_tlast_2</obj_property>
-      <obj_property name="ObjectShortName">rx_axis_tlast_2</obj_property>
-   </wvobject>
-   <wvobject fp_name="/sim_all/my_project/rx_axis_tkeep_2" type="array">
-      <obj_property name="ElementShortName">rx_axis_tkeep_2[7:0]</obj_property>
-      <obj_property name="ObjectShortName">rx_axis_tkeep_2[7:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/sim_all/my_project/packet_frame_index_0" type="array">
-      <obj_property name="ElementShortName">packet_frame_index_0[47:0]</obj_property>
-      <obj_property name="ObjectShortName">packet_frame_index_0[47:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/sim_all/my_project/wait_cnt_0" type="array">
-      <obj_property name="ElementShortName">wait_cnt_0[31:0]</obj_property>
-      <obj_property name="ObjectShortName">wait_cnt_0[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/sim_all/my_project/start_send_data_0" type="logic">
-      <obj_property name="ElementShortName">start_send_data_0</obj_property>
-      <obj_property name="ObjectShortName">start_send_data_0</obj_property>
-   </wvobject>
-   <wvobject fp_name="/sim_all/my_project/packet_frame_index_2" type="array">
-      <obj_property name="ElementShortName">packet_frame_index_2[47:0]</obj_property>
-      <obj_property name="ObjectShortName">packet_frame_index_2[47:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/sim_all/my_project/wait_cnt_2" type="array">
-      <obj_property name="ElementShortName">wait_cnt_2[31:0]</obj_property>
-      <obj_property name="ObjectShortName">wait_cnt_2[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/sim_all/my_project/start_send_data_2" type="logic">
-      <obj_property name="ElementShortName">start_send_data_2</obj_property>
-      <obj_property name="ObjectShortName">start_send_data_2</obj_property>
-   </wvobject>
-   <wvobject fp_name="/sim_all/my_project/cnt_send_number_0" type="array">
-      <obj_property name="ElementShortName">cnt_send_number_0[47:0]</obj_property>
-      <obj_property name="ObjectShortName">cnt_send_number_0[47:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/sim_all/my_project/cnt_send_to_03_number_0" type="array">
-      <obj_property name="ElementShortName">cnt_send_to_03_number_0[47:0]</obj_property>
-      <obj_property name="ObjectShortName">cnt_send_to_03_number_0[47:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/sim_all/my_project/cnt_receive_number_0" type="array">
-      <obj_property name="ElementShortName">cnt_receive_number_0[47:0]</obj_property>
-      <obj_property name="ObjectShortName">cnt_receive_number_0[47:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/sim_all/my_project/cnt_send_number_2" type="array">
-      <obj_property name="ElementShortName">cnt_send_number_2[47:0]</obj_property>
-      <obj_property name="ObjectShortName">cnt_send_number_2[47:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/sim_all/my_project/cnt_receive_number_2" type="array">
-      <obj_property name="ElementShortName">cnt_receive_number_2[47:0]</obj_property>
-      <obj_property name="ObjectShortName">cnt_receive_number_2[47:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/sim_all/my_project/cnt_receive_from_01_number_2" type="array">
-      <obj_property name="ElementShortName">cnt_receive_from_01_number_2[47:0]</obj_property>
-      <obj_property name="ObjectShortName">cnt_receive_from_01_number_2[47:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   <wvobject fp_name="/sim_all/my_project/cnt_receive_number_1" type="array">
+      <obj_property name="ElementShortName">cnt_receive_number_1[47:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_receive_number_1[47:0]</obj_property>
    </wvobject>
 </wave_config>
