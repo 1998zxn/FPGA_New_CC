@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Tue Jun 22 14:13:46 2021
+| Date         : Tue Jun 22 14:39:36 2021
 | Host         : zxn running 64-bit major release  (build 9200)
 | Command      : report_utilization -file my_project_utilization_synth.rpt -pb my_project_utilization_synth.pb
 | Design       : my_project
@@ -57,8 +57,8 @@ Table of Contents
 | 0     |            _ |         Set |            - |
 | 0     |            _ |       Reset |            - |
 | 0     |          Yes |           - |            - |
-| 362   |          Yes |           - |          Set |
-| 2143  |          Yes |           - |        Reset |
+| 363   |          Yes |           - |          Set |
+| 2142  |          Yes |           - |        Reset |
 | 24    |          Yes |         Set |            - |
 | 4260  |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
@@ -155,14 +155,14 @@ Table of Contents
 |    Ref Name   | Used | Functional Category |
 +---------------+------+---------------------+
 | FDRE          | 4260 |            Register |
-| FDCE          | 2143 |            Register |
+| FDCE          | 2142 |            Register |
 | LUT6          | 1045 |                 CLB |
 | LUT3          |  873 |                 CLB |
 | LUT5          |  723 |                 CLB |
 | LUT4          |  666 |                 CLB |
 | LUT2          |  642 |                 CLB |
 | CARRY8        |  455 |                 CLB |
-| FDPE          |  362 |            Register |
+| FDPE          |  363 |            Register |
 | LUT1          |  263 |                 CLB |
 | FDSE          |   24 |            Register |
 | RAMB36E2      |   16 |            BLOCKRAM |

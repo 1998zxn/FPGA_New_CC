@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Tue Jun 22 14:24:17 2021
+| Date         : Tue Jun 22 14:49:53 2021
 | Host         : zxn running 64-bit major release  (build 9200)
 | Command      : report_utilization -file my_project_utilization_placed.rpt -pb my_project_utilization_placed.pb
 | Design       : my_project
@@ -59,8 +59,8 @@ Table of Contents
 | 0     |            _ |         Set |            - |
 | 0     |            _ |       Reset |            - |
 | 0     |          Yes |           - |            - |
-| 475   |          Yes |           - |          Set |
-| 2365  |          Yes |           - |        Reset |
+| 476   |          Yes |           - |          Set |
+| 2364  |          Yes |           - |        Reset |
 | 613   |          Yes |         Set |            - |
 | 48017 |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
@@ -213,13 +213,13 @@ Table of Contents
 | LUT4          |  5052 |                 CLB |
 | LUT5          |  4373 |                 CLB |
 | LUT2          |  3357 |                 CLB |
-| FDCE          |  2365 |            Register |
+| FDCE          |  2364 |            Register |
 | SRLC32E       |  2224 |                 CLB |
 | CARRY8        |  1033 |                 CLB |
 | LUT1          |   828 |                 CLB |
 | MUXF7         |   728 |                 CLB |
 | FDSE          |   613 |            Register |
-| FDPE          |   475 |            Register |
+| FDPE          |   476 |            Register |
 | RAMD32        |   368 |                 CLB |
 | MUXF8         |   117 |                 CLB |
 | RAMS32        |   112 |                 CLB |
