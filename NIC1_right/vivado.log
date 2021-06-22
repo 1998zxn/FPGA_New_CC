@@ -745,3 +745,11 @@ Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.349 . Memory 
 [Mon Jun 21 19:57:19 2021] Launched impl_3...
 Run output will be captured here: D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.runs/impl_3/runme.log
 launch_runs: Time (s): cpu = 00:00:14 ; elapsed = 00:00:10 . Memory (MB): peak = 2494.715 ; gain = 10.293
+reset_run synth_1_copy_2
+launch_runs impl_3 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/ip/xxv_ethernet_0/xxv_ethernet_0.xci' is already up-to-date
+WARNING: [Project 1-478] Design 'synth_1_copy_2' is stale and will not be used when launching 'impl_3'
+[Tue Jun 22 14:11:08 2021] Launched synth_1_copy_2...
+Run output will be captured here: D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.runs/synth_1_copy_2/runme.log
+[Tue Jun 22 14:11:08 2021] Launched impl_3...
+Run output will be captured here: D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.runs/impl_3/runme.log

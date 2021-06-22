@@ -628,3 +628,6 @@ connect_debug_port u_ila_7/probe5 [get_nets [list user_tx_reset_3 ]]
 save_constraints
 launch_runs impl_3 -to_step write_bitstream -jobs 4
 wait_on_run impl_3
+reset_run synth_1_copy_2
+launch_runs impl_3 -to_step write_bitstream -jobs 4
+wait_on_run impl_3

@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Mon Jun 21 20:19:41 2021
+| Date         : Tue Jun 22 14:20:10 2021
 | Host         : zxn running 64-bit major release  (build 9200)
 | Command      : report_drc -file my_project_drc_opted.rpt -pb my_project_drc_opted.pb -rpx my_project_drc_opted.rpx
 | Design       : my_project
@@ -20,7 +20,7 @@ Table of Contents
 1. REPORT SUMMARY
 -----------------
             Netlist: netlist
-          Floorplan: checkpoint_my_project
+          Floorplan: design_1
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>

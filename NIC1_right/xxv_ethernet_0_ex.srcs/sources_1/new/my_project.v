@@ -424,8 +424,8 @@ begin
   if (user_tx_reset_1)
     start_send_data_1 <= 0 ;
   else 
-    if(wait_cnt_1 < 31'hFFFFFFFF || cnt_send_number_1 > 48'h000000FFFFFF || receive_data_packet == 0)
-    //if(wait_cnt_1 < 31'hFFFFFFFF || cnt_send_number_1 > 48'h000000FFFFFF)
+    //if(wait_cnt_1 < 31'hFFFFFFFF || cnt_send_number_1 > 48'h000000FFFFFF || receive_data_packet == 0)
+    if(wait_cnt_1 < 31'hFFFFFFFF || cnt_send_number_1 > 48'h000000FFFFFF)
     //if(wait_cnt_1 < 32'hFFFFFFFF || receive_data_packet == 0)//h000000FF
       start_send_data_1 <= 0;
     else
