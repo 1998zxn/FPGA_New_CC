@@ -371,7 +371,7 @@ end
 
 always @(posedge tx_clk_out_1 or posedge user_tx_reset_1)
 begin
-  if (user_tx_reset_1)
+  if (user_tx_reset_1 || cnt_receive_from_01_number_1 == 0)
     packet_frame_index_1 <= 48'd0 ;
   else 
     if(packet_frame_index_1 == 48'hFFFFFFFFFFFF)
@@ -425,7 +425,8 @@ begin
     start_send_data_1 <= 0 ;
   else 
     //if(wait_cnt_1 < 31'hFFFFFFFF || cnt_send_number_1 > 48'h000000FFFFFF || receive_data_packet == 0)
-    if(wait_cnt_1 < 31'hFFFFFFFF || cnt_send_number_1 > 48'h000000FFFFFF)
+    //if(wait_cnt_1 < 31'hFFFFFFFF || cnt_send_number_1 > 48'h000000FFFFFF)
+    if(wait_cnt_1 < 31'hFFFFFFFF)
     //if(wait_cnt_1 < 32'hFFFFFFFF || receive_data_packet == 0)//h000000FF
       start_send_data_1 <= 0;
     else
@@ -488,7 +489,8 @@ begin
   if (user_tx_reset_2)
     start_send_data_2 <= 0 ;
   else 
-    if(wait_cnt_2 < 31'h0FFFFFFF || cnt_send_number_2 > 48'h000000FFFFFF)
+    //if(wait_cnt_2 < 31'h0FFFFFFF || cnt_send_number_2 > 48'h000000FFFFFF)
+    if(wait_cnt_2 < 31'h0FFFFFFF)
       start_send_data_2 <= 0;
     else
       start_send_data_2 <= 1;

@@ -146,7 +146,12 @@ begin
                 end if;
                 Timestamp(47 downto 32) <= Timestamp_47downto32;
                 Timestamp(31 downto 0) <= rx_tdata_out(31 downto 0);
-                valid_1 <= '1';
+                if( rx_tdata_out(31 downto 0) = X"00000000" ) then
+                    valid_1 <= '1';
+                else
+                    valid_1 <= '0';
+                end if;
+                --valid_1 <= '1';
 --            when SM_BEAT8_ST =>
 --                if( rx_tlast_out='1' ) then
 --                    SM_nxt <= SM_IDLE_ST;

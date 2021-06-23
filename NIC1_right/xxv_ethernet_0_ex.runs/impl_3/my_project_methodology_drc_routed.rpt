@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Tue Jun 22 14:55:25 2021
+| Date         : Tue Jun 22 19:20:04 2021
 | Host         : zxn running 64-bit major release  (build 9200)
 | Command      : report_methodology -file my_project_methodology_drc_routed.rpt -pb my_project_methodology_drc_routed.pb -rpx my_project_methodology_drc_routed.rpx
 | Design       : my_project
@@ -23,14 +23,14 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 762
+             Violations found: 764
 +-----------+------------------+---------------------------------------+------------+
 | Rule      | Severity         | Description                           | Violations |
 +-----------+------------------+---------------------------------------+------------+
-| TIMING-7  | Critical Warning | No common node between related clocks | 1          |
+| TIMING-7  | Critical Warning | No common node between related clocks | 2          |
 | TIMING-17 | Critical Warning | Non-clocked sequential cell           | 744        |
 | AVAL-324  | Warning          | Hard_blocks_needs_LOCs                | 1          |
-| LUTAR-1   | Warning          | LUT drives async reset alert          | 13         |
+| LUTAR-1   | Warning          | LUT drives async reset alert          | 14         |
 | SYNTH-13  | Warning          | combinational multiplier              | 1          |
 | TIMING-9  | Warning          | Unknown CDC Logic                     | 1          |
 | TIMING-18 | Warning          | Missing input or output delay         | 1          |
@@ -39,6 +39,11 @@ Table of Contents
 2. REPORT DETAILS
 -----------------
 TIMING-7#1 Critical Warning
+No common node between related clocks  
+The clocks rx_core_clk_1 and tx_clk_out_1 are related (timed together) but they have no common node. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks rx_core_clk_1] -to [get_clocks tx_clk_out_1]
+Related violations: <none>
+
+TIMING-7#2 Critical Warning
 No common node between related clocks  
 The clocks tx_clk_out_1 and rx_core_clk_1 are related (timed together) but they have no common node. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks tx_clk_out_1] -to [get_clocks rx_core_clk_1]
 Related violations: <none>
@@ -3868,6 +3873,18 @@ my_xxv_ethernet_0_exdes/i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrappe
 my_xxv_ethernet_0_exdes/i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_3/i_xxv_ethernet_0_gt_3/inst/gen_gtwizard_gthe3_top.xxv_ethernet_0_gt_3_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_rx_any_inst/rst_in_sync1_reg/PRE,
 my_xxv_ethernet_0_exdes/i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_3/i_xxv_ethernet_0_gt_3/inst/gen_gtwizard_gthe3_top.xxv_ethernet_0_gt_3_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_rx_any_inst/rst_in_sync2_reg/PRE
 my_xxv_ethernet_0_exdes/i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_3/i_xxv_ethernet_0_gt_3/inst/gen_gtwizard_gthe3_top.xxv_ethernet_0_gt_3_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_rx_any_inst/rst_in_sync3_reg/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#14 Warning
+LUT drives async reset alert  
+LUT cell packet_frame_index_1[47]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) packet_frame_index_1_reg[0]/CLR, packet_frame_index_1_reg[10]/CLR,
+packet_frame_index_1_reg[11]/CLR, packet_frame_index_1_reg[12]/CLR,
+packet_frame_index_1_reg[13]/CLR, packet_frame_index_1_reg[14]/CLR,
+packet_frame_index_1_reg[15]/CLR, packet_frame_index_1_reg[16]/CLR,
+packet_frame_index_1_reg[17]/CLR, packet_frame_index_1_reg[18]/CLR,
+packet_frame_index_1_reg[19]/CLR, packet_frame_index_1_reg[1]/CLR,
+packet_frame_index_1_reg[20]/CLR, packet_frame_index_1_reg[21]/CLR,
+packet_frame_index_1_reg[22]/CLR (the first 15 of 48 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 SYNTH-13#1 Warning

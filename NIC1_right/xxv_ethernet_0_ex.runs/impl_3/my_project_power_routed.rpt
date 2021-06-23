@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date             : Tue Jun 22 14:55:50 2021
+| Date             : Tue Jun 22 19:20:30 2021
 | Host             : zxn running 64-bit major release  (build 9200)
 | Command          : report_power -file my_project_power_routed.rpt -pb my_project_power_summary_routed.pb -rpx my_project_power_routed.rpx
 | Design           : my_project
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 2.607        |
+| Total On-Chip Power (W)  | 2.612        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 2.062        |
+| Dynamic (W)              | 2.067        |
 | Device Static (W)        | 0.545        |
 | Effective TJA (C/W)      | 1.4          |
 | Max Ambient (C)          | 96.3         |
@@ -52,24 +52,24 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.293 |       22 |       --- |             --- |
-| CLB Logic                |     0.256 |    99540 |       --- |             --- |
-|   LUT as Logic           |     0.134 |    28328 |    242400 |           11.69 |
-|   LUT as Shift Register  |     0.101 |     3991 |    112800 |            3.54 |
-|   Register               |     0.016 |    51470 |    484800 |           10.62 |
-|   LUT as Distributed RAM |     0.004 |      248 |    112800 |            0.22 |
-|   CARRY8                 |     0.002 |     1033 |     30300 |            3.41 |
+| Clocks                   |     0.294 |       22 |       --- |             --- |
+| CLB Logic                |     0.254 |    99499 |       --- |             --- |
+|   LUT as Logic           |     0.132 |    28290 |    242400 |           11.67 |
+|   LUT as Shift Register  |     0.102 |     3991 |    112800 |            3.54 |
+|   Register               |     0.015 |    51470 |    484800 |           10.62 |
+|   LUT as Distributed RAM |     0.003 |      248 |    112800 |            0.22 |
+|   CARRY8                 |     0.001 |     1033 |     30300 |            3.41 |
 |   BUFG                   |    <0.001 |        5 |        80 |            6.25 |
 |   F7/F8 Muxes            |    <0.001 |      845 |    242400 |            0.35 |
 |   Others                 |     0.000 |     4803 |       --- |             --- |
-| Signals                  |     0.197 |    74149 |       --- |             --- |
-| Block RAM                |     0.139 |    104.5 |       600 |           17.42 |
+| Signals                  |     0.199 |    74115 |       --- |             --- |
+| Block RAM                |     0.142 |    104.5 |       600 |           17.42 |
 | MMCM                     |     0.063 |        1 |        10 |           10.00 |
 | DSPs                     |    <0.001 |        1 |      1920 |            0.05 |
 | I/O                      |     0.004 |        3 |       520 |            0.58 |
 | GTH                      |     1.110 |        4 |        20 |           20.00 |
 | Static Power             |     0.545 |          |           |                 |
-| Total                    |     2.607 |          |           |                 |
+| Total                    |     2.612 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -79,7 +79,7 @@ Table of Contents
 +------------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source     | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +------------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint     |       0.950 |     1.229 |       1.068 |      0.160 |       NA    | Unspecified | NA         |
+| Vccint     |       0.950 |     1.233 |       1.073 |      0.160 |       NA    | Unspecified | NA         |
 | Vccaux     |       1.800 |     0.132 |       0.035 |      0.097 |       NA    | Unspecified | NA         |
 | Vccaux_io  |       1.800 |     0.067 |       0.002 |      0.065 |       NA    | Unspecified | NA         |
 | Vccint_io  |       0.950 |     0.017 |       0.001 |      0.017 |       NA    | Unspecified | NA         |
@@ -173,71 +173,71 @@ Table of Contents
 +--------------------------------------------+-----------+
 | Name                                       | Power (W) |
 +--------------------------------------------+-----------+
-| my_project                                 |     2.062 |
+| my_project                                 |     2.067 |
 |   dbg_hub                                  |     0.005 |
 |     inst                                   |     0.005 |
 |       BSCANID.u_xsdbm_id                   |     0.005 |
-|   inst_Ports0                              |     0.008 |
+|   inst_Ports0                              |     0.009 |
 |     fifo_generator_for_MAC                 |     0.002 |
 |       U0                                   |     0.002 |
 |     fifo_generator_for_RTT                 |     0.002 |
 |       U0                                   |     0.002 |
-|     inst_RTT_Measurement                   |     0.001 |
-|     inst_send_ack                          |     0.002 |
-|   inst_Ports_for_CC_port_1                 |     0.088 |
-|     fifo_generator_for_RTT                 |     0.002 |
-|       U0                                   |     0.002 |
+|     inst_RTT_Measurement                   |     0.002 |
+|     inst_send_ack                          |     0.003 |
+|   inst_Ports_for_CC_port_1                 |     0.079 |
+|     fifo_generator_for_RTT                 |     0.003 |
+|       U0                                   |     0.003 |
 |     inst_CWnd_Rate_Computation_verilog     |     0.062 |
 |       C_Rate                               |     0.018 |
 |       C_adder_ECN_0                        |     0.015 |
 |       C_adder_Low                          |     0.015 |
-|       ram                                  |     0.003 |
+|       ram                                  |     0.002 |
 |     inst_Control_CWnd                      |     0.001 |
-|     inst_Control_Rate                      |     0.015 |
-|       C_T_pai                              |     0.015 |
-|     inst_RTT_Measurement                   |     0.003 |
+|     inst_Control_Rate                      |     0.006 |
+|       C_T_pai                              |     0.006 |
+|     inst_RTT_Measurement                   |     0.002 |
 |     inst_send_data                         |     0.004 |
 |   inst_send_data_2                         |     0.003 |
-|   my_xxv_ethernet_0_exdes                  |     1.574 |
+|   my_xxv_ethernet_0_exdes                  |     1.581 |
 |     axi_lite_clocking_i                    |     0.067 |
 |       clkin1_buf                           |     0.004 |
 |     ethernet_mac_fifo_0                    |     0.016 |
 |       i_tx_fifo                            |     0.006 |
-|       rx_fifo_inst                         |     0.009 |
-|     ethernet_mac_fifo_1                    |     0.020 |
+|       rx_fifo_inst                         |     0.010 |
+|     ethernet_mac_fifo_1                    |     0.021 |
+|       i_tx_fifo                            |     0.013 |
+|       rx_fifo_inst                         |     0.008 |
+|     ethernet_mac_fifo_2                    |     0.021 |
 |       i_tx_fifo                            |     0.012 |
-|       rx_fifo_inst                         |     0.008 |
-|     ethernet_mac_fifo_2                    |     0.020 |
-|       i_tx_fifo                            |     0.011 |
-|       rx_fifo_inst                         |     0.008 |
-|     ethernet_mac_fifo_3                    |     0.013 |
+|       rx_fifo_inst                         |     0.009 |
+|     ethernet_mac_fifo_3                    |     0.014 |
 |       i_tx_fifo                            |     0.005 |
 |       rx_fifo_inst                         |     0.009 |
-|     i_xxv_ethernet_0_core_support          |     1.434 |
-|       DUT                                  |     0.298 |
+|     i_xxv_ethernet_0_core_support          |     1.438 |
+|       DUT                                  |     0.302 |
 |       i_xxv_ethernet_0_gt_wrapper_0        |     0.283 |
 |       i_xxv_ethernet_0_gt_wrapper_1        |     0.283 |
-|       i_xxv_ethernet_0_gt_wrapper_2        |     0.283 |
+|       i_xxv_ethernet_0_gt_wrapper_2        |     0.284 |
 |       i_xxv_ethernet_0_gt_wrapper_3        |     0.284 |
 |       i_xxv_ethernet_0_sharedlogic_wrapper |     0.002 |
-|   u_ila_0                                  |     0.097 |
-|     inst                                   |     0.097 |
-|       ila_core_inst                        |     0.096 |
-|   u_ila_1                                  |     0.091 |
-|     inst                                   |     0.091 |
-|       ila_core_inst                        |     0.091 |
-|   u_ila_2                                  |     0.027 |
-|     inst                                   |     0.027 |
-|       ila_core_inst                        |     0.027 |
+|   u_ila_0                                  |     0.098 |
+|     inst                                   |     0.098 |
+|       ila_core_inst                        |     0.098 |
+|   u_ila_1                                  |     0.092 |
+|     inst                                   |     0.092 |
+|       ila_core_inst                        |     0.092 |
+|   u_ila_2                                  |     0.026 |
+|     inst                                   |     0.026 |
+|       ila_core_inst                        |     0.026 |
 |   u_ila_3                                  |     0.041 |
 |     inst                                   |     0.041 |
 |       ila_core_inst                        |     0.041 |
 |   u_ila_4                                  |     0.040 |
 |     inst                                   |     0.040 |
 |       ila_core_inst                        |     0.040 |
-|   u_ila_5                                  |     0.046 |
-|     inst                                   |     0.046 |
-|       ila_core_inst                        |     0.046 |
+|   u_ila_5                                  |     0.047 |
+|     inst                                   |     0.047 |
+|       ila_core_inst                        |     0.047 |
 |   u_ila_6                                  |     0.018 |
 |     inst                                   |     0.018 |
 |       ila_core_inst                        |     0.018 |
