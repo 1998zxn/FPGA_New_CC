@@ -2,15 +2,14 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Tue Jun 22 19:02:00 2021
-# Process ID: 16768
+# Start of session at: Tue Jun 29 23:44:37 2021
+# Process ID: 18244
 # Current directory: D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.runs/synth_1_copy_2
 # Command line: vivado.exe -log my_project.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source my_project.tcl
 # Log file: D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.runs/synth_1_copy_2/my_project.vds
 # Journal file: D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.runs/synth_1_copy_2\vivado.jou
 #-----------------------------------------------------------
 source my_project.tcl -notrace
-create_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 918.984 ; gain = 0.000
 Command: synth_design -top my_project -part xcku040-ffva1156-2-e
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xcku040'
@@ -18,15 +17,15 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcku040
 INFO: [Device 21-403] Loading part xcku040-ffva1156-2-e
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 17568
+INFO: [Synth 8-7075] Helper process launched with PID 24224
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1478.539 ; gain = 262.238
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1476.547 ; gain = 261.207
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'my_project' [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:23]
 INFO: [Synth 8-6157] synthesizing module 'xxv_ethernet_0_exdes' [D:/project/FPGA_New_CC/NIC1_right/imports/xxv_ethernet_0_exdes.v:64]
 	Parameter PKT_NUM bound to: 20 - type: integer 
 INFO: [Synth 8-6157] synthesizing module 'xxv_ethernet_0_core_support' [D:/project/FPGA_New_CC/NIC1_right/imports/xxv_ethernet_0_core_support.v:64]
-INFO: [Synth 8-638] synthesizing module 'xxv_ethernet_0' [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.runs/synth_1_copy_2/.Xil/Vivado-16768-zxn/realtime/xxv_ethernet_0_stub.vhdl:515]
+INFO: [Synth 8-638] synthesizing module 'xxv_ethernet_0' [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.runs/synth_1_copy_2/.Xil/Vivado-18244-zxn/realtime/xxv_ethernet_0_stub.vhdl:515]
 INFO: [Synth 8-6157] synthesizing module 'xxv_ethernet_0_gt_wrapper_0' [D:/project/FPGA_New_CC/NIC1_right/imports/xxv_ethernet_0_gt_wrapper.v:63]
 INFO: [Synth 8-6157] synthesizing module 'xxv_ethernet_0_ultrascale_tx_userclk' [D:/project/FPGA_New_CC/NIC1_right/imports/xxv_ethernet_0_ultrascale_tx_userclk.v:73]
 	Parameter P_CONTENTS bound to: 0 - type: integer 
@@ -2328,9 +2327,9 @@ INFO: [Synth 8-638] synthesizing module 'Ports1' [D:/project/FPGA_New_CC/NIC1_ri
 INFO: [Synth 8-3491] module 'Receive_Timestamp' declared at 'D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/Receive_Timestamp.vhd:35' bound to instance 'inst_RTT_Measurement' of component 'Receive_Timestamp' [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/Ports1.vhd:204]
 INFO: [Synth 8-638] synthesizing module 'Receive_Timestamp' [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/Receive_Timestamp.vhd:54]
 INFO: [Synth 8-256] done synthesizing module 'Receive_Timestamp' (53#1) [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/Receive_Timestamp.vhd:54]
-INFO: [Synth 8-3491] module 'fifo_generator_0' declared at 'D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.runs/synth_1_copy_2/.Xil/Vivado-16768-zxn/realtime/fifo_generator_0_stub.vhdl:5' bound to instance 'fifo_generator_for_RTT' of component 'fifo_generator_0' [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/Ports1.vhd:223]
-INFO: [Synth 8-638] synthesizing module 'fifo_generator_0' [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.runs/synth_1_copy_2/.Xil/Vivado-16768-zxn/realtime/fifo_generator_0_stub.vhdl:19]
-INFO: [Synth 8-3491] module 'fifo_generator_0' declared at 'D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.runs/synth_1_copy_2/.Xil/Vivado-16768-zxn/realtime/fifo_generator_0_stub.vhdl:5' bound to instance 'fifo_generator_for_MAC' of component 'fifo_generator_0' [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/Ports1.vhd:234]
+INFO: [Synth 8-3491] module 'fifo_generator_0' declared at 'D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.runs/synth_1_copy_2/.Xil/Vivado-18244-zxn/realtime/fifo_generator_0_stub.vhdl:5' bound to instance 'fifo_generator_for_RTT' of component 'fifo_generator_0' [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/Ports1.vhd:223]
+INFO: [Synth 8-638] synthesizing module 'fifo_generator_0' [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.runs/synth_1_copy_2/.Xil/Vivado-18244-zxn/realtime/fifo_generator_0_stub.vhdl:19]
+INFO: [Synth 8-3491] module 'fifo_generator_0' declared at 'D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.runs/synth_1_copy_2/.Xil/Vivado-18244-zxn/realtime/fifo_generator_0_stub.vhdl:5' bound to instance 'fifo_generator_for_MAC' of component 'fifo_generator_0' [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/Ports1.vhd:234]
 INFO: [Synth 8-3491] module 'send_ack' declared at 'D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/send_ack.vhd:30' bound to instance 'inst_send_ack' of component 'send_ack' [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/Ports1.vhd:260]
 INFO: [Synth 8-638] synthesizing module 'send_ack' [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/send_ack.vhd:50]
 WARNING: [Synth 8-614] signal 'RTT' is read in the process but is not in the sensitivity list [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/send_ack.vhd:94]
@@ -2356,8 +2355,8 @@ INFO: [Synth 8-6157] synthesizing module 'CWnd_Rate_Computation_verilog' [D:/pro
 	Parameter SM_ECN_0_ST bound to: 8'b00100000 
 	Parameter SM_ECN_1_ST bound to: 8'b01000000 
 	Parameter SM_Result_ST bound to: 8'b10000000 
-INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0' [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.runs/synth_1_copy_2/.Xil/Vivado-16768-zxn/realtime/blk_mem_gen_0_stub.vhdl:16]
-INFO: [Synth 8-638] synthesizing module 'div_gen_0' [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.runs/synth_1_copy_2/.Xil/Vivado-16768-zxn/realtime/div_gen_0_stub.vhdl:18]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0' [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.runs/synth_1_copy_2/.Xil/Vivado-18244-zxn/realtime/blk_mem_gen_0_stub.vhdl:16]
+INFO: [Synth 8-638] synthesizing module 'div_gen_0' [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.runs/synth_1_copy_2/.Xil/Vivado-18244-zxn/realtime/div_gen_0_stub.vhdl:18]
 INFO: [Synth 8-6155] done synthesizing module 'CWnd_Rate_Computation_verilog' (57#1) [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/CWnd_Rate_Computation_verilog.v:21]
 INFO: [Synth 8-6157] synthesizing module 'Rate_Control' [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/Rate_Control.v:23]
 	Parameter SM_IDLE_ST bound to: 4'b0001 
@@ -2371,16 +2370,16 @@ INFO: [Synth 8-6157] synthesizing module 'CWnd_Control' [D:/project/FPGA_New_CC/
 	Parameter SM_Wait_ST bound to: 4'b0100 
 	Parameter SM_Noting_ST bound to: 4'b1000 
 INFO: [Synth 8-6155] done synthesizing module 'CWnd_Control' (59#1) [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/CWnd_Control.v:22]
-INFO: [Synth 8-638] synthesizing module 'send_data' [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/send_data.vhd:47]
-WARNING: [Synth 8-614] signal 'dest_mac' is read in the process but is not in the sensitivity list [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/send_data.vhd:87]
-WARNING: [Synth 8-614] signal 'src_mac' is read in the process but is not in the sensitivity list [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/send_data.vhd:87]
-INFO: [Synth 8-256] done synthesizing module 'send_data' (60#1) [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/send_data.vhd:47]
-WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/Ports_for_CC.v:166]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'inst_send_data'. This will prevent further optimization [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/Ports_for_CC.v:151]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'inst_CWnd_Rate_Computation_verilog'. This will prevent further optimization [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/Ports_for_CC.v:120]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'inst_Control_CWnd'. This will prevent further optimization [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/Ports_for_CC.v:140]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'inst_Control_Rate'. This will prevent further optimization [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/Ports_for_CC.v:133]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'inst_RTT_Measurement'. This will prevent further optimization [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/Ports_for_CC.v:98]
+INFO: [Synth 8-638] synthesizing module 'send_data' [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/send_data.vhd:48]
+WARNING: [Synth 8-614] signal 'dest_mac' is read in the process but is not in the sensitivity list [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/send_data.vhd:88]
+WARNING: [Synth 8-614] signal 'src_mac' is read in the process but is not in the sensitivity list [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/send_data.vhd:88]
+INFO: [Synth 8-256] done synthesizing module 'send_data' (60#1) [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/send_data.vhd:48]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/Ports_for_CC.v:171]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'inst_send_data'. This will prevent further optimization [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/Ports_for_CC.v:155]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'inst_CWnd_Rate_Computation_verilog'. This will prevent further optimization [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/Ports_for_CC.v:122]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'inst_Control_CWnd'. This will prevent further optimization [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/Ports_for_CC.v:143]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'inst_Control_Rate'. This will prevent further optimization [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/Ports_for_CC.v:136]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'inst_RTT_Measurement'. This will prevent further optimization [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/Ports_for_CC.v:100]
 INFO: [Synth 8-6155] done synthesizing module 'Ports_for_CC' (61#1) [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/Ports_for_CC.v:23]
 INFO: [Synth 8-638] synthesizing module 'send_data_five_gig' [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/send_data_five_gig.vhd:47]
 WARNING: [Synth 8-614] signal 'dest_mac' is read in the process but is not in the sensitivity list [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/send_data_five_gig.vhd:87]
@@ -2391,19 +2390,19 @@ INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance '
 INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'inst_post_0_send'. This will prevent further optimization [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:261]
 INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'inst_post_0_receive'. This will prevent further optimization [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:252]
 INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'inst_Ports_for_CC_port_1'. This will prevent further optimization [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:271]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'inst_send_data_2'. This will prevent further optimization [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:291]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'inst_send_data_2'. This will prevent further optimization [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:292]
 INFO: [Synth 8-6155] done synthesizing module 'my_project' (63#1) [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:23]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1615.785 ; gain = 399.484
+Finished RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 1613.820 ; gain = 398.480
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1634.695 ; gain = 418.395
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1613.820 ; gain = 398.480
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1634.695 ; gain = 418.395
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1613.820 ; gain = 398.480
 ---------------------------------------------------------------------------------
 CRITICAL WARNING: [Common 17-130] Wrong Boolean value '{true}'. Setting it to default value '0'.
 CRITICAL WARNING: [Common 17-130] Wrong Boolean value '{true}'. Setting it to default value '0'.
@@ -2506,7 +2505,7 @@ CRITICAL WARNING: [Common 17-130] Wrong Boolean value '{true}'. Setting it to de
 CRITICAL WARNING: [Common 17-130] Wrong Boolean value '{true}'. Setting it to default value '0'.
 CRITICAL WARNING: [Common 17-130] Wrong Boolean value '{true}'. Setting it to default value '0'.
 INFO: [Common 17-14] Message 'Common 17-130' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.531 . Memory (MB): peak = 1646.699 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.577 . Memory (MB): peak = 1613.820 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 3 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -2558,14 +2557,14 @@ Resolution: To avoid this warning, move constraints listed in [.Xil/my_project_p
 INFO: [Timing 38-2] Deriving generated clocks
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1744.699 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1694.938 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 3 instances were transformed.
   BUFG => BUFGCE: 1 instance 
   IBUFDS => IBUFDS (DIFFINBUF, IBUFCTRL): 1 instance 
   MMCME2_BASE => MMCME3_ADV: 1 instance 
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.189 . Memory (MB): peak = 1744.699 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.215 . Memory (MB): peak = 1694.938 ; gain = 0.000
 WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'inst_Ports0/fifo_generator_for_MAC' at clock pin 'rd_clk' is different from the actual clock period '6.400', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'inst_Ports0/fifo_generator_for_RTT' at clock pin 'rd_clk' is different from the actual clock period '6.400', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'inst_Ports_for_CC_port_1/fifo_generator_for_RTT' at clock pin 'rd_clk' is different from the actual clock period '6.400', this can lead to different synthesis results.
@@ -2575,7 +2574,7 @@ WARNING: [Timing 38-316] Clock period '1000.000' specified during out-of-context
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'inst_Ports_for_CC_port_1/inst_CWnd_Rate_Computation_verilog/ram' at clock pin 'clka' is different from the actual clock period '6.400', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '1000.000' specified during out-of-context synthesis of instance 'inst_Ports_for_CC_port_1/inst_Control_Rate/C_T_pai' at clock pin 'aclk' is different from the actual clock period '6.400', this can lead to different synthesis results.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 1744.699 ; gain = 528.398
+Finished Constraint Validation : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 1694.938 ; gain = 479.598
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -2583,7 +2582,7 @@ Start Loading Part and Timing Information
 Loading part: xcku040-ffva1156-2-e
 INFO: [Synth 8-6742] Reading net delay rules and data
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 1744.699 ; gain = 528.398
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 1694.938 ; gain = 479.598
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -2606,7 +2605,7 @@ Applied set_property KEEP_HIERARCHY = SOFT for inst_Ports_for_CC_port_1/inst_CWn
 Applied set_property KEEP_HIERARCHY = SOFT for inst_Ports_for_CC_port_1/inst_CWnd_Rate_Computation_verilog/C_adder_Low. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for inst_Ports_for_CC_port_1/inst_CWnd_Rate_Computation_verilog/ram. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 1744.699 ; gain = 528.398
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 1694.938 ; gain = 479.598
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'sm_reset_all_reg' in module 'gtwizard_ultrascale_v1_7_9_gtwiz_reset'
 INFO: [Synth 8-802] inferred FSM for state register 'sm_reset_tx_reg' in module 'gtwizard_ultrascale_v1_7_9_gtwiz_reset'
@@ -2834,14 +2833,14 @@ INFO: [Synth 8-6159] Found Keep on FSM register 'SM_reg' in module 'send_data_fi
             sm_wait_1_st |                             0010 |                             0010
 ---------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 1744.699 ; gain = 528.398
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 1694.938 ; gain = 479.598
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input   48 Bit       Adders := 28    
+	   2 Input   48 Bit       Adders := 34    
 	   3 Input   48 Bit       Adders := 1     
 	   2 Input   32 Bit       Adders := 30    
 	   2 Input   24 Bit       Adders := 1     
@@ -2860,7 +2859,7 @@ Detailed RTL Component Info :
 +---Registers : 
 	               68 Bit    Registers := 8     
 	               64 Bit    Registers := 18    
-	               48 Bit    Registers := 34    
+	               48 Bit    Registers := 37    
 	               32 Bit    Registers := 22    
 	               24 Bit    Registers := 4     
 	               16 Bit    Registers := 39    
@@ -2887,7 +2886,7 @@ Detailed RTL Component Info :
 	   8 Input   48 Bit        Muxes := 2     
 	   2 Input   32 Bit        Muxes := 2     
 	   2 Input   24 Bit        Muxes := 1     
-	   2 Input   16 Bit        Muxes := 23    
+	   2 Input   16 Bit        Muxes := 24    
 	  10 Input   16 Bit        Muxes := 3     
 	   4 Input   16 Bit        Muxes := 2     
 	  13 Input   14 Bit        Muxes := 1     
@@ -2910,14 +2909,14 @@ Detailed RTL Component Info :
 	   4 Input    2 Bit        Muxes := 16    
 	   2 Input    2 Bit        Muxes := 26    
 	   3 Input    2 Bit        Muxes := 1     
-	   2 Input    1 Bit        Muxes := 119   
+	   2 Input    1 Bit        Muxes := 122   
 	   7 Input    1 Bit        Muxes := 52    
 	   8 Input    1 Bit        Muxes := 107   
 	   5 Input    1 Bit        Muxes := 9     
 	  10 Input    1 Bit        Muxes := 3     
 	  11 Input    1 Bit        Muxes := 4     
 	   3 Input    1 Bit        Muxes := 1     
-	  12 Input    1 Bit        Muxes := 3     
+	  12 Input    1 Bit        Muxes := 4     
 	  13 Input    1 Bit        Muxes := 4     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
@@ -2961,7 +2960,7 @@ INFO: [Synth 8-5779] Default cascade height of 1 will be used for BRAM '"my_xxv_
 INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 36 for RAM "my_xxv_ethernet_0_exdes/ethernet_mac_fifo_3/rx_fifo_inst/fifo_ram_inst/ram_reg"
 INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 32 for RAM "my_xxv_ethernet_0_exdes/ethernet_mac_fifo_3/rx_fifo_inst/fifo_ram_inst/ram_reg"
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:55 ; elapsed = 00:00:59 . Memory (MB): peak = 1744.699 ; gain = 528.398
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:07 ; elapsed = 00:01:11 . Memory (MB): peak = 1694.938 ; gain = 479.598
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -2998,7 +2997,7 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:04 ; elapsed = 00:01:10 . Memory (MB): peak = 1833.410 ; gain = 617.109
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:17 ; elapsed = 00:01:21 . Memory (MB): peak = 1835.520 ; gain = 620.180
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
@@ -3028,7 +3027,7 @@ INFO: [Synth 8-5556] The block RAM "my_xxv_ethernet_0_exdes/ethernet_mac_fifo_3/
 INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 36 for RAM "my_xxv_ethernet_0_exdes/ethernet_mac_fifo_3/rx_fifo_inst/fifo_ram_inst/ram_reg"
 INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 32 for RAM "my_xxv_ethernet_0_exdes/ethernet_mac_fifo_3/rx_fifo_inst/fifo_ram_inst/ram_reg"
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:07 ; elapsed = 00:01:13 . Memory (MB): peak = 1857.387 ; gain = 641.086
+Finished Timing Optimization : Time (s): cpu = 00:01:20 ; elapsed = 00:01:25 . Memory (MB): peak = 1858.426 ; gain = 643.086
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -3067,7 +3066,7 @@ INFO: [Synth 8-7052] The timing for the instance my_xxv_ethernet_0_exdes/etherne
 INFO: [Synth 8-7052] The timing for the instance my_xxv_ethernet_0_exdes/ethernet_mac_fifo_3/rx_fifo_inst/fifo_ram_inst/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 INFO: [Synth 8-7052] The timing for the instance my_xxv_ethernet_0_exdes/ethernet_mac_fifo_3/rx_fifo_inst/fifo_ram_inst/ram_reg_bram_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:12 ; elapsed = 00:01:19 . Memory (MB): peak = 1888.098 ; gain = 671.797
+Finished Technology Mapping : Time (s): cpu = 00:01:27 ; elapsed = 00:01:34 . Memory (MB): peak = 1889.566 ; gain = 674.227
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -3158,54 +3157,54 @@ WARNING: [Synth 8-3295] tying undriven pin tx_axis_tkeep_3_inferred:in0[3] to co
 WARNING: [Synth 8-3295] tying undriven pin tx_axis_tkeep_3_inferred:in0[2] to constant 0
 WARNING: [Synth 8-3295] tying undriven pin tx_axis_tkeep_3_inferred:in0[1] to constant 0
 WARNING: [Synth 8-3295] tying undriven pin tx_axis_tkeep_3_inferred:in0[0] to constant 0
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:333]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:333]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:333]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:333]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:333]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:333]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:333]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:333]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:333]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:333]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:333]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:333]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:333]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:333]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:333]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:333]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:333]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:333]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:333]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:333]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:333]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:333]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:333]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:333]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:333]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:333]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:333]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:333]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:333]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:333]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:333]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:333]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:333]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:333]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:333]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:333]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:333]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:333]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:333]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:333]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:333]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:333]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:333]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:333]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:333]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:333]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:333]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:333]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:334]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:334]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:334]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:334]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:334]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:334]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:334]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:334]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:334]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:334]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:334]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:334]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:334]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:334]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:334]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:334]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:334]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:334]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:334]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:334]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:334]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:334]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:334]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:334]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:334]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:334]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:334]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:334]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:334]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:334]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:334]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:334]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:334]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:334]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:334]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:334]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:334]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:334]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:334]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:334]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:334]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:334]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:334]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:334]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:334]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:334]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:334]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/my_project.v:334]
 WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/bao_cnt_debug.v:41]
 WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/bao_cnt_debug.v:41]
 WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/bao_cnt_debug.v:41]
@@ -3260,37 +3259,37 @@ WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/
 WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.srcs/sources_1/new/send_ack.vhd:87]
 INFO: [Common 17-14] Message 'Synth 8-5396' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:17 ; elapsed = 00:01:24 . Memory (MB): peak = 1901.891 ; gain = 685.590
+Finished IO Insertion : Time (s): cpu = 00:01:33 ; elapsed = 00:01:39 . Memory (MB): peak = 1903.043 ; gain = 687.703
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:17 ; elapsed = 00:01:24 . Memory (MB): peak = 1901.891 ; gain = 685.590
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:33 ; elapsed = 00:01:39 . Memory (MB): peak = 1903.043 ; gain = 687.703
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:18 ; elapsed = 00:01:25 . Memory (MB): peak = 1901.891 ; gain = 685.590
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:34 ; elapsed = 00:01:40 . Memory (MB): peak = 1903.043 ; gain = 687.703
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:18 ; elapsed = 00:01:25 . Memory (MB): peak = 1901.891 ; gain = 685.590
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:34 ; elapsed = 00:01:40 . Memory (MB): peak = 1903.043 ; gain = 687.703
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:18 ; elapsed = 00:01:25 . Memory (MB): peak = 1901.891 ; gain = 685.590
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:35 ; elapsed = 00:01:41 . Memory (MB): peak = 1903.043 ; gain = 687.703
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:18 ; elapsed = 00:01:25 . Memory (MB): peak = 1901.891 ; gain = 685.590
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:35 ; elapsed = 00:01:41 . Memory (MB): peak = 1903.043 ; gain = 687.703
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -3316,7 +3315,7 @@ Report Cell Usage:
 |9     |xxv_ethernet_0_bbox   |     1|
 |10    |BUFG                  |     1|
 |11    |BUFG_GT               |    16|
-|12    |CARRY8                |   455|
+|12    |CARRY8                |   491|
 |13    |DSP_ALU               |     1|
 |14    |DSP_A_B_DATA          |     1|
 |15    |DSP_C_DATA            |     1|
@@ -3328,15 +3327,15 @@ Report Cell Usage:
 |21    |GTHE3_CHANNEL         |     4|
 |22    |GTHE3_COMMON          |     1|
 |23    |IBUFDS_GTE3           |     1|
-|24    |LUT1                  |   263|
-|25    |LUT2                  |   643|
-|26    |LUT3                  |   873|
-|27    |LUT4                  |   658|
-|28    |LUT5                  |   610|
-|29    |LUT6                  |  1124|
+|24    |LUT1                  |   327|
+|25    |LUT2                  |   742|
+|26    |LUT3                  |   882|
+|27    |LUT4                  |   662|
+|28    |LUT5                  |   625|
+|29    |LUT6                  |  1129|
 |30    |MMCME2_BASE           |     1|
 |31    |RAMB36E2              |    16|
-|33    |FDCE                  |  2142|
+|33    |FDCE                  |  2286|
 |34    |FDPE                  |   363|
 |35    |FDRE                  |  4260|
 |36    |FDSE                  |    24|
@@ -3344,14 +3343,14 @@ Report Cell Usage:
 |38    |IBUFDS                |     1|
 +------+----------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:18 ; elapsed = 00:01:25 . Memory (MB): peak = 1901.891 ; gain = 685.590
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:35 ; elapsed = 00:01:41 . Memory (MB): peak = 1903.043 ; gain = 687.703
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 2331 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:57 ; elapsed = 00:01:18 . Memory (MB): peak = 1901.891 ; gain = 575.586
-Synthesis Optimization Complete : Time (s): cpu = 00:01:18 ; elapsed = 00:01:26 . Memory (MB): peak = 1901.891 ; gain = 685.590
+Synthesis finished with 0 errors, 0 critical warnings and 2475 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:12 ; elapsed = 00:01:34 . Memory (MB): peak = 1903.043 ; gain = 606.586
+Synthesis Optimization Complete : Time (s): cpu = 00:01:35 ; elapsed = 00:01:41 . Memory (MB): peak = 1903.043 ; gain = 687.703
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.378 . Memory (MB): peak = 1909.902 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 460 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.417 . Memory (MB): peak = 1913.078 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 496 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
@@ -3364,7 +3363,7 @@ INFO: [Opt 31-441] Inserted BUFG_GT_SYNC my_xxv_ethernet_0_exdes/i_xxv_ethernet_
 INFO: [Opt 31-441] Inserted BUFG_GT_SYNC my_xxv_ethernet_0_exdes/i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_3/i_xxv_ethernet_0_gt_3/inst/gen_gtwizard_gthe3_top.xxv_ethernet_0_gt_3_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_channel_container[0].gen_enabled_channel.gthe3_channel_wrapper_inst/channel_inst/BUFG_GT_SYNC for BUFG_GT my_xxv_ethernet_0_exdes/i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_3/i_xxv_ethernet_0_core_gtwiz_userclk_rx_inst/gen_gtwiz_userclk_rx_main.bufg_gt_usrclk2_inst
 INFO: [Opt 31-441] Inserted BUFG_GT_SYNC my_xxv_ethernet_0_exdes/i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_3/i_xxv_ethernet_0_gt_3/inst/gen_gtwizard_gthe3_top.xxv_ethernet_0_gt_3_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_channel_container[0].gen_enabled_channel.gthe3_channel_wrapper_inst/channel_inst/BUFG_GT_SYNC_1 for BUFG_GT my_xxv_ethernet_0_exdes/i_xxv_ethernet_0_core_support/i_xxv_ethernet_0_gt_wrapper_3/i_xxv_ethernet_0_core_gtwiz_userclk_tx_inst/gen_gtwiz_userclk_tx_main.bufg_gt_usrclk2_inst
 INFO: [Opt 31-326] The CLKFBOUT to CLKFBIN net for instance my_xxv_ethernet_0_exdes/axi_lite_clocking_i/tx_mmcm with COMPENSATION=INTERNAL is optimized away to aid design routability
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1930.391 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1933.758 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 5 instances were transformed.
   BUFG => BUFGCE: 1 instance 
@@ -3376,8 +3375,8 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 272 Infos, 198 Warnings, 100 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:28 ; elapsed = 00:01:39 . Memory (MB): peak = 1930.391 ; gain = 1011.406
+synth_design: Time (s): cpu = 00:01:46 ; elapsed = 00:01:53 . Memory (MB): peak = 1933.758 ; gain = 807.086
 INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
 INFO: [Common 17-1381] The checkpoint 'D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.runs/synth_1_copy_2/my_project.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file my_project_utilization_synth.rpt -pb my_project_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Jun 22 19:04:07 2021...
+INFO: [Common 17-206] Exiting Vivado at Tue Jun 29 23:46:47 2021...

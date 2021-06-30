@@ -26,6 +26,7 @@ module CWnd_Rate_Computation_verilog
  input                      RTT_fifo_empty,                //RTT_fifo not empty
  output     reg             RTT_fifo_rd_en,       //read next RTT_fifo
  input          [47:0]      newRTT_in,
+ input      wire [47:0]     cnt_send_number_1,
 
  output     reg             cWnd_or_Rate,
 
@@ -266,6 +267,8 @@ always @(posedge clk or negedge reset)
 begin
   if (~reset)
     cWnd_or_Rate <= 1 ;
+  else if (cnt_send_number_1 == 48'h000000050000)
+    cWnd_or_Rate <= 0 ;
   else if (state == SM_Result_ST )
   begin
     if(m_cWnd_now < 16'd1024)

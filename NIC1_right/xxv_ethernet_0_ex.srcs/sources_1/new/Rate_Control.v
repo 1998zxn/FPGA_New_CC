@@ -47,6 +47,8 @@ parameter SM_Noting_ST              =  4'b1000;
 (*mark_debug = "true"*) reg [3:0]     state;
 reg        [3:0]                      next_state;
 
+(*mark_debug = "true"*) reg  [47:0] cnt_all_Rate = 48'd0;
+
 reg        [15:0] cnt;//
 reg        [15:0] cnt_begin;//
 reg        [15:0] T_pai;//
@@ -105,10 +107,20 @@ always @(posedge clk or negedge reset)
 begin
   if (~reset)
     start <= 0 ;
-  else if (state == SM_Begin_ST)
+  else if (state == SM_Begin_ST && cnt_begin == 16'd1 )
     start <= 1 ;
   else
     start <= 0;
+end
+
+always @(posedge clk or negedge reset)
+begin
+  if (~reset)
+    cnt_all_Rate <= 0 ;
+  else if (state == SM_Begin_ST && cnt_begin == 16'd1 )
+    cnt_all_Rate <= cnt_all_Rate + 1 ;
+  else
+    cnt_all_Rate <= cnt_all_Rate;
 end
 
 always @(posedge clk or negedge reset)

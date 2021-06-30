@@ -28,6 +28,7 @@ module Ports_for_CC(
     
     input  wire         start_wait,
     input  wire [47:0]  packet_frame_index,
+    input  wire [47:0]  cnt_send_number_1,
     output wire [63:0]  Ports_for_CC_tdata,
     output wire [7:0]   Ports_for_CC_tkeep,
     output wire         Ports_for_CC_tlast,
@@ -93,6 +94,7 @@ module Ports_for_CC(
 (*mark_debug = "true"*)wire             RTT_fifo_full;
 (*mark_debug = "true"*)wire             RTT_fifo_empty;
 (*mark_debug = "true"*)wire             RTT_fifo_rd_en;
+(*mark_debug = "true"*)wire             begin_CC;
 (*mark_debug = "true"*) reg  [47:0] cnt_before_computer_number_3 = 48'd0;
 (*mark_debug = "true"*) reg  [47:0] cnt_before_FIFO_number_3 = 48'd0;
 RTT_Measurement inst_RTT_Measurement(  
@@ -123,6 +125,7 @@ CWnd_Rate_Computation_verilog inst_CWnd_Rate_Computation_verilog(
 .RTT_fifo_empty(RTT_fifo_empty),
 .RTT_fifo_rd_en(RTT_fifo_rd_en),
 .newRTT_in(RTT_after_fifo),
+.cnt_send_number_1(cnt_send_number_1),
 
 .cWnd_or_Rate(ECN),
 .m_cWnd(m_cWnd),
@@ -145,6 +148,7 @@ CWnd_Control inst_Control_CWnd(
 .cWnd(m_cWnd),
 .cWnd_en(cWnd_en),
 .ECN(ECN),
+.begin_CC(begin_CC),
 .start_wait(start_wait),
 .start(start_from_CWnd)
 );
@@ -160,6 +164,7 @@ send_data inst_send_data(
 .tx_axis_tready(Ports_for_CC_tready),
 //.start(start_send_data),
 .start(start_send_data),
+.begin_CC(begin_CC),
 .packet_frame_index(packet_frame_index)
 );
 

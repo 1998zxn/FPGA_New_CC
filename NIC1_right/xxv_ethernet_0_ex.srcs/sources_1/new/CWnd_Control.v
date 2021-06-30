@@ -30,6 +30,7 @@ module CWnd_Control
  input                      cWnd_en,                //RTT_fifo not empty
  input                      ECN,                //RTT_fifo not empty
  input                      start_wait,
+ input                      begin_CC,
 
  output     reg             start                 //put rate to Rate_fifo
 
@@ -52,7 +53,9 @@ reg        [3:0]                      next_state ;
 
 (*mark_debug = "true"*) reg        [15:0] cWnd_size;//
 (*mark_debug = "true"*) reg        [15:0] cWnd_now;//
-(*mark_debug = "true"*) reg  [47:0] cnt_cWnd_en = 32'd0;
+(*mark_debug = "true"*) reg  [47:0] cnt_cWnd_en = 48'd0;
+(*mark_debug = "true"*) reg  [47:0] cnt_all_cWnd = 48'd0;
+(*mark_debug = "true"*) reg  [47:0] ack_on_link_now = 48'd0;
 reg        [7:0]  cnt_Wait;
 
 always @(posedge clk or negedge reset)
@@ -127,15 +130,29 @@ begin
     cWnd_now <= 8'd0 ;
   else if (cWnd_en == 1 )
   begin
-    if (cWnd_now >= 1)
+    if (begin_CC == 1 && last == 1)
+      cWnd_now <= cWnd_now;
+    else if (cWnd_now >= 1)
       cWnd_now <= cWnd_now - 1 ;
     else
       cWnd_now <= cWnd_now;
   end
-  else if (state == SM_Begin_ST && cWnd_now < cWnd_size)
+  //else if (state == SM_Wait_ST && cWnd_now < cWnd_size && last == 1)
+  else if (begin_CC == 1 && last == 1)
     cWnd_now <= cWnd_now + 1 ;
   else
     cWnd_now <= cWnd_now;
+end
+
+always @(posedge clk or negedge reset)
+begin
+  if (~reset)
+    cnt_all_cWnd <= 48'd0 ;
+  //else if (state == SM_Wait_ST && cWnd_now < cWnd_size && last == 1)
+  else if (begin_CC == 1 && last == 1)
+    cnt_all_cWnd <= cnt_all_cWnd + 1 ;
+  else
+    cnt_all_cWnd <= cnt_all_cWnd;
 end
 always @(posedge clk or negedge reset)
 begin
@@ -146,5 +163,12 @@ begin
       cnt_cWnd_en <= cnt_cWnd_en + 1;
     else
       cnt_cWnd_en <= cnt_cWnd_en;
+end
+always @(posedge clk or negedge reset)
+begin
+  if (~reset)
+    ack_on_link_now <= 48'd0 ;
+  else 
+    ack_on_link_now <= cnt_all_cWnd - cnt_cWnd_en - cWnd_now;
 end
 endmodule

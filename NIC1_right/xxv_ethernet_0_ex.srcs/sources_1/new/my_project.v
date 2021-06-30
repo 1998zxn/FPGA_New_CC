@@ -277,6 +277,7 @@ Ports_for_CC inst_Ports_for_CC_port_1(
 .start_wait(start_send_data_1),
 //.start_wait(0),
 .packet_frame_index(packet_frame_index_1),
+.cnt_send_number_1(cnt_send_number_1),
 .Ports_for_CC_tdata(tx_axis_tdata_1),
 .Ports_for_CC_tkeep(tx_axis_tkeep_1),
 .Ports_for_CC_tlast(tx_axis_tlast_1),
@@ -371,11 +372,12 @@ end
 
 always @(posedge tx_clk_out_1 or posedge user_tx_reset_1)
 begin
-  if (user_tx_reset_1 || cnt_receive_from_01_number_1 == 0)
+  if (user_tx_reset_1 || cnt_send_number_1 < 48'h000000050000)
+  //if (user_tx_reset_1)
     packet_frame_index_1 <= 48'd0 ;
   else 
     if(packet_frame_index_1 == 48'hFFFFFFFFFFFF)
-      packet_frame_index_1 <= 48'h000000000000 ;
+      packet_frame_index_1 <= 48'h000000000001 ;
     else
       packet_frame_index_1 <= packet_frame_index_1 + 1;
 end
@@ -394,7 +396,8 @@ begin
   if (user_tx_reset_1)
     cnt_send_number_1 <= 48'd0 ;
   else 
-    if(tx_axis_tlast_1 == 1 && cnt_send_number_1 < 48'h0000FFFFFFFF)
+    if(tx_axis_tlast_1 == 1 && cnt_send_number_1 < 48'hFFFFFFFFFFFF)
+    //if(tx_axis_tlast_1 == 1)
       cnt_send_number_1 <= cnt_send_number_1 + 1;
     else
       cnt_send_number_1 <= cnt_send_number_1;
@@ -414,7 +417,7 @@ begin
   if (user_rx_reset_1)
     cnt_receive_from_01_number_1 <= 48'd0 ;
   else 
-    if(rx_axis_tdata_1 == 64'hFDFE03FAFBFCFDFE && rx_axis_tvalid_1 == 1)
+    if(rx_axis_tdata_1 == 64'hFDFE02FAFBFCFDFE && rx_axis_tvalid_1 == 1)
       cnt_receive_from_01_number_1 <= cnt_receive_from_01_number_1 + 1;
     else
       cnt_receive_from_01_number_1 <= cnt_receive_from_01_number_1;
@@ -459,7 +462,8 @@ begin
   if (user_tx_reset_2)
     cnt_send_number_2 <= 48'd0 ;
   else 
-    if(tx_axis_tlast_2 == 1 && cnt_send_number_2 < 48'h0000FFFFFFFF)
+    //if(tx_axis_tlast_2 == 1 && cnt_send_number_2 < 48'h0000FFFFFFFF)
+    if(tx_axis_tlast_2 == 1)
       cnt_send_number_2 <= cnt_send_number_2 + 1;
     else
       cnt_send_number_2 <= cnt_send_number_2;

@@ -39,6 +39,7 @@ port (
   tx_axis_tvalid    : out std_logic;
   tx_axis_tready    : in  std_logic;
   start                      : in std_logic;
+  begin_CC   : out std_logic;
   packet_frame_index: in std_logic_vector(47 downto 0)
 );
 end send_data;
@@ -94,6 +95,7 @@ begin
     tx_axis_tkeep <= X"FF";
     tx_axis_tvalid <= '0';
     tx_axis_tlast <= '0';
+    begin_CC <= '0';
     tx_axis_tdata <= (others=>'0');
     case SM is
       when SM_IDLE_ST =>
@@ -104,10 +106,14 @@ begin
             SM_nxt <= SM_WAIT_ST;
           end if;
         end if;
+        tx_axis_tdata <=X"0000000000000000";
+        tx_axis_tvalid <= '0';
       when SM_WAIT_ST =>
         if( tx_axis_tready='1' ) then
           SM_nxt <= SM_BEAT1_ST;
         end if;
+        tx_axis_tdata <=X"0000000000000000";
+        tx_axis_tvalid <= '0';
       when SM_BEAT1_ST =>
         if( tx_axis_tready='1' ) then
           SM_nxt <= SM_BEAT2_ST;
@@ -187,6 +193,11 @@ begin
             SM_nxt <= SM_IDLE_ST;
             cnt_T_pai_nxt <= 0;
             tx_axis_tlast <= '1';
+            if( packet_frame_index = X"000000000000") then
+                begin_CC <= '0';
+            else
+                begin_CC <= '1';
+            end if;
           end if;
           beat_cnt_nxt <= beat_cnt + 8;
           if( tx_axis_tdata_1 = X"0FFFFFFFFFFFFFFF" ) then
