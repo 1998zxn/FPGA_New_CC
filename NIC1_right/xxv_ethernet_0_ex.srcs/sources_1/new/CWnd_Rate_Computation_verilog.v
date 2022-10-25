@@ -717,23 +717,23 @@ end
 always @(posedge clk or negedge reset)
 begin
   if (~reset)
-    T_low <= 8'd32 ;
+    T_low <= 8'd10 ;
   else 
-    T_low <= 8'd32 ;
+    T_low <= 8'd10 ;
 end
 always @(posedge clk or negedge reset)
 begin
   if (~reset)
-    T_high <= 8'd200 ;
+    T_high <= 8'd30 ;
   else 
-    T_high <= 8'd200 ;
+    T_high <= 8'd30 ;
 end
 always @(posedge clk or negedge reset)
 begin
   if (~reset)
-    T_high_low <= 8'd168 ;
+    T_high_low <= 8'd20 ;
   else 
-    T_high_low <= 8'd168 ;
+    T_high_low <= 8'd20 ;
 end
 always @(posedge clk or negedge reset)
 begin

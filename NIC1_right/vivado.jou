@@ -2,23 +2,14 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Tue Jun 22 16:43:01 2021
-# Process ID: 12056
+# Start of session at: Fri Nov 26 11:51:32 2021
+# Process ID: 22172
 # Current directory: D:/project/FPGA_New_CC/NIC1_right
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19516 D:\project\FPGA_New_CC\NIC1_right\xxv_ethernet_0_ex.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2456 D:\project\FPGA_New_CC\NIC1_right\xxv_ethernet_0_ex.xpr
 # Log file: D:/project/FPGA_New_CC/NIC1_right/vivado.log
 # Journal file: D:/project/FPGA_New_CC/NIC1_right\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.xpr
 update_compile_order -fileset sources_1
-reset_run synth_1_copy_2
-launch_runs impl_3 -to_step write_bitstream -jobs 4
-wait_on_run impl_3
-reset_run impl_3
-reset_run synth_1_copy_2
-launch_runs impl_3 -to_step write_bitstream -jobs 4
-wait_on_run impl_3
-reset_run synth_1_copy_2
-launch_runs impl_3 -to_step write_bitstream -jobs 4
-wait_on_run impl_3
+synth_design -rtl -rtl_skip_mlo -name rtl_1

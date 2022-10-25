@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Nov 24 17:42:32 2021
+# Process ID: 10304
+# Current directory: D:/project/FPGA_New_CC/NIC1_right
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12172 D:\project\FPGA_New_CC\NIC1_right\xxv_ethernet_0_ex.xpr
+# Log file: D:/project/FPGA_New_CC/NIC1_right/vivado.log
+# Journal file: D:/project/FPGA_New_CC/NIC1_right\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado_2020.2/Vivado/2020.2/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'xxv_ethernet_0' is locked:
+* IP 'xxv_ethernet_0' requires one or more mandatory licenses but no valid licenses were found. However license checkpoints may prevent use of this IP in some tool flows.
+WARNING: [IP_Flow 19-5178] IP xxv_ethernet_0 will not be generated with lower license level. If you would like to generate with the current available license levels, please reset and regenerate.
+open_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1143.969 ; gain = 0.000
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Nov 24 17:46:00 2021...

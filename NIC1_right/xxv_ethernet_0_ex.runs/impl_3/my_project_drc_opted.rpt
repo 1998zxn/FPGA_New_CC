@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Tue Jun 29 23:53:55 2021
+| Date         : Sat Jul  3 16:35:37 2021
 | Host         : zxn running 64-bit major release  (build 9200)
 | Command      : report_drc -file my_project_drc_opted.rpt -pb my_project_drc_opted.pb -rpx my_project_drc_opted.rpx
 | Design       : my_project
@@ -24,7 +24,7 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 9
+             Violations found: 5
 +----------+----------+-----------------------------------------------------+------------+
 | Rule     | Severity | Description                                         | Violations |
 +----------+----------+-----------------------------------------------------+------------+
@@ -32,7 +32,7 @@ Table of Contents
 | DPIP-2   | Warning  | Input pipelining                                    | 1          |
 | DPOP-3   | Warning  | PREG Output pipelining                              | 1          |
 | DPOP-4   | Warning  | MREG Output pipelining                              | 1          |
-| DPOR-2   | Warning  | Asynchronous load check                             | 5          |
+| DPOR-2   | Warning  | Asynchronous load check                             | 1          |
 +----------+----------+-----------------------------------------------------+------------+
 
 2. REPORT DETAILS
@@ -68,26 +68,6 @@ Related violations: <none>
 DPOR-2#1 Warning
 Asynchronous load check  
 DSP inst_Ports_for_CC_port_1/inst_CWnd_Rate_Computation_verilog/ECN_tmp_reg2 output is connected to registers with an asynchronous reset (inst_Ports_for_CC_port_1/inst_CWnd_Rate_Computation_verilog/ECN_tmp_reg[0]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
-Related violations: <none>
-
-DPOR-2#2 Warning
-Asynchronous load check  
-DSP inst_Ports_for_CC_port_1/inst_CWnd_Rate_Computation_verilog/ECN_tmp_reg2 output is connected to registers with an asynchronous reset (inst_Ports_for_CC_port_1/inst_CWnd_Rate_Computation_verilog/ECN_tmp_reg[1]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
-Related violations: <none>
-
-DPOR-2#3 Warning
-Asynchronous load check  
-DSP inst_Ports_for_CC_port_1/inst_CWnd_Rate_Computation_verilog/ECN_tmp_reg2 output is connected to registers with an asynchronous reset (inst_Ports_for_CC_port_1/inst_CWnd_Rate_Computation_verilog/ECN_tmp_reg[2]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
-Related violations: <none>
-
-DPOR-2#4 Warning
-Asynchronous load check  
-DSP inst_Ports_for_CC_port_1/inst_CWnd_Rate_Computation_verilog/ECN_tmp_reg2 output is connected to registers with an asynchronous reset (inst_Ports_for_CC_port_1/inst_CWnd_Rate_Computation_verilog/ECN_tmp_reg[3]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
-Related violations: <none>
-
-DPOR-2#5 Warning
-Asynchronous load check  
-DSP inst_Ports_for_CC_port_1/inst_CWnd_Rate_Computation_verilog/ECN_tmp_reg2 output is connected to registers with an asynchronous reset (inst_Ports_for_CC_port_1/inst_CWnd_Rate_Computation_verilog/ECN_tmp_reg[4]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
 Related violations: <none>
 
 

@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Nov 24 17:42:32 2021
+# Process ID: 10304
+# Current directory: D:/project/FPGA_New_CC/NIC1_right
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12172 D:\project\FPGA_New_CC\NIC1_right\xxv_ethernet_0_ex.xpr
+# Log file: D:/project/FPGA_New_CC/NIC1_right/vivado.log
+# Journal file: D:/project/FPGA_New_CC/NIC1_right\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/project/FPGA_New_CC/NIC1_right/xxv_ethernet_0_ex.xpr
+update_compile_order -fileset sources_1

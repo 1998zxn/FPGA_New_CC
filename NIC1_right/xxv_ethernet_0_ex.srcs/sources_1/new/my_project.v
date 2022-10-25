@@ -142,10 +142,10 @@ module my_project
 
 xxv_ethernet_0_exdes my_xxv_ethernet_0_exdes
 (
-  .tx_clk_out_0 (tx_clk_out_0),
-  .rx_core_clk_0 (rx_core_clk_0),
-  .user_tx_reset_0 (user_tx_reset_0),
-  .user_rx_reset_0 (user_rx_reset_0),
+  .tx_clk_out_0 (tx_clk_out_3),
+  .rx_core_clk_0 (rx_core_clk_3),
+  .user_tx_reset_0 (user_tx_reset_3),
+  .user_rx_reset_0 (user_rx_reset_3),
  
   .tx_clk_out_1 (tx_clk_out_1),
   .rx_core_clk_1 (rx_core_clk_1),
@@ -157,16 +157,16 @@ xxv_ethernet_0_exdes my_xxv_ethernet_0_exdes
   .user_tx_reset_2 (user_tx_reset_2),
   .user_rx_reset_2 (user_rx_reset_2),
 
-  .tx_clk_out_3 (tx_clk_out_3),
-  .rx_core_clk_3 (rx_core_clk_3),
-  .user_tx_reset_3 (user_tx_reset_3),
-  .user_rx_reset_3 (user_rx_reset_3),
+  .tx_clk_out_3 (tx_clk_out_0),
+  .rx_core_clk_3 (rx_core_clk_0),
+  .user_tx_reset_3 (user_tx_reset_0),
+  .user_rx_reset_3 (user_rx_reset_0),
 
-  .tx_axis_tready_design_0 (tx_axis_tready_0),
-  .tx_axis_tvalid_design_0 (tx_axis_tvalid_0),
-  .tx_axis_tdata_design_0 (tx_axis_tdata_0),
-  .tx_axis_tlast_design_0 (tx_axis_tlast_0),
-  .tx_axis_tkeep_design_0 (tx_axis_tkeep_0),
+  .tx_axis_tready_design_0 (tx_axis_tready_3),
+  .tx_axis_tvalid_design_0 (tx_axis_tvalid_3),
+  .tx_axis_tdata_design_0 (tx_axis_tdata_3),
+  .tx_axis_tlast_design_0 (tx_axis_tlast_3),
+  .tx_axis_tkeep_design_0 (tx_axis_tkeep_3),
   
   .tx_axis_tready_design_1 (tx_axis_tready_1),
   .tx_axis_tvalid_design_1 (tx_axis_tvalid_1),
@@ -180,16 +180,16 @@ xxv_ethernet_0_exdes my_xxv_ethernet_0_exdes
   .tx_axis_tlast_design_2 (tx_axis_tlast_2),
   .tx_axis_tkeep_design_2 (tx_axis_tkeep_2),
 
-  .tx_axis_tready_design_3 (tx_axis_tready_3),
-  .tx_axis_tvalid_design_3 (tx_axis_tvalid_3),
-  .tx_axis_tdata_design_3 (tx_axis_tdata_3),
-  .tx_axis_tlast_design_3 (tx_axis_tlast_3),
-  .tx_axis_tkeep_design_3 (tx_axis_tkeep_3),
+  .tx_axis_tready_design_3 (tx_axis_tready_0),
+  .tx_axis_tvalid_design_3 (tx_axis_tvalid_0),
+  .tx_axis_tdata_design_3 (tx_axis_tdata_0),
+  .tx_axis_tlast_design_3 (tx_axis_tlast_0),
+  .tx_axis_tkeep_design_3 (tx_axis_tkeep_0),
   
-  .rx_axis_tvalid_design_0 (rx_axis_tvalid_0),
-  .rx_axis_tdata_design_0 (rx_axis_tdata_0),
-  .rx_axis_tlast_design_0 (rx_axis_tlast_0),
-  .rx_axis_tkeep_design_0 (rx_axis_tkeep_0),
+  .rx_axis_tvalid_design_0 (rx_axis_tvalid_3),
+  .rx_axis_tdata_design_0 (rx_axis_tdata_3),
+  .rx_axis_tlast_design_0 (rx_axis_tlast_3),
+  .rx_axis_tkeep_design_0 (rx_axis_tkeep_3),
   
   .rx_axis_tvalid_design_1 (rx_axis_tvalid_1),
   .rx_axis_tdata_design_1 (rx_axis_tdata_1),
@@ -201,10 +201,10 @@ xxv_ethernet_0_exdes my_xxv_ethernet_0_exdes
   .rx_axis_tlast_design_2 (rx_axis_tlast_2),
   .rx_axis_tkeep_design_2 (rx_axis_tkeep_2),
 
-  .rx_axis_tvalid_design_3 (rx_axis_tvalid_3),
-  .rx_axis_tdata_design_3 (rx_axis_tdata_3),
-  .rx_axis_tlast_design_3 (rx_axis_tlast_3),
-  .rx_axis_tkeep_design_3 (rx_axis_tkeep_3),
+  .rx_axis_tvalid_design_3 (rx_axis_tvalid_0),
+  .rx_axis_tdata_design_3 (rx_axis_tdata_0),
+  .rx_axis_tlast_design_3 (rx_axis_tlast_0),
+  .rx_axis_tkeep_design_3 (rx_axis_tkeep_0),
   
   .gt_rxp_in_0 (gt_rxp_in_0),
   .gt_rxn_in_0 (gt_rxn_in_0),
